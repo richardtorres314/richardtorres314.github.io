@@ -1,10 +1,22 @@
 [
 	{
+		"company": "Craft.co",
+		"logo": "craft.jpg",
+		"location": "Remote",
+		"title": "Software Engineer",
+		"dates": "Dec. 2020–Apr. 2021",
+		"duties": [
+			"Collaborated with engineers across multiple teams to contribute key features to the core product",
+			"Assisted in initiating a new engineering team through documentation and mentorship",
+			"Managed regular deployments to QA, staging, and production environments"
+		]
+	},
+	{
 		"company": "coUrbanize",
 		"logo": "courbanize.png",
 		"location": "Boston, MA",
 		"title": "Senior Software Engineer",
-		"dates": "Feb., 2020–PRESENT",
+		"dates": "Feb., 2020–Aug. 2020",
 		"duties": [
 			"Helped develop for the company's core second product from inception and participated in weekly Agile meetings to discuss the development cycle",
 			"Set up hosting environment on AWS using a variety of services such as Elastic Beanstalk, SNS, RDS, and Lambda",
