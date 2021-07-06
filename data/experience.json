@@ -1,0 +1,55 @@
+[
+	{
+		"company": "coUrbanize",
+		"logo": "courbanize.png",
+		"location": "Boston, MA",
+		"title": "Senior Software Engineer",
+		"dates": "Feb., 2020–PRESENT",
+		"duties": [
+			"Helped develop for the company's core second product from inception and participated in weekly Agile meetings to discuss the development cycle",
+			"Set up hosting environment on AWS using a variety of services such as Elastic Beanstalk, SNS, RDS, and Lambda",
+			"Configured static site deployment for designers to view Storybook environment",
+			"Established CI/CD tooling using GitHub Actions to push to NPM where I created a package for the company's WCAG compliant components"
+		]
+	},
+	{
+		"company": "SyncOnSet Technologies",
+		"logo": "sos.svg",
+		"location": "Boston, MA",
+		"title": "Software Engineer",
+		"dates": "April, 2018–Feb., 2020",
+		"duties": [
+			"Contributed software engineering expertise in the development of the company's key product",
+			"Introduced methodologies and best practices for scalable building and collaboration across a rapidly expanded team",
+			"Participated in Scrum workflow to deliver product based on user feedback",
+			"Rebuilt core application as a single-page using a wide variety of development tools such as Node, React, Redux, TypeScript, Webpack, and Storybook"
+		]
+	},
+	{
+		"company": "Swell Rewards",
+		"logo": "swell.jpg",
+		"location": "Boston, MA",
+		"title": "Front-end Developer",
+		"dates": "July, 2017–Mar., 2018",
+		"duties": [
+			"Developed web components for integrating with third-party e-commerce sites, emphasizing performance, cross-browser compatibility, SEO, and best practices",
+			"Created a new development process enabling the product to make use of modern front-end tools such as React and Webpack",
+			"Created email marketing templates for mass-market campaigns",
+			"Established a centralized code repository to aid in version control reusable code snippets and collaboration with other developers"
+		]
+	},
+	{
+		"company": "Boston University Metropolitan College",
+		"logo": "bu.gif",
+		"location": "Boston, MA",
+		"title": "Web Producer",
+		"dates": "Oct. 2015–July, 2017",
+		"duties": [
+			"Develop and maintain sites in WordPress and Dreamweaver with an emphasis on responsive design and best practices",
+			"Established a Github code repository and migrated in-house built code for collaboration",
+			"Incorporate SEO tactics, social media integration, and data analytics to provide feedback for UI/UX and user engagement",
+			"Create and track email marketing campaigns with as many as several thousand recipients",
+			"Edit photos and produce graphics utilizing image processing tools such Photoshop, Lightroom, and InDesign"
+		]
+	}
+]
