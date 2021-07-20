@@ -1,0 +1,93 @@
+.navContainer {
+  background-color: var(--primary);
+  height: 12em;
+  padding: 1em;
+  font-size: 0.75em;
+}
+
+.contactWrapper {
+  margin-top: -7em;
+  padding: 1em;
+}
+
+.contactContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.avatarWrapper {
+  border-radius: 50%;
+  height: 12em;
+  overflow: hidden;
+  width: 12em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav div:not(:last-child) {
+  margin-right: 1.5em;
+  position: relative;
+}
+
+.nav div:not(:last-child)::after {
+  top: 0;
+  color: white;
+  right: -0.75rem;
+  content: "•";
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.nav a {
+  color: white;
+  display: block;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  font-weight: 900;
+}
+
+.subtitle {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.contactInfoContainer {
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 960px) {
+  .navContainer {
+    font-size: 1em;
+  }
+
+  .nav div:not(:last-child) {
+    margin-right: 1em;
+    position: relative;
+  }
+}

@@ -1,0 +1,61 @@
+.experienceWrapper {
+  padding: 2em;
+}
+
+@media screen and (min-width: 960px) {
+  .experienceContainer {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.experienceContent {
+  flex-grow: 1;
+}
+
+.listItem {
+  padding: 1em;
+}
+
+.company {
+  font-weight: 500;
+}
+
+.location {
+  color: #f50057;
+}
+
+.title {
+  font-variant: small-caps;
+  font-weight: 500;
+  color: var(--text__medium);
+}
+
+.dates {
+  font-variant: italic;
+  font-size: 0.9em;
+}
+
+.dates,
+.location {
+  text-align: right;
+}
+
+.logo {
+  max-width: 32px;
+  width: 100%;
+}
+
+.dutyIcon {
+  min-width: 2em;
+}
+
+.dutyText {
+  flex: 1 1 auto;
+}
+
+.dutyContainer {
+  display: flex;
+  flex-wrap: nowrap !important;
+}

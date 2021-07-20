@@ -1,20 +1,19 @@
-import About from '../components/about';
-import Contact from '../components/contact';
-import Experience from '../components/experience';
-import Footer from '../components/footer';
-import Header from '../components/header';
-import Skills from '../components/skills';
-import { Fragment } from 'react';
+import About from 'components/about/about';
+import Contact from 'components/contact/contact';
+import Experience from 'components/experience/experience';
+import Footer from 'components/footer/footer';
+import Header from 'components/header/header';
+import { Skills } from 'components/skills/skills';
 
 export default function Home() {
-	return (
-		<Fragment>
-			<Header />
-			<About />
-			<Skills />
-			<Experience />
-			<Contact />
-			<Footer />
-		</Fragment>
-	);
+  return (
+    <>
+      <Header />
+      <About />
+      <Skills />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
+  );
 }

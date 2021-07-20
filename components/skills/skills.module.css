@@ -1,0 +1,16 @@
+.skillsWrapper {
+  background-color: var(--light);
+}
+
+.subheading {
+  text-align: center;
+}
+
+.subheading {
+  font-variant: small-caps;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+}

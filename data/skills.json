@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Front-End",
+    "values": [
+      {
+        "name": "Libraries",
+        "color": "#4caf50",
+        "values": [
+          "React",
+          "Redux",
+          "Enzyme"
+        ]
+      },
+      {
+        "name": "Tools",
+        "color": "#ff5722",
+        "values": [
+          "Webpack",
+          "PostCSS"
+        ]
+      },
+      {
+        "name": "Design Systems",
+        "color": "#ffc107",
+        "values": [
+          "Material",
+          "Bootstrap"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Across the Stack",
+    "values": [
+      {
+        "name": "Languages",
+        "color": "#3f51b5",
+        "values": [
+          "TypeScript/JavaScript",
+          "Python"
+        ]
+      },
+      {
+        "name": "APIs",
+        "color": "#ff9800",
+        "values": [
+          "REST",
+          "GraphQL"
+        ]
+      },
+      {
+        "name": "IaaS/PaaS",
+        "color": "#009688",
+        "values": [
+          "AWS",
+          "Heroku",
+          "Google App Engine"
+        ]
+      },
+      {
+        "name": "Testing",
+        "color": "#03a9f4",
+        "values": [
+          "Jest",
+          "Mocha"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Back-End",
+    "values": [
+      {
+        "name": "Databases",
+        "color": "#f50057",
+        "values": [
+          "PostgresSQL",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Frameworks",
+        "color": "#9c27b0",
+        "values": [
+          "Express.js",
+          "hapi.js"
+        ]
+      },
+      {
+        "name": "ORMs",
+        "color": "#424242",
+        "values": [
+          "TypeORM",
+          "Mongoose"
+        ]
+      }
+    ]
+  }
+]

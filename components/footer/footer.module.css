@@ -1,0 +1,6 @@
+.footerWrapper {
+  background-color: var(--dark);
+  color: var(--text__medium);
+  padding: 2em;
+  text-align: center;
+}

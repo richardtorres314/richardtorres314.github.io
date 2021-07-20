@@ -1,0 +1,7 @@
+.listItem {
+  padding: 0.75em;
+}
+
+.divider {
+  border-bottom: 1px solid lightgray;
+}
