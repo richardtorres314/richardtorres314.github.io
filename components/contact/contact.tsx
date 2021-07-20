@@ -1,6 +1,6 @@
 import styles from './contact.module.css';
 import { Container } from 'components/container/container';
-import { Email, GitHub, Twitter } from '@material-ui/icons';
+import { Email, GitHub, Twitter } from 'components/icons';
 import { Section } from 'components/section/section';
 import { SectionHeading } from 'components/section-heading/section-heading';
 
@@ -20,17 +20,17 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHub fontSize="large" />
+            <GitHub />
           </a>
           <a
             href="https://www.twitter.com/rtorr05"
             target="_blank"
             rel="noreferrer"
           >
-            <Twitter fontSize="large" />
+            <Twitter />
           </a>
           <a href="mailto:richardtorres314@gmail.com">
-            <Email fontSize="large" />
+            <Email />
           </a>
         </div>
       </Container>

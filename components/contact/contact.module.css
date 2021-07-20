@@ -23,9 +23,11 @@
 }
 
 .contactList a {
-  color: var(--text__medium);
+  display: block;
+  fill: var(--text__medium);
+  width: 2.25em;
 }
 
 .contactList a:hover {
-  color: var(--text__light);
+  fill: var(--text__light);
 }

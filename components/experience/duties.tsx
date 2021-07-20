@@ -1,5 +1,5 @@
 import styles from './experience.module.css';
-import { Done } from '@material-ui/icons';
+import { Done } from 'components/icons/done';
 import { Flex } from 'components/flex/flex';
 import { Grid } from 'components/grid/grid';
 import { List } from 'components/list/list';
@@ -15,11 +15,13 @@ export function Duties({ duties }: Props) {
       <List>
         {duties.map((duty, index) => (
           <ListItem key={`duty-${index}`}>
-            <Flex className={styles.dutyContainer}>
-              <Flex className={styles.dutyIcon}>
-                <Done fontSize="small" />
+            <Flex container className={styles.dutyContainer}>
+              <Flex item className={styles.dutyIcon}>
+                <Done />
               </Flex>
-              <Flex className={styles.dutyText}>{duty}</Flex>
+              <Flex item className={styles.dutyText}>
+                {duty}
+              </Flex>
             </Flex>
           </ListItem>
         ))}

@@ -48,7 +48,12 @@
 }
 
 .dutyIcon {
-  min-width: 2em;
+  width: 1.25em;
+  flex: 0 0 auto;
+}
+
+.dutyIcon svg {
+  width: 100%;
 }
 
 .dutyText {
@@ -58,4 +63,8 @@
 .dutyContainer {
   display: flex;
   flex-wrap: nowrap !important;
+}
+
+.dutyContainer > *:not(:last-child) {
+  margin-right: 0.5em;
 }
