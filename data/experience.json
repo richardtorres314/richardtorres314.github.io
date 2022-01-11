@@ -1,7 +1,7 @@
 [
 	{
 		"company": "Craft.co",
-		"logo": "craft.jpg",
+		"logo": "images/craft.jpg",
 		"location": "Remote",
 		"title": "Software Engineer",
 		"dates": "Dec. 2020–Apr. 2021",
@@ -13,7 +13,7 @@
 	},
 	{
 		"company": "coUrbanize",
-		"logo": "courbanize.png",
+		"logo": "images/courbanize.png",
 		"location": "Boston, MA",
 		"title": "Senior Software Engineer",
 		"dates": "Feb., 2020–Aug. 2020",
@@ -26,10 +26,10 @@
 	},
 	{
 		"company": "SyncOnSet Technologies",
-		"logo": "sos.svg",
+		"logo": "images/sos.svg",
 		"location": "Boston, MA",
 		"title": "Software Engineer",
-		"dates": "April, 2018–Feb., 2020",
+		"dates": "Apr., 2018–Feb., 2020",
 		"duties": [
 			"Contributed software engineering expertise in the development of the company's key product",
 			"Introduced methodologies and best practices for scalable building and collaboration across a rapidly expanded team",
@@ -39,7 +39,7 @@
 	},
 	{
 		"company": "Swell Rewards",
-		"logo": "swell.jpg",
+		"logo": "images/swell.jpg",
 		"location": "Boston, MA",
 		"title": "Front-end Developer",
 		"dates": "July, 2017–Mar., 2018",
@@ -52,7 +52,7 @@
 	},
 	{
 		"company": "Boston University Metropolitan College",
-		"logo": "bu.gif",
+		"logo": "images/bu.gif",
 		"location": "Boston, MA",
 		"title": "Web Producer",
 		"dates": "Oct. 2015–July, 2017",

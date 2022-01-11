@@ -30,7 +30,7 @@ export default function About() {
           <img
             className={styles.aboutImage}
             alt="Illustration of person thinking alongside laptop"
-            src="undraw_code_thinking_1jeh.svg"
+            src="images/undraw_code_thinking_1jeh.svg"
           />
         </div>
       </Container>

@@ -6,7 +6,7 @@ import { SectionHeading } from 'components/section-heading/section-heading';
 
 export default function Contact() {
   return (
-    <Section className={styles.contactWrapper}>
+    <Section className={styles.contactWrapper} id="contact">
       <Container className={styles.contactContainer}>
         <SectionHeading align="center">
           <span>Con</span>tact Me

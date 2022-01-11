@@ -25,7 +25,7 @@ export default function Header() {
             <img
               draggable="false"
               alt="Richard Torres"
-              src="me.jpg"
+              src="images/me.jpg"
               className={styles.avatar}
             />
           </div>
