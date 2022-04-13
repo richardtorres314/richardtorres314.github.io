@@ -1,5 +1,17 @@
 [
 	{
+		"company": "SquadFormers",
+		"logo": "images/squadformers.png",
+		"location": "Remote",
+		"title": "Software Engineer (Contract)",
+		"dates": "July 2021–Nov. 2021",
+		"duties": [
+			"Worked with a small and nimble cohort to manage work on a desktop application with frequent deployments to users",
+			"Built features in a React frontend and Go backend making use of websockets for real time communication",
+			"Contributed to product and architecture discussions as the client's userbase and team grew"
+		]
+	},
+	{
 		"company": "Craft.co",
 		"logo": "images/craft.jpg",
 		"location": "Remote",
