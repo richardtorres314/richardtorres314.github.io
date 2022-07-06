@@ -1,21 +1,40 @@
-import styles from './header.module.css';
+import { MouseEvent } from "react";
+import styles from "./header.module.css";
 
-export default function Header() {
+function Header() {
+  function handleOnClick(event: MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+    const sectionId = event.currentTarget.href.split("#")[1];
+    const element = document.getElementById(sectionId);
+    if (!element) return;
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   return (
     <>
       <div className={styles.navContainer}>
         <nav className={styles.nav}>
           <div>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleOnClick}>
+              About
+            </a>
           </div>
           <div>
-            <a href="#skills">Skills</a>
+            <a href="#skills" onClick={handleOnClick}>
+              Skills
+            </a>
           </div>
           <div>
-            <a href="#experience">Experience</a>
+            <a href="#experience" onClick={handleOnClick}>
+              Experience
+            </a>
           </div>
           <div>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleOnClick}>
+              Contact
+            </a>
           </div>
         </nav>
       </div>
@@ -40,3 +59,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header;
