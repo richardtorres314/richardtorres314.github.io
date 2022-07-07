@@ -1,10 +1,12 @@
-import styles from './contact.module.css';
-import { Container } from 'components/container/container';
-import { Email, GitHub, Twitter } from 'components/icons';
-import { Section } from 'components/section/section';
-import { SectionHeading } from 'components/section-heading/section-heading';
+import styles from "./contact.module.css";
+import Container from "components/container/container";
+import Section from "components/section/section";
+import SectionHeading from "components/section-heading/section-heading";
+import GitHub from "components/icons/github";
+import Twitter from "components/icons/twitter";
+import Email from "components/icons/email";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <Section className={styles.contactWrapper} id="contact">
       <Container className={styles.contactContainer}>
@@ -12,7 +14,7 @@ export default function Contact() {
           <span>Con</span>tact Me
         </SectionHeading>
         <p>
-          Let's work together! Contact me and I'll get back to you shortly 😊
+          Let’s work together! Contact me and I’ll get back to you shortly 😊
         </p>
         <div className={styles.contactList}>
           <a
@@ -36,4 +38,6 @@ export default function Contact() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Contact;

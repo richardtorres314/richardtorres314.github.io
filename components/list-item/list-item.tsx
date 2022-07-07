@@ -1,12 +1,13 @@
-import classNames from 'classnames';
-import styles from './list-item.module.css';
-import { HTMLAttributes } from 'react';
+import classNames from "classnames";
+import styles from "./list-item.module.css";
+import { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<HTMLLIElement> {
   divider?: boolean;
 }
 
-export function ListItem({ className, divider, ...passedProps }: Props) {
+const ListItem = (props: Props) => {
+  const { className, divider, ...passedProps } = props;
   return (
     <li
       className={classNames(styles.listItem, className, {
@@ -15,4 +16,6 @@ export function ListItem({ className, divider, ...passedProps }: Props) {
       {...passedProps}
     />
   );
-}
+};
+
+export default ListItem;

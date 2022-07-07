@@ -1,10 +1,10 @@
-import classNames from 'classnames';
-import styles from './list.module.css';
-import { HTMLAttributes } from 'react';
+import classNames from "classnames";
+import styles from "./list.module.css";
+import { HTMLAttributes } from "react";
 
-export function List({
-  className,
-  ...passedProps
-}: HTMLAttributes<HTMLUListElement>) {
+const List = (props: HTMLAttributes<HTMLUListElement>) => {
+  const { className, ...passedProps } = props;
   return <ul className={classNames(styles.list, className)} {...passedProps} />;
-}
+};
+
+export default List;

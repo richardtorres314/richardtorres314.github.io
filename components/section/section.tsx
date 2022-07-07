@@ -1,15 +1,15 @@
-import classNames from 'classnames';
-import styles from './section.module.css';
-import { HTMLAttributes } from 'react';
+import classNames from "classnames";
+import styles from "./section.module.css";
+import { HTMLAttributes } from "react";
 
-export function Section({
-  className,
-  ...passedProps
-}: HTMLAttributes<HTMLElement>) {
+const Section = (props: HTMLAttributes<HTMLElement>) => {
+  const { className, ...passedProps } = props;
   return (
     <section
       className={classNames(styles.section, className)}
       {...passedProps}
     />
   );
-}
+};
+
+export default Section;

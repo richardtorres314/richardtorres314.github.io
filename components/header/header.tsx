@@ -1,41 +1,31 @@
 import { MouseEvent } from "react";
 import styles from "./header.module.css";
 
-function Header() {
+const Header = () => {
   function handleOnClick(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
     const sectionId = event.currentTarget.href.split("#")[1];
     const element = document.getElementById(sectionId);
     if (!element) return;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
-    <>
+    <header id="header">
       <div className={styles.navContainer}>
         <nav className={styles.nav}>
-          <div>
-            <a href="#about" onClick={handleOnClick}>
-              About
-            </a>
-          </div>
-          <div>
-            <a href="#skills" onClick={handleOnClick}>
-              Skills
-            </a>
-          </div>
-          <div>
-            <a href="#experience" onClick={handleOnClick}>
-              Experience
-            </a>
-          </div>
-          <div>
-            <a href="#contact" onClick={handleOnClick}>
-              Contact
-            </a>
-          </div>
+          <a href="#about" onClick={handleOnClick}>
+            About
+          </a>
+          <a href="#skills" onClick={handleOnClick}>
+            Skills
+          </a>
+          <a href="#experience" onClick={handleOnClick}>
+            Experience
+          </a>
+          <a href="#contact" onClick={handleOnClick}>
+            Contact
+          </a>
         </nav>
       </div>
       <div className={styles.contactWrapper}>
@@ -56,8 +46,8 @@ function Header() {
           </div>
         </div>
       </div>
-    </>
+    </header>
   );
-}
+};
 
 export default Header;

@@ -1,6 +1,6 @@
-import classNames from 'classnames';
-import styles from './flex.module.css';
-import { HTMLAttributes } from 'react';
+import classNames from "classnames";
+import styles from "./flex.module.css";
+import { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   container?: boolean;
@@ -8,13 +8,8 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   md?: boolean;
 }
 
-export function Flex({
-  className,
-  container,
-  item,
-  md,
-  ...passedProps
-}: Props) {
+const Flex = (props: Props) => {
+  const { className, container, item, md, ...passedProps } = props;
   return (
     <div
       className={classNames(
@@ -28,4 +23,6 @@ export function Flex({
       {...passedProps}
     />
   );
-}
+};
+
+export default Flex;

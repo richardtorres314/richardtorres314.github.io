@@ -1,15 +1,11 @@
-import Head from 'next/head';
-import { AppPropsType } from 'next/dist/shared/lib/utils';
-import 'public/styles/global.css';
+import Head from "next/head";
+import { AppPropsType } from "next/dist/shared/lib/utils";
+import "public/styles/global.css";
 
 function MyApp({ Component, pageProps }: AppPropsType) {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
-        />
         <title>Richard Torres</title>
         <link
           rel="icon"

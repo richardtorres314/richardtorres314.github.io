@@ -1,15 +1,16 @@
-import styles from './experience.module.css';
-import { Done } from 'components/icons/done';
-import { Flex } from 'components/flex/flex';
-import { Grid } from 'components/grid/grid';
-import { List } from 'components/list/list';
-import { ListItem } from 'components/list-item/list-item';
+import styles from "./experience.module.css";
+import Done from "components/icons/done";
+import Flex from "components/flex/flex";
+import Grid from "components/grid/grid";
+import List from "components/list/list";
+import ListItem from "components/list-item/list-item";
 
 interface Props {
   duties: string[];
 }
 
-export function Duties({ duties }: Props) {
+const Duties = (props: Props) => {
+  const { duties } = props;
   return (
     <Grid style={{ gridArea: "duties" }}>
       <List>
@@ -28,4 +29,6 @@ export function Duties({ duties }: Props) {
       </List>
     </Grid>
   );
-}
+};
+
+export default Duties;

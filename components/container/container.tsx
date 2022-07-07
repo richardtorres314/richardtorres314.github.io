@@ -1,12 +1,13 @@
-import classnames from 'classnames';
-import styles from './container.module.css';
-import { HTMLAttributes } from 'react';
+import classnames from "classnames";
+import styles from "./container.module.css";
+import { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   md?: boolean;
 }
 
-export function Container({ className, md, ...passedProps }: Props) {
+const Container = (props: Props) => {
+  const { className, md, ...passedProps } = props;
   return (
     <div
       className={classnames(styles.container, className, {
@@ -15,4 +16,6 @@ export function Container({ className, md, ...passedProps }: Props) {
       {...passedProps}
     />
   );
-}
+};
+
+export default Container;
