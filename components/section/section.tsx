@@ -2,11 +2,19 @@ import classNames from "classnames";
 import styles from "./section.module.css";
 import { HTMLAttributes } from "react";
 
-const Section = (props: HTMLAttributes<HTMLElement>) => {
-  const { className, ...passedProps } = props;
+interface Props extends HTMLAttributes<HTMLElement> {
+  withPageBreak?: boolean;
+}
+
+const Section = (props: Props) => {
+  const { className, withPageBreak, ...passedProps } = props;
   return (
     <section
-      className={classNames(styles.section, className)}
+      className={classNames(
+        styles.section,
+        withPageBreak && styles.withPageBreak,
+        className
+      )}
       {...passedProps}
     />
   );

@@ -13,3 +13,9 @@
   right: 2rem;
   width: 50px;
 }
+
+@media print {
+  .button {
+    display: none;
+  }
+}

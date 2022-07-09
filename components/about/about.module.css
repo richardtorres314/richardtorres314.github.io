@@ -39,3 +39,9 @@
     width: auto;
   }
 }
+
+@media print {
+  .aboutImageWrapper {
+    display: none;
+  }
+}

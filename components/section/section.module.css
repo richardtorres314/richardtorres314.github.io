@@ -1,3 +1,9 @@
 .section {
   padding: 2em;
 }
+
+@media print {
+  .withPageBreak {
+    page-break-before: always;
+  }
+}

@@ -8,7 +8,7 @@ import Section from "components/section/section";
 import SectionHeading from "components/section-heading/section-heading";
 
 const Skills = () => (
-  <Section className={styles.skillsWrapper} id="skills">
+  <Section className={styles.skillsWrapper} id="skills" withPageBreak>
     <Container>
       <SectionHeading align="center">
         <span>Ski</span>lls

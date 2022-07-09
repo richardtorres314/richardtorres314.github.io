@@ -14,7 +14,7 @@ import SectionHeading from "components/section-heading/section-heading";
 import Title from "./title";
 
 const Experience = () => (
-  <Section id="experience">
+  <Section id="experience" className={styles.experienceWrapper} withPageBreak>
     <Container md>
       <SectionHeading align="center">
         <span>Exp</span>erience

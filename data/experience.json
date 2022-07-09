@@ -1,5 +1,18 @@
 [
 	{
+		"company": "The.com",
+		"logo": "images/the.com.png",
+		"location": "Remote",
+		"title": "Software Engineer",
+		"dates": "Jan. 2021–Present",
+		"duties": [
+			"Collaborated with engineering and product teams to contribute key features to the core product",
+			"Utilized Google Cloud Platform for data storage and endpoint management in a serverless architecture",
+			"Managed regular deployments to staging and production environments",
+			"Frequently wrote internal documentation, tests, and updates to CI/CD pipelines and build tools"
+		]
+	},
+	{
 		"company": "SquadFormers",
 		"logo": "images/squadformers.png",
 		"location": "Remote",
@@ -9,18 +22,6 @@
 			"Worked with a small and nimble cohort to manage work on a desktop application with frequent deployments to users",
 			"Built features in a React frontend and Go backend making use of websockets for real time communication",
 			"Contributed to product and architecture discussions as the client's userbase and team grew"
-		]
-	},
-	{
-		"company": "Craft.co",
-		"logo": "images/craft.jpg",
-		"location": "Remote",
-		"title": "Software Engineer",
-		"dates": "Dec. 2020–Apr. 2021",
-		"duties": [
-			"Collaborated with engineers across multiple teams to contribute key features to the core product",
-			"Assisted in initiating a new engineering team through documentation and mentorship",
-			"Managed regular deployments to QA, staging, and production environments"
 		]
 	},
 	{

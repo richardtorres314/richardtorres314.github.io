@@ -50,11 +50,11 @@
   top: auto;
   bottom: auto;
   color: white;
-  right: -0.5em;
+  right: -0.6em;
   content: "•";
   position: absolute;
-  font-size: 1.5em;
-  line-height: 1;
+  font-size: 1.25em;
+  line-height: 1.25;
 }
 
 .nav a:hover {
