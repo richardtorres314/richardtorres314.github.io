@@ -61,7 +61,17 @@
         "color": "#03a9f4",
         "values": [
           "Jest",
-          "Mocha"
+          "Selenium",
+          "Cypress"
+        ]
+      },
+      {
+        "name": "Infrastructure",
+        "color": "#7ae",
+        "values": [
+          "Docker",
+          "Netlify",
+          "Serverless"
         ]
       }
     ]
@@ -75,7 +85,7 @@
         "values": [
           "PostgresSQL",
           "MySQL",
-          "MongoDB"
+          "Firestore"
         ]
       },
       {
