@@ -23,6 +23,13 @@ const Header = () => {
           <a href="#experience" onClick={handleOnClick}>
             Experience
           </a>
+          <a
+            href="https://dev.to/richardtorres314"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Blog
+          </a>
           <a href="#contact" onClick={handleOnClick}>
             Contact
           </a>
