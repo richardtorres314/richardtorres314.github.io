@@ -6,6 +6,7 @@ import Header from "components/header/header";
 import Skills from "components/skills/skills";
 import Button from "components/button/button";
 import { useEffect, useState } from "react";
+import Contributions from "components/contributions/contributions";
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
@@ -28,6 +29,7 @@ const Home = () => {
       <About />
       <Skills />
       <Experience />
+      <Contributions />
       <Contact />
       <Footer />
       {showButton && <Button />}

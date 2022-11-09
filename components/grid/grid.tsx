@@ -10,9 +10,7 @@ const Grid = (props: Props) => {
   const { className, layout, ...passedProps } = props;
   return (
     <div
-      className={classNames(styles.grid, className, {
-        [styles.experience]: layout === "experience",
-      })}
+      className={classNames(styles.grid, className, layout && styles[layout])}
       {...passedProps}
     />
   );

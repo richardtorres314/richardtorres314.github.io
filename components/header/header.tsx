@@ -23,6 +23,9 @@ const Header = () => {
           <a href="#experience" onClick={handleOnClick}>
             Experience
           </a>
+          <a href="#contributions" onClick={handleOnClick}>
+            Contributions
+          </a>
           <a
             href="https://dev.to/richardtorres314"
             target="_blank"
