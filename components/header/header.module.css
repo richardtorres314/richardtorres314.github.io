@@ -4,6 +4,7 @@
     var(--primary) 50%,
     var(--primaryDark) 50%
   );
+  box-shadow: 0 -5px 10px inset rgba(0, 0, 0, 0.25);
   font-size: 0.75em;
   height: 12em;
   padding: 1em;
@@ -28,6 +29,7 @@
 
 .avatarWrapper {
   border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px dimgray);
   height: 12em;
   overflow: hidden;
   width: 12em;
