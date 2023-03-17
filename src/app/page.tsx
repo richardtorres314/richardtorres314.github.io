@@ -15,7 +15,9 @@ export const metadata = {
     type: "website",
     description:
       "I'm Richard Torres, software engineer located in Boston, MA. Learn more or contact me.",
-    image: "https://richardtorres314.github.io/images/richard-torres.jpg",
+    images: {
+      url: "https://richardtorres314.github.io/images/richard-torres.jpg",
+    },
   },
   icons: {
     icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>",
