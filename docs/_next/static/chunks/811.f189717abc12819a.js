@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[811],{6811:function(a){a.exports={aboutWrapper:"about_aboutWrapper__D__xp",aboutContainer:"about_aboutContainer__Mevdr",aboutText:"about_aboutText__F5YUP",aboutImageWrapper:"about_aboutImageWrapper__P4eJ4",aboutImage:"about_aboutImage__0zBNA"}}}]);

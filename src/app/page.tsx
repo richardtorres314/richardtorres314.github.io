@@ -8,6 +8,7 @@ import { Contributions } from "@/components/contributions/contributions";
 
 export const metadata = {
   title: "Richard Torres",
+  metadataBase: new URL("https://richardtorres.github.io/"),
   openGraph: {
     title: "Richard Torres — Personal Homepage",
     url: "https://richardtorres.github.io/",
@@ -16,7 +17,7 @@ export const metadata = {
     description:
       "I'm Richard Torres, software engineer located in Boston, MA. Learn more or contact me.",
     images: {
-      url: "https://richardtorres314.github.io/images/richard-torres.jpg",
+      url: "/images/richard-torres.jpg",
     },
   },
   icons: {
