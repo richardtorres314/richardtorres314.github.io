@@ -1,0 +1,7 @@
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/components/navbar";
+@import "bulma/sass/helpers/_all";
+
+.body {
+  padding-top: calc(64px + 2rem);
+}

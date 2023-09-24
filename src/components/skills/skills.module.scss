@@ -1,0 +1,16 @@
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/helpers/_all";
+
+.category {
+  @include widescreen {
+    display: flex;
+  }
+}
+
+.categoryName {
+  @extend .mb-2;
+
+  @include widescreen {
+    margin-bottom: 0;
+  }
+}

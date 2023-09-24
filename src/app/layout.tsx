@@ -1,14 +1,16 @@
 import "public/styles/global.css";
+import "bulma/bulma.sass";
+import { ReactNode } from "react";
+import styles from "./layout.module.scss";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface Props {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <head />
-      <body>{children}</body>
+      <body className={styles.body}>{children}</body>
     </html>
   );
 }

@@ -1,51 +1,52 @@
-import data from "data/skills.json";
-import styles from "./skills.module.css";
-import { Card } from "@/components/card/card";
-import { Chip } from "@/components/chip/chip";
-import { Container } from "@/components/container/container";
-import { Flex } from "@/components/flex/flex";
-import { Section } from "@/components/section/section";
-import { SectionHeading } from "@/components/section-heading/section-heading";
+import data from "@/data/skills.json";
+import styles from "./skills.module.scss";
+import classNames from "classnames";
 
 export function Skills() {
   return (
-    <Section className={styles.skillsWrapper} id="skills" withPageBreak>
-      <Container>
-        <SectionHeading align="center">
-          <span>Ski</span>lls
-        </SectionHeading>
-        <Flex container>
+    <section className="section has-background-white-ter" id="skills">
+      <div className="container">
+        <h2 className="title has-text-centered">
+          <span className="has-text-danger">Ski</span>lls
+        </h2>
+        <div className="columns">
           {data.map((skill) => (
-            <Flex item md key={skill.name} className={styles.cardWrapper}>
-              <Card>
-                <h3 className={styles.subheading}>{skill.name}</h3>
-                {skill.values.map((item) => (
-                  <Flex container key={item.name}>
-                    <Flex item className={styles.itemContainer}>
-                      <div key={item.name}>{item.name}</div>
-                    </Flex>
-                    <Flex item>
-                      <Flex container>
+            <div className="column" key={skill.name}>
+              <div className="card">
+                <div className="card-content">
+                  <h3 className="title is-uppercase is-6 has-text-centered has-text-weight-normal">
+                    {skill.name}
+                  </h3>
+                  {skill.values.map((item) => (
+                    <div
+                      className={classNames(
+                        "is-align-items-center mb-4",
+                        styles.category
+                      )}
+                      key={item.name}
+                    >
+                      <div className={classNames("mr-4", styles.categoryName)}>
+                        {item.name}
+                      </div>
+                      <div className="tags are-medium">
                         {item.values.map((value) => (
-                          <Flex item key={value}>
-                            <Chip
-                              label={value}
-                              style={{
-                                backgroundColor: item.color,
-                                color: "white",
-                              }}
-                            />
-                          </Flex>
+                          <div
+                            className="tag has-text-white"
+                            key={value}
+                            style={{ backgroundColor: item.color }}
+                          >
+                            {value}
+                          </div>
                         ))}
-                      </Flex>
-                    </Flex>
-                  </Flex>
-                ))}
-              </Card>
-            </Flex>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
-        </Flex>
-      </Container>
-    </Section>
+        </div>
+      </div>
+    </section>
   );
 }

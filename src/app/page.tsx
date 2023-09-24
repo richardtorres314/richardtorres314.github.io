@@ -1,10 +1,10 @@
-import About from "@/components/about/about";
-import { Contact } from "@/components/contact/contact";
-import { Experience } from "@/components/experience/experience";
-import { Footer } from "@/components/footer/footer";
-import { Header } from "@/components/header/header";
+import About from "@/components/about";
+import { Contact } from "@/components/contact";
+import { Experience } from "@/components/experience";
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar/navbar";
 import { Skills } from "@/components/skills/skills";
-import { Contributions } from "@/components/contributions/contributions";
+import { Contributions } from "@/components/contributions";
 
 export const metadata = {
   title: "Richard Torres",
@@ -28,7 +28,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <About />
       <Skills />
       <Experience />
