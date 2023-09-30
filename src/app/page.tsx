@@ -1,8 +1,6 @@
 import About from "@/components/about";
 import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experience";
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar/navbar";
 import { Skills } from "@/components/skills/skills";
 import { Contributions } from "@/components/contributions";
 
@@ -28,13 +26,11 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
       <About />
       <Skills />
       <Experience />
       <Contributions />
       <Contact />
-      <Footer />
     </>
   );
 }

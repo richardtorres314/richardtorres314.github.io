@@ -1,10 +1,11 @@
 import data from "@/data/skills.json";
 import styles from "./skills.module.scss";
 import classNames from "classnames";
+import { Section } from "@/ui/section/section";
 
 export function Skills() {
   return (
-    <section className="section has-background-white-ter" id="skills">
+    <Section className="has-background-white-ter" id="skills">
       <div className="container">
         <h2 className="title has-text-centered">
           <span className="has-text-danger">Ski</span>lls
@@ -47,6 +48,6 @@ export function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

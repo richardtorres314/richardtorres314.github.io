@@ -1,10 +1,11 @@
 import contributions from "@/data/contributions.json";
 import Link from "next/link";
 import { Grid } from "@/ui/grid/grid";
+import { Section } from "@/ui/section/section";
 
 export function Contributions() {
   return (
-    <section className="section" id="contributions">
+    <Section id="contributions">
       <div className="container">
         <h2 className="title has-text-centered">
           <span className="has-text-danger">O</span>pen{" "}
@@ -45,6 +46,6 @@ export function Contributions() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

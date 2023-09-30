@@ -1,10 +1,11 @@
 import experiences from "@/data/experience.json";
 import { Grid } from "@/ui/grid/grid";
 import { Done } from "@/icons/done";
+import { Section } from "@/ui/section/section";
 
 export function Experience() {
   return (
-    <section id="experience" className="section">
+    <Section id="experience">
       <div className="container is-max-desktop">
         <h2 className="title has-text-centered">
           <span className="has-text-danger">Exp</span>erience
@@ -71,6 +72,6 @@ export function Experience() {
           ))}
         </ul>
       </div>
-    </section>
+    </Section>
   );
 }

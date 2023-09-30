@@ -1,12 +1,10 @@
 import { GitHub } from "@/icons/github";
 import { Email } from "@/icons/email";
+import { Section } from "@/ui/section/section";
 
 export function Contact() {
   return (
-    <section
-      className="section has-background-dark has-text-light"
-      id="contact"
-    >
+    <Section className="has-background-dark has-text-light" id="contact">
       <div className="container">
         <h2 className="title has-text-centered has-text-light">
           <span className="has-text-danger">Con</span>tact Me
@@ -35,6 +33,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

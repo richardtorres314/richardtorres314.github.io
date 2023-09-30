@@ -1,6 +1,8 @@
+import { Section } from "@/ui/section/section";
+
 export default function About() {
   return (
-    <section className="section" id="about">
+    <Section id="about">
       <div className="container columns is-max-desktop is-centered m-auto">
         <div className="column is-half">
           <h2 className="title">
@@ -25,11 +27,11 @@ export default function About() {
           <figure className="image">
             <img
               alt="Illustration of person thinking alongside laptop"
-              src="images/undraw_code_thinking_1jeh.svg"
+              src="images/code-thinking.svg"
             />
           </figure>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

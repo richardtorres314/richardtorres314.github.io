@@ -1,18 +1,18 @@
 [
   {
-    "url": "#about",
+    "url": "/#about",
     "text": "About"
   },
   {
-    "url": "#skills",
+    "url": "/#skills",
     "text": "Skills"
   },
   {
-    "url": "#experience",
+    "url": "/#experience",
     "text": "Experience"
   },
   {
-    "url": "#contributions",
+    "url": "/#contributions",
     "text": "Contributions"
   },
   {
@@ -20,7 +20,7 @@
     "text": "Blog"
   },
   {
-    "url": "#contact",
+    "url": "/#contact",
     "text": "Contact"
   }
 ]

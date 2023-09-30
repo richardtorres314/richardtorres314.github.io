@@ -4,30 +4,24 @@ import { MouseEvent } from "react";
 import links from "@/data/links.json";
 import classNames from "classnames";
 import styles from "./navbar.module.scss";
+import { useRouter } from "next/navigation";
 
 export function Navbar() {
+  const router = useRouter();
+
   function handleOnClick(event: MouseEvent<HTMLAnchorElement>) {
     event.stopPropagation();
     event.preventDefault();
-    const sectionId = event.currentTarget.href.split("#")[1];
-    const element = document.getElementById(sectionId);
-    const header = document.getElementById("header");
-    if (!element || !header) return;
-    if (sectionId === "about") {
-      window.scrollBy({
-        top:
-          element.getBoundingClientRect().top! -
-          header.getBoundingClientRect().height -
-          24,
+
+    if (window.location.pathname !== "/") {
+      window.location.replace("/");
+    } else {
+      window.scrollTo({
+        top: 0,
         behavior: "smooth",
       });
-    } else {
-      window.scrollBy({
-        top:
-          element.getBoundingClientRect().top! -
-          header.getBoundingClientRect().height +
-          24,
-        behavior: "smooth",
+      router.replace("/", {
+        scroll: false,
       });
     }
   }
@@ -53,30 +47,36 @@ export function Navbar() {
       id="header"
     >
       <div className="container is-align-items-center">
-        <div className="navbar-brand is-flex is-align-items-center">
-          <figure id="avatar" className="image is-64x64">
-            <img
-              draggable="false"
-              alt="Richard Torres"
-              src="images/me.jpg"
-              className="is-rounded"
-              style={{ aspectRatio: "1 / 1", objectFit: "cover" }}
-            />
-          </figure>
-          <div className="ml-4">
-            <h1
-              id="title"
-              className={classNames(
-                "title has-text-weight-light is-3",
-                styles.title
-              )}
-            >
-              Richard <span className="has-text-weight-bold">Torres</span>
-            </h1>
-            <h2 id="subtitle" className="subtitle is-5">
-              Software Engineer
-            </h2>
-          </div>
+        <div className="navbar-brand">
+          <a
+            href="/"
+            onClick={handleOnClick}
+            className="is-flex is-align-items-center"
+          >
+            <figure id="avatar" className="image is-64x64">
+              <img
+                draggable="false"
+                alt="Richard Torres"
+                src="images/me.jpg"
+                className="is-rounded"
+                style={{ aspectRatio: "1 / 1", objectFit: "cover" }}
+              />
+            </figure>
+            <div className="ml-4">
+              <div
+                id="title"
+                className={classNames(
+                  "title has-text-weight-light is-3",
+                  styles.title
+                )}
+              >
+                Richard <span className="has-text-weight-bold">Torres</span>
+              </div>
+              <div id="subtitle" className="subtitle is-5">
+                Software Engineer
+              </div>
+            </div>
+          </a>
           <a
             role="button"
             className="navbar-burger"
@@ -97,8 +97,7 @@ export function Navbar() {
               key={link.url}
               className="navbar-item is-size-5 is-uppercase"
               href={link.url}
-              {...(link.url[0] === "#" && { onClick: handleOnClick })}
-              {...(link.url[0] !== "#" && {
+              {...(link.url[1] !== "#" && {
                 rel: "noreferrer",
                 target: "_blank",
               })}
