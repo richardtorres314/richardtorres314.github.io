@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  distDir: "/docs",
+  basePath: "/richardtorres314.github.io",
 };
 
 module.exports = nextConfig;
