@@ -5,7 +5,7 @@ import { Done } from "@/icons/done";
 export function Experience() {
   return (
     <section id="experience" className="section">
-      <div className="container">
+      <div className="container is-max-desktop">
         <h2 className="title has-text-centered">
           <span className="has-text-danger">Exp</span>erience
         </h2>
