@@ -16,10 +16,7 @@ export function Navbar() {
     if (window.location.pathname !== "/") {
       window.location.replace("/");
     } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      document.getElementById("about")?.scrollIntoView();
       router.replace("/", {
         scroll: false,
       });

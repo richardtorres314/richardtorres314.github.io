@@ -1,4 +1,4 @@
-import "public/styles/global.css";
+import "styles/global.css";
 import "bulma/bulma.sass";
 import { ReactNode } from "react";
 import styles from "./layout.module.scss";
