@@ -16,7 +16,8 @@ export function Navbar() {
     if (window.location.pathname !== "/") {
       window.location.replace("/");
     } else {
-      document.getElementById("about")?.scrollIntoView();
+      const main = document.querySelector("main");
+      main?.scrollIntoView();
       router.replace("/", {
         scroll: false,
       });
