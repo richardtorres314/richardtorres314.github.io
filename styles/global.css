@@ -11,13 +11,13 @@ body {
 }
 
 body {
-  overflow-y: auto;
-  overscroll-behavior-y: none;
   scroll-behavior: smooth;
 }
 
 html {
   min-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
   scroll-behavior: smooth;
 }
 
