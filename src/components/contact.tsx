@@ -1,6 +1,7 @@
 import { GitHub } from "@/icons/github";
 import { Email } from "@/icons/email";
 import { Section } from "@/ui/section/section";
+import { LinkedIn } from "@/icons/linkedin";
 
 export function Contact() {
   return (
@@ -21,6 +22,16 @@ export function Contact() {
               className="icon is-large has-text-light"
             >
               <GitHub />
+            </a>
+          </div>
+          <div className="column is-1 is-centered has-text-centered">
+            <a
+              href="https://www.linkedin.com/in/richardtorres314"
+              target="_blank"
+              rel="noreferrer"
+              className="icon is-large has-text-light"
+            >
+              <LinkedIn />
             </a>
           </div>
           <div className="column is-1 is-centered has-text-centered">
