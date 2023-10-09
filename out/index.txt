@@ -1,6 +1,6 @@
 1:HL["/richardtorres314.github.io/_next/static/css/d9335aeb5cab8966.css","style",{"crossOrigin":""}]
 2:HL["/richardtorres314.github.io/_next/static/css/1664c70c07112a06.css","style",{"crossOrigin":""}]
-0:["TPuq3hoyIe-ZgVLCW8wDX",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/richardtorres314.github.io/_next/static/css/d9335aeb5cab8966.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/richardtorres314.github.io/_next/static/css/1664c70c07112a06.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
+0:["nlHwYWJj9unqYp4vZSmHh",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/richardtorres314.github.io/_next/static/css/d9335aeb5cab8966.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/richardtorres314.github.io/_next/static/css/1664c70c07112a06.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
 5:HL["/richardtorres314.github.io/_next/static/css/273ac4edd166e308.css","style",{"crossOrigin":""}]
 6:I{"id":3159,"chunks":["185:static/chunks/app/layout-a2cd95aea37445b9.js"],"name":"Navbar","async":false}
 7:I{"id":1443,"chunks":["272:static/chunks/webpack-8c6924f88fc0e34b.js","971:static/chunks/fd9d1056-bdbc21787612b876.js","864:static/chunks/864-c93ce1e7d7fe7ac1.js"],"name":"","async":false}
