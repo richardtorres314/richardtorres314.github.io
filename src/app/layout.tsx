@@ -1,15 +1,11 @@
-import "styles/global.css";
 import "bulma/bulma.sass";
-import { ReactNode } from "react";
+import "styles/global.scss";
+import { PropsWithChildren } from "react";
 import styles from "./layout.module.scss";
 import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer";
 
-interface Props {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={styles.body}>

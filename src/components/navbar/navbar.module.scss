@@ -1,3 +1,79 @@
+@import "bulma/sass/helpers/color";
+@import "bulma/sass/helpers/spacing";
+
 .title {
   margin-bottom: 1.25rem !important;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.themeButtonContainer {
+  height: 3.25rem;
+  width: 3.25rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.themeButton {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: $dark;
+  height: 3.25rem;
+  width: 3.25rem;
+  padding: 0;
+
+  svg {
+    width: 1rem;
+  }
+
+  &:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 53%, 53%);
+  }
+}
+
+.burger {
+  @extend .ml-0;
+}
+
+.navbarMenu:global(.is-active) {
+  @extend .mt-2;
+}
+
+@media (max-width: $desktop) {
+  .themeButtonContainer {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(:global(.light-mode)) {
+    a.navbarItem:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .themeButton,
+    .burger {
+      color: $white-ter;
+    }
+
+    .themeButton:hover,
+    .burger:hover {
+      color: $white;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .navbarMenu:global(.is-active) {
+      background-color: $black-bis;
+    }
+
+    .navbarMenu:global(.is-active) :global(.navbar-item):hover {
+      background-color: $black-ter;
+    }
+  }
 }

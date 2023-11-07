@@ -1,0 +1,22 @@
+@import "bulma/sass/helpers/color";
+
+.company {
+  grid-area: company;
+}
+
+.version {
+  grid-area: version;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(:global(.light-mode)) {
+    .box {
+      background-color: $black-bis;
+      color: $white-ter;
+    }
+  }
+}

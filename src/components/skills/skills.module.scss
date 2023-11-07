@@ -1,5 +1,6 @@
 @import "bulma/sass/utilities/_all";
-@import "bulma/sass/helpers/_all";
+@import "bulma/sass/helpers/spacing";
+@import "bulma/sass/helpers/color";
 
 .category {
   @include widescreen {
@@ -12,5 +13,24 @@
 
   @include widescreen {
     margin-bottom: 0;
+  }
+}
+
+.section {
+  background-color: $white-ter;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(:global(.light-mode)) {
+    .section {
+      background-color: $black-bis;
+      color: $white-ter;
+    }
+
+    .card {
+      background-color: $black-bis;
+      border: 2px solid $white;
+      color: $white-ter;
+    }
   }
 }

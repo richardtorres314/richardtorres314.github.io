@@ -2,7 +2,7 @@ import About from "@/components/about";
 import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experience";
 import { Skills } from "@/components/skills/skills";
-import { Contributions } from "@/components/contributions";
+import { Contributions } from "@/components/contributions/contributions";
 
 export const metadata = {
   title: "Richard Torres",

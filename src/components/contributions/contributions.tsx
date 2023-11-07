@@ -2,6 +2,8 @@ import contributions from "@/data/contributions.json";
 import Link from "next/link";
 import { Grid } from "@/ui/grid/grid";
 import { Section } from "@/ui/section/section";
+import styles from "./contributions.module.scss";
+import classNames from "classnames";
 
 export function Contributions() {
   return (
@@ -16,18 +18,20 @@ export function Contributions() {
           <div className="columns is-multiline is-centered">
             {contributions.map((contribution) => (
               <div className="column is-6" key={contribution.projectName}>
-                <div className="box">
+                <div className={classNames("box", styles.box)}>
                   <Grid layout="contributions">
                     <figure
-                      style={{ gridArea: "logo" }}
-                      className="image is-32x32"
+                      className={classNames(
+                        "image is-32x32 is-flex is-justify-content-center",
+                        styles.logo
+                      )}
                     >
                       <img
                         alt={contribution.projectName}
                         src={contribution.image}
                       />
                     </figure>
-                    <div style={{ gridArea: "company" }}>
+                    <div className={styles.company}>
                       <Link
                         rel="noreferrer"
                         target="_blank"
@@ -36,7 +40,7 @@ export function Contributions() {
                         {contribution.projectName}
                       </Link>
                     </div>
-                    <div style={{ gridArea: "version" }}>
+                    <div className={styles.version}>
                       Contributed Version: {contribution.version}
                     </div>
                   </Grid>

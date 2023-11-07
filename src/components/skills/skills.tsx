@@ -5,7 +5,7 @@ import { Section } from "@/ui/section/section";
 
 export function Skills() {
   return (
-    <Section className="has-background-white-ter" id="skills">
+    <Section className={styles.section} id="skills">
       <div className="container">
         <h2 className="title has-text-centered">
           <span className="has-text-danger">Ski</span>lls
@@ -13,9 +13,14 @@ export function Skills() {
         <div className="columns">
           {data.map((skill) => (
             <div className="column" key={skill.name}>
-              <div className="card">
+              <div className={classNames("card", styles.card)}>
                 <div className="card-content">
-                  <h3 className="title is-uppercase is-6 has-text-centered has-text-weight-normal">
+                  <h3
+                    className={classNames(
+                      "title is-uppercase is-6 has-text-centered has-text-weight-normal",
+                      styles.title
+                    )}
+                  >
                     {skill.name}
                   </h3>
                   {skill.values.map((item) => (
@@ -29,7 +34,7 @@ export function Skills() {
                       <div className={classNames("mr-4", styles.categoryName)}>
                         {item.name}
                       </div>
-                      <div className="tags are-medium">
+                      <div className="tags are-small">
                         {item.values.map((value) => (
                           <div
                             className="tag has-text-white"

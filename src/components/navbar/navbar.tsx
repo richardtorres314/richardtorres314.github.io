@@ -5,6 +5,7 @@ import links from "@/data/links.json";
 import classNames from "classnames";
 import styles from "./navbar.module.scss";
 import { useRouter } from "next/navigation";
+import { ThemeButton } from "./theme-button";
 
 export function Navbar() {
   const router = useRouter();
@@ -24,7 +25,7 @@ export function Navbar() {
     }
   }
 
-  const handleClickBurger = (event: MouseEvent<HTMLAnchorElement>) => {
+  function handleClickBurger(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
     const menu = document.getElementById("navbar-menu");
     if (!menu) return;
@@ -35,11 +36,11 @@ export function Navbar() {
       menu.classList.add("is-active");
       event.currentTarget.classList.add("is-active");
     }
-  };
+  }
 
   return (
     <nav
-      className="navbar is-fixed-top p-4"
+      className="navbar is-fixed-top p-4 is-align-items-center"
       role="navigation"
       area-label="main navigation"
       id="header"
@@ -56,8 +57,7 @@ export function Navbar() {
                 draggable="false"
                 alt="Richard Torres"
                 src="images/me.jpg"
-                className="is-rounded"
-                style={{ aspectRatio: "1 / 1", objectFit: "cover" }}
+                className={classNames("is-rounded", styles.image)}
               />
             </figure>
             <div className="ml-4">
@@ -75,9 +75,10 @@ export function Navbar() {
               </div>
             </div>
           </a>
+          <ThemeButton className="is-hidden-desktop" />
           <a
             role="button"
-            className="navbar-burger"
+            className={classNames("navbar-burger", styles.burger)}
             id="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
@@ -89,11 +90,17 @@ export function Navbar() {
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div className="navbar-menu navbar-end" id="navbar-menu">
+        <div
+          className={classNames("navbar-menu navbar-end", styles.navbarMenu)}
+          id="navbar-menu"
+        >
           {links.map((link) => (
             <a
               key={link.url}
-              className="navbar-item is-size-5 is-uppercase"
+              className={classNames(
+                "navbar-item is-size-6 is-uppercase",
+                styles.navbarItem
+              )}
               href={link.url}
               {...(link.url[1] !== "#" && {
                 rel: "noreferrer",
@@ -103,6 +110,7 @@ export function Navbar() {
               {link.text}
             </a>
           ))}
+          <ThemeButton className="is-hidden-touch" />
         </div>
       </div>
     </nav>
