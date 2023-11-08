@@ -20,17 +20,15 @@
   background-color: $white-ter;
 }
 
-@media (prefers-color-scheme: dark) {
-  body:not(:global(.light-mode)) {
-    .section {
-      background-color: $black-bis;
-      color: $white-ter;
-    }
+body:not(:global(.light-mode)) {
+  .section {
+    background-color: $black-bis;
+    color: $white-ter;
+  }
 
-    .card {
-      background-color: $black-bis;
-      border: 2px solid $white;
-      color: $white-ter;
-    }
+  .card {
+    background-color: $black-bis;
+    border: 2px solid $white;
+    color: $white-ter;
   }
 }

@@ -2,10 +2,15 @@ import { GitHub } from "@/icons/github";
 import { Email } from "@/icons/email";
 import { Section } from "@/ui/section/section";
 import { LinkedIn } from "@/icons/linkedin";
+import styles from "./contact.module.scss";
+import classNames from "classnames";
 
 export function Contact() {
   return (
-    <Section className="has-background-dark has-text-light" id="contact">
+    <Section
+      className={classNames("has-text-light", styles.section)}
+      id="contact"
+    >
       <div className="container">
         <h2 className="title has-text-centered has-text-light">
           <span className="has-text-danger">Con</span>tact Me

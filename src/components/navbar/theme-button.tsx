@@ -5,23 +5,13 @@ import { HTMLAttributes } from "react";
 
 export function ThemeButton({ className }: HTMLAttributes<HTMLDivElement>) {
   function handleOnClickThemeButton() {
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const currentTheme = localStorage.getItem("theme");
-
-    if (!currentTheme) {
-      if (prefersDarkScheme.matches) {
-        document.body.classList.toggle("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.toggle("dark-mode");
-        localStorage.setItem("theme", "dark");
-      }
-    } else if (currentTheme === "dark") {
-      document.body.classList.toggle("dark-mode");
-      localStorage.setItem("theme", "dark");
-    } else if (currentTheme === "light") {
-      document.body.classList.toggle("light-mode");
+    if (currentTheme === "dark") {
+      document.body.classList.add("light-mode");
       localStorage.setItem("theme", "light");
+    } else if (currentTheme === "light") {
+      document.body.classList.remove("light-mode");
+      localStorage.setItem("theme", "dark");
     }
   }
 

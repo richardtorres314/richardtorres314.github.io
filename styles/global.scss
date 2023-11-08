@@ -27,21 +27,19 @@ main {
   scroll-margin-top: calc(64px + 2rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  body:not(.light-mode) {
+body:not(.light-mode) {
+  background-color: $dark;
+  color: $white-ter;
+
+  .title,
+  .subtitle,
+  strong,
+  .navbar-item {
+    color: $white-ter;
+  }
+
+  .navbar {
     background-color: $dark;
     color: $white-ter;
-
-    .title,
-    .subtitle,
-    strong,
-    .navbar-item {
-      color: $white-ter;
-    }
-
-    .navbar {
-      background-color: $dark;
-      color: $white-ter;
-    }
   }
 }

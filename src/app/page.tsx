@@ -1,6 +1,6 @@
 import About from "@/components/about";
-import { Contact } from "@/components/contact";
-import { Experience } from "@/components/experience";
+import { Contact } from "@/components/contact/contact";
+import { Experience } from "@/components/experience/experience";
 import { Skills } from "@/components/skills/skills";
 import { Contributions } from "@/components/contributions/contributions";
 

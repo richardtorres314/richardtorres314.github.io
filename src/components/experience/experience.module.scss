@@ -1,0 +1,38 @@
+.image {
+  grid-area: logo;
+}
+
+.company {
+  grid-area: company;
+}
+
+.location {
+  grid-area: location;
+}
+
+.title {
+  grid-area: title;
+}
+
+.dates {
+  grid-area: dates;
+  font-size: 0.9rem;
+}
+
+.duties {
+  grid-area: duties;
+}
+
+.duty {
+  align-items: first baseline;
+}
+
+.icon {
+  min-width: 1rem;
+}
+
+body:not(:global(.light-mode)) {
+  .icon svg {
+    fill: white;
+  }
+}

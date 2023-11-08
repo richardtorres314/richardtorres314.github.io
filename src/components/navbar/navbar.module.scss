@@ -51,29 +51,27 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body:not(:global(.light-mode)) {
-    a.navbarItem:hover {
-      background-color: rgba(0, 0, 0, 0.05);
-    }
+body:not(:global(.light-mode)) {
+  a.navbarItem:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 
-    .themeButton,
-    .burger {
-      color: $white-ter;
-    }
+  .themeButton,
+  .burger {
+    color: $white-ter;
+  }
 
-    .themeButton:hover,
-    .burger:hover {
-      color: $white;
-      background-color: rgba(0, 0, 0, 0.05);
-    }
+  .themeButton:hover,
+  .burger:hover {
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 
-    .navbarMenu:global(.is-active) {
-      background-color: $black-bis;
-    }
+  .navbarMenu:global(.is-active) {
+    background-color: $black-bis;
+  }
 
-    .navbarMenu:global(.is-active) :global(.navbar-item):hover {
-      background-color: $black-ter;
-    }
+  .navbarMenu:global(.is-active) :global(.navbar-item):hover {
+    background-color: $black-ter;
   }
 }

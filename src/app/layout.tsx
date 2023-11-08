@@ -1,9 +1,9 @@
 import "bulma/bulma.sass";
-import "styles/global.scss";
 import { PropsWithChildren } from "react";
 import styles from "./layout.module.scss";
 import { Navbar } from "@/components/navbar/navbar";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/footer/footer";
+import "styles/global.scss";
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (

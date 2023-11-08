@@ -2,6 +2,8 @@ import experiences from "@/data/experience.json";
 import { Grid } from "@/ui/grid/grid";
 import { Done } from "@/icons/done";
 import { Section } from "@/ui/section/section";
+import classNames from "classnames";
+import styles from "./experience.module.scss";
 
 export function Experience() {
   return (
@@ -15,8 +17,10 @@ export function Experience() {
             <li key={`experience-${index}`} className="mb-4">
               <Grid layout="experience">
                 <figure
-                  className="image is-flex is-align-items-center is-32x32"
-                  style={{ gridArea: "logo" }}
+                  className={classNames(
+                    "image is-flex is-align-items-center is-32x32",
+                    styles.image
+                  )}
                 >
                   <img
                     alt={`${experience.company} Logo`}
@@ -24,40 +28,46 @@ export function Experience() {
                   />
                 </figure>
                 <div
-                  className="has-text-weight-semibold"
-                  style={{ gridArea: "company" }}
+                  className={classNames(
+                    "has-text-weight-semibold",
+                    styles.company
+                  )}
                 >
                   {experience.company}
                 </div>
                 <div
-                  className="has-text-danger has-text-right"
-                  style={{ gridArea: "location" }}
+                  className={classNames(
+                    "has-text-danger has-text-right",
+                    styles.location
+                  )}
                 >
                   {experience.location}
                 </div>
                 <div
-                  className="has-text-weight-medium"
-                  style={{ gridArea: "title" }}
+                  className={classNames("has-text-weight-medium", styles.title)}
                 >
                   {experience.title}
                 </div>
                 <div
-                  className="has-text-right is-italic"
-                  style={{ gridArea: "dates", fontSize: "0.9rem" }}
+                  className={classNames(
+                    "has-text-right is-italic",
+                    styles.dates
+                  )}
                 >
                   {experience.dates}
                 </div>
-                <div style={{ gridArea: "duties" }}>
+                <div className={styles.duties}>
                   <ul>
                     {experience.duties.map((duty, index) => (
                       <li key={`duty-${index}`}>
                         <div
-                          className="is-flex mb-2"
-                          style={{ alignItems: "first baseline" }}
+                          className={classNames("is-flex mb-2", styles.duty)}
                         >
                           <span
-                            className="icon mr-1 is-small has-text-dark"
-                            style={{ minWidth: "1rem" }}
+                            className={classNames(
+                              "icon mr-1 is-small has-text-dark",
+                              styles.icon
+                            )}
                           >
                             <Done />
                           </span>

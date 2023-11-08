@@ -1,6 +1,6 @@
 "use client";
 
-import { MouseEvent } from "react";
+import { MouseEvent, useEffect } from "react";
 import links from "@/data/links.json";
 import classNames from "classnames";
 import styles from "./navbar.module.scss";
@@ -8,6 +8,25 @@ import { useRouter } from "next/navigation";
 import { ThemeButton } from "./theme-button";
 
 export function Navbar() {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (!theme) {
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      );
+      localStorage.setItem(
+        "theme",
+        prefersDarkScheme.matches ? "dark" : "light"
+      );
+    } else {
+      if (theme === "light") {
+        document.body.classList.add("light-mode");
+      } else {
+        localStorage.setItem("theme", "dark");
+      }
+    }
+  }, []);
+
   const router = useRouter();
 
   function handleOnClick(event: MouseEvent<HTMLAnchorElement>) {

@@ -1,0 +1,11 @@
+@import "bulma/sass/helpers/color";
+
+.footer {
+  background-color: $dark;
+}
+
+body:not(:global(.light-mode)) {
+  .footer {
+    background-color: $black-bis;
+  }
+}
