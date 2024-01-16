@@ -1,3 +1,6 @@
+"use client";
+
+import { Fade } from "react-awesome-reveal";
 import styles from "./footer.module.scss";
 import classNames from "classnames";
 
@@ -9,7 +12,7 @@ export function Footer() {
         styles.footer
       )}
     >
-      Made in Boston • Richard Torres
+      <Fade duration={1500}>Made in Boston • Richard Torres</Fade>
     </footer>
   );
 }
