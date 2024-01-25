@@ -7,6 +7,7 @@ import { Section } from "@/ui/section/section";
 import styles from "./contributions.module.scss";
 import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
+import { ReactSVG } from "react-svg";
 
 export function Contributions() {
   return (
@@ -30,10 +31,7 @@ export function Contributions() {
                           styles.logo
                         )}
                       >
-                        <img
-                          alt={contribution.projectName}
-                          src={contribution.image}
-                        />
+                        <ReactSVG src={contribution.image} />
                       </figure>
                       <div className={styles.company}>
                         <Link
