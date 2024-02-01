@@ -18,8 +18,8 @@
     "react-svg": "^16.1.32"
   },
   "devDependencies": {
-    "@types/node": "^20.11.13",
-    "@types/react": "18.2.48",
+    "@types/node": "^20.11.15",
+    "@types/react": "18.2.50",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",
     "sass": "^1.70.0",
