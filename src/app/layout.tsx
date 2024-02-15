@@ -1,5 +1,5 @@
 import "bulma/bulma.sass";
-import { PropsWithChildren } from "react";
+import { type PropsWithChildren } from "react";
 import styles from "./layout.module.scss";
 import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";

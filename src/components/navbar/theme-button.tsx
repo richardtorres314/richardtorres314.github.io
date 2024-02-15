@@ -20,7 +20,7 @@ export function ThemeButton({ className }: HTMLAttributes<HTMLDivElement>) {
       className={classNames(
         "navbar-item",
         styles.themeButtonContainer,
-        className
+        className,
       )}
     >
       <a

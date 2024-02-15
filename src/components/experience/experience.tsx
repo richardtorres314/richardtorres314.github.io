@@ -23,7 +23,7 @@ export function Experience() {
                   <figure
                     className={classNames(
                       "image is-flex is-align-items-center is-32x32",
-                      styles.image
+                      styles.image,
                     )}
                   >
                     <img
@@ -34,7 +34,7 @@ export function Experience() {
                   <div
                     className={classNames(
                       "has-text-weight-semibold",
-                      styles.company
+                      styles.company,
                     )}
                   >
                     {experience.company}
@@ -42,7 +42,7 @@ export function Experience() {
                   <div
                     className={classNames(
                       "has-text-danger has-text-right",
-                      styles.location
+                      styles.location,
                     )}
                   >
                     {experience.location}
@@ -50,7 +50,7 @@ export function Experience() {
                   <div
                     className={classNames(
                       "has-text-weight-medium",
-                      styles.title
+                      styles.title,
                     )}
                   >
                     {experience.title}
@@ -58,7 +58,7 @@ export function Experience() {
                   <div
                     className={classNames(
                       "has-text-right is-italic",
-                      styles.dates
+                      styles.dates,
                     )}
                   >
                     {experience.dates}
@@ -73,7 +73,7 @@ export function Experience() {
                             <span
                               className={classNames(
                                 "icon mr-1 is-small has-text-dark",
-                                styles.icon
+                                styles.icon,
                               )}
                             >
                               <Done />

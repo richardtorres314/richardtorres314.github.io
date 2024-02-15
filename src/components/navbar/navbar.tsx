@@ -12,11 +12,11 @@ export function Navbar() {
     const theme = localStorage.getItem("theme");
     if (!theme) {
       const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       );
       localStorage.setItem(
         "theme",
-        prefersDarkScheme.matches ? "dark" : "light"
+        prefersDarkScheme.matches ? "dark" : "light",
       );
     } else {
       if (theme === "light") {
@@ -84,7 +84,7 @@ export function Navbar() {
                 id="title"
                 className={classNames(
                   "title has-text-weight-light is-3",
-                  styles.title
+                  styles.title,
                 )}
               >
                 Richard <span className="has-text-weight-bold">Torres</span>
@@ -118,7 +118,7 @@ export function Navbar() {
               key={link.url}
               className={classNames(
                 "navbar-item is-size-6 is-uppercase",
-                styles.navbarItem
+                styles.navbarItem,
               )}
               href={link.url}
               {...(link.url[1] !== "#" && {

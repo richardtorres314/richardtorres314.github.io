@@ -28,7 +28,7 @@ export function Contributions() {
                       <figure
                         className={classNames(
                           "image is-32x32 is-flex is-justify-content-center",
-                          styles.logo
+                          styles.logo,
                         )}
                       >
                         <ReactSVG src={contribution.image} />

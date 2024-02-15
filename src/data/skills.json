@@ -5,27 +5,17 @@
       {
         "name": "Libraries",
         "color": "#4caf50",
-        "values": [
-          "React",
-          "Redux",
-          "Enzyme"
-        ]
+        "values": ["React", "Redux", "Enzyme"]
       },
       {
         "name": "Tools",
         "color": "#ff5722",
-        "values": [
-          "Webpack",
-          "PostCSS"
-        ]
+        "values": ["Webpack", "PostCSS"]
       },
       {
         "name": "Design Systems",
         "color": "#ffc107",
-        "values": [
-          "Material",
-          "Bootstrap"
-        ]
+        "values": ["Material", "Bootstrap"]
       }
     ]
   },
@@ -35,44 +25,27 @@
       {
         "name": "Languages",
         "color": "#3f51b5",
-        "values": [
-          "TypeScript/JavaScript",
-          "Go"
-        ]
+        "values": ["TypeScript/JavaScript", "Go"]
       },
       {
         "name": "APIs",
         "color": "#ff9800",
-        "values": [
-          "REST",
-          "GraphQL"
-        ]
+        "values": ["REST", "GraphQL"]
       },
       {
         "name": "IaaS/PaaS",
         "color": "#009688",
-        "values": [
-          "AWS",
-          "Firebase"
-        ]
+        "values": ["AWS", "Firebase"]
       },
       {
         "name": "Testing",
         "color": "#03a9f4",
-        "values": [
-          "Jest",
-          "Selenium",
-          "Cypress"
-        ]
+        "values": ["Jest", "Selenium", "Cypress"]
       },
       {
         "name": "Infrastructure",
         "color": "#7ae",
-        "values": [
-          "Docker",
-          "Netlify",
-          "Serverless"
-        ]
+        "values": ["Docker", "Netlify", "Serverless"]
       }
     ]
   },
@@ -82,28 +55,17 @@
       {
         "name": "Databases",
         "color": "#f50057",
-        "values": [
-          "PostgresSQL",
-          "MySQL",
-          "Firestore"
-        ]
+        "values": ["PostgresSQL", "MySQL", "Firestore"]
       },
       {
         "name": "Frameworks",
         "color": "#9c27b0",
-        "values": [
-          "Express.js",
-          "hapi.js",
-          "Node.js"
-        ]
+        "values": ["Express.js", "hapi.js", "Node.js"]
       },
       {
         "name": "ORMs",
         "color": "#424242",
-        "values": [
-          "TypeORM",
-          "Prisma"
-        ]
+        "values": ["TypeORM", "Prisma"]
       }
     ]
   }

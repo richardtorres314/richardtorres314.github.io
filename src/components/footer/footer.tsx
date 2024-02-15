@@ -9,7 +9,7 @@ export function Footer() {
     <footer
       className={classNames(
         "footer has-text-light has-text-centered",
-        styles.footer
+        styles.footer,
       )}
     >
       <Fade duration={1500}>Made in Boston • Richard Torres</Fade>
