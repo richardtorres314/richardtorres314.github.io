@@ -1,4 +1,4 @@
-export function Email() {
+export function Email(): JSX.Element {
   return (
     <svg
       focusable="false"

@@ -5,7 +5,9 @@ import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";
 import "styles/global.scss";
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({
+  children
+}: PropsWithChildren): JSX.Element {
   return (
     <html lang="en">
       <body className={styles.body}>

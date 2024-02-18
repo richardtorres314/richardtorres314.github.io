@@ -8,7 +8,7 @@ import styles from "./contact.module.scss";
 import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
 
-export function Contact() {
+export function Contact(): JSX.Element {
   return (
     <Section
       className={classNames("has-text-light", styles.section)}

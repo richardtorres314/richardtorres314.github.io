@@ -1,10 +1,10 @@
 import { Section } from "@/ui/section/section";
 
 export const metadata = {
-  title: "Richard Torres - Not Found",
+  title: "Richard Torres - Not Found"
 };
 
-export default function NotFound() {
+export default function NotFound(): JSX.Element {
   return (
     <Section>
       <div className="container m-auto is-max-desktop">

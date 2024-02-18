@@ -9,7 +9,7 @@ import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
 import { ReactSVG } from "react-svg";
 
-export function Contributions() {
+export function Contributions(): JSX.Element {
   return (
     <Fade duration={1500}>
       <Section id="contributions">
@@ -28,7 +28,7 @@ export function Contributions() {
                       <figure
                         className={classNames(
                           "image is-32x32 is-flex is-justify-content-center",
-                          styles.logo,
+                          styles.logo
                         )}
                       >
                         <ReactSVG src={contribution.image} />

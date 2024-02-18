@@ -1,4 +1,4 @@
-export function GitHub() {
+export function GitHub(): JSX.Element {
   return (
     <svg
       aria-hidden="true"

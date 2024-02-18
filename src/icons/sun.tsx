@@ -1,4 +1,4 @@
-export function Sun() {
+export function Sun(): JSX.Element {
   return (
     <svg
       aria-hidden="true"

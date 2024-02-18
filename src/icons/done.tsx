@@ -1,4 +1,4 @@
-export function Done() {
+export function Done(): JSX.Element {
   return (
     <svg
       focusable="false"

@@ -1,22 +1,22 @@
 "use client";
 
-import { MouseEvent, useEffect } from "react";
+import { type MouseEvent, useEffect } from "react";
 import links from "@/data/links.json";
 import classNames from "classnames";
 import styles from "./navbar.module.scss";
 import { useRouter } from "next/navigation";
 import { ThemeButton } from "./theme-button";
 
-export function Navbar() {
+export function Navbar(): JSX.Element {
   useEffect(() => {
     const theme = localStorage.getItem("theme");
-    if (!theme) {
+    if (theme !== null) {
       const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)",
+        "(prefers-color-scheme: dark)"
       );
       localStorage.setItem(
         "theme",
-        prefersDarkScheme.matches ? "dark" : "light",
+        prefersDarkScheme.matches ? "dark" : "light"
       );
     } else {
       if (theme === "light") {
@@ -29,7 +29,7 @@ export function Navbar() {
 
   const router = useRouter();
 
-  function handleOnClick(event: MouseEvent<HTMLAnchorElement>) {
+  function handleOnClick(event: MouseEvent<HTMLAnchorElement>): void {
     event.stopPropagation();
     event.preventDefault();
 
@@ -39,15 +39,15 @@ export function Navbar() {
       const main = document.querySelector("main");
       main?.scrollIntoView();
       router.replace("/", {
-        scroll: false,
+        scroll: false
       });
     }
   }
 
-  function handleClickBurger(event: MouseEvent<HTMLAnchorElement>) {
+  function handleClickBurger(event: MouseEvent<HTMLAnchorElement>): void {
     event.preventDefault();
     const menu = document.getElementById("navbar-menu");
-    if (!menu) return;
+    if (menu === null) return;
     if (menu.classList.contains("is-active")) {
       menu.classList.remove("is-active");
       event.currentTarget.classList.remove("is-active");
@@ -84,7 +84,7 @@ export function Navbar() {
                 id="title"
                 className={classNames(
                   "title has-text-weight-light is-3",
-                  styles.title,
+                  styles.title
                 )}
               >
                 Richard <span className="has-text-weight-bold">Torres</span>
@@ -118,12 +118,12 @@ export function Navbar() {
               key={link.url}
               className={classNames(
                 "navbar-item is-size-6 is-uppercase",
-                styles.navbarItem,
+                styles.navbarItem
               )}
               href={link.url}
               {...(link.url[1] !== "#" && {
                 rel: "noreferrer",
-                target: "_blank",
+                target: "_blank"
               })}
             >
               {link.text}

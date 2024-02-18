@@ -3,7 +3,7 @@
 import { Section } from "@/ui/section/section";
 import { Fade } from "react-awesome-reveal";
 
-export default function About() {
+export default function About(): JSX.Element {
   return (
     <Fade duration={1500}>
       <Section id="about">

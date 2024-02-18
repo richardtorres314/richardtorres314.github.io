@@ -1,10 +1,12 @@
 import { Sun } from "@/icons/sun";
 import classNames from "classnames";
 import styles from "./navbar.module.scss";
-import { HTMLAttributes } from "react";
+import { type HTMLAttributes } from "react";
 
-export function ThemeButton({ className }: HTMLAttributes<HTMLDivElement>) {
-  function handleOnClickThemeButton() {
+export function ThemeButton({
+  className
+}: HTMLAttributes<HTMLDivElement>): JSX.Element {
+  function handleOnClickThemeButton(): void {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
       document.body.classList.add("light-mode");
@@ -20,7 +22,7 @@ export function ThemeButton({ className }: HTMLAttributes<HTMLDivElement>) {
       className={classNames(
         "navbar-item",
         styles.themeButtonContainer,
-        className,
+        className
       )}
     >
       <a

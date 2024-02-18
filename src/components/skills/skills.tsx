@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { Section } from "@/ui/section/section";
 import { Fade } from "react-awesome-reveal";
 
-export function Skills() {
+export function Skills(): JSX.Element {
   return (
     <Section className={styles.section} id="skills">
       <Fade duration={1500}>
@@ -22,7 +22,7 @@ export function Skills() {
                     <h3
                       className={classNames(
                         "title is-uppercase is-6 has-text-centered has-text-weight-normal",
-                        styles.title,
+                        styles.title
                       )}
                     >
                       {skill.name}
@@ -31,7 +31,7 @@ export function Skills() {
                       <div
                         className={classNames(
                           "is-align-items-center mb-4",
-                          styles.category,
+                          styles.category
                         )}
                         key={item.name}
                       >

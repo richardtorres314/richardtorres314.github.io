@@ -1,4 +1,4 @@
-export function LinkedIn() {
+export function LinkedIn(): JSX.Element {
   return (
     <svg
       aria-hidden="true"
