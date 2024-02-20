@@ -12,11 +12,9 @@
   grid-area: logo;
 }
 
-@media (prefers-color-scheme: dark) {
-  body:not(:global(.light-mode)) {
-    .box {
-      background-color: $black-bis;
-      color: $white-ter;
-    }
+body:global(.dark) {
+  .box {
+    background-color: $black-bis;
+    color: $white-ter;
   }
 }
