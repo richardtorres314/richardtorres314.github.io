@@ -5,7 +5,7 @@ const nextConfig = {
   basePath:
     process.env.NODE_ENV === "production"
       ? "/richardtorres314.github.io"
-      : undefined,
+      : undefined
 };
 
 module.exports = nextConfig;
