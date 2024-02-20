@@ -51,7 +51,7 @@
   }
 }
 
-body:not(:global(.light-mode)) {
+body:global(.dark) {
   a.navbarItem:hover {
     background-color: rgba(0, 0, 0, 0.05);
   }

@@ -27,7 +27,7 @@ main {
   scroll-margin-top: calc(64px + 2rem);
 }
 
-body:not(.light-mode) {
+body.dark {
   background-color: $dark;
   color: $white-ter;
 

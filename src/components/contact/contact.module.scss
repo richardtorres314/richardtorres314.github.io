@@ -4,7 +4,7 @@
   background-color: $dark;
 }
 
-body:not(:global(.light-mode)) {
+body:global(.dark) {
   .section {
     background-color: $black-bis;
   }

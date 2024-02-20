@@ -10,6 +10,9 @@ export default function RootLayout({
 }: PropsWithChildren): JSX.Element {
   return (
     <html lang="en">
+      <head>
+        <script async src="/appearance.js"></script>
+      </head>
       <body className={styles.body}>
         <Navbar />
         <main className={styles.main}>{children}</main>

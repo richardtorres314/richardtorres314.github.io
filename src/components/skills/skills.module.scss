@@ -20,7 +20,7 @@
   background-color: $white-ter;
 }
 
-body:not(:global(.light-mode)) {
+body:global(.dark) {
   .section {
     background-color: $black-bis;
     color: $white-ter;

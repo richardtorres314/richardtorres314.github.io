@@ -31,7 +31,7 @@
   min-width: 1rem;
 }
 
-body:not(:global(.light-mode)) {
+body:global(.dark) {
   .icon svg {
     fill: white;
   }
