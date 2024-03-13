@@ -1,13 +1,13 @@
 "use client";
 
-import contributions from "@/data/contributions.json";
-import Link from "next/link";
-import { Grid } from "@/ui/grid/grid";
-import { Section } from "@/ui/section/section";
-import styles from "./contributions.module.scss";
-import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
+import { Grid } from "@/ui/grid/grid";
+import Link from "next/link";
 import { ReactSVG } from "react-svg";
+import { Section } from "@/ui/section/section";
+import classNames from "classnames";
+import contributions from "@/data/contributions.json";
+import styles from "./contributions.module.scss";
 
 export function Contributions(): JSX.Element {
   return (

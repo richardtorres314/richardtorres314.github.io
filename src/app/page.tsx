@@ -1,8 +1,8 @@
 import About from "@/components/about";
 import { Contact } from "@/components/contact/contact";
+import { Contributions } from "@/components/contributions/contributions";
 import { Experience } from "@/components/experience/experience";
 import { Skills } from "@/components/skills/skills";
-import { Contributions } from "@/components/contributions/contributions";
 
 export const metadata = {
   title: "Richard Torres",
@@ -23,7 +23,7 @@ export const metadata = {
   }
 };
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <>
       <About />

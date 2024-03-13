@@ -1,12 +1,12 @@
 "use client";
 
-import experiences from "@/data/experience.json";
-import { Grid } from "@/ui/grid/grid";
 import { Done } from "@/icons/done";
+import { Fade } from "react-awesome-reveal";
+import { Grid } from "@/ui/grid/grid";
 import { Section } from "@/ui/section/section";
 import classNames from "classnames";
+import experiences from "@/data/experience.json";
 import styles from "./experience.module.scss";
-import { Fade } from "react-awesome-reveal";
 
 export function Experience(): JSX.Element {
   return (

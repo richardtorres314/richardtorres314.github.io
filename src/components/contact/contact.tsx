@@ -1,12 +1,12 @@
 "use client";
 
-import { GitHub } from "@/icons/github";
 import { Email } from "@/icons/email";
-import { Section } from "@/ui/section/section";
-import { LinkedIn } from "@/icons/linkedin";
-import styles from "./contact.module.scss";
-import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
+import { GitHub } from "@/icons/github";
+import { LinkedIn } from "@/icons/linkedin";
+import { Section } from "@/ui/section/section";
+import classNames from "classnames";
+import styles from "./contact.module.scss";
 
 export function Contact(): JSX.Element {
   return (

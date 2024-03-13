@@ -1,10 +1,10 @@
 "use client";
 
+import { Fade } from "react-awesome-reveal";
+import { Section } from "@/ui/section/section";
+import classNames from "classnames";
 import data from "@/data/skills.json";
 import styles from "./skills.module.scss";
-import classNames from "classnames";
-import { Section } from "@/ui/section/section";
-import { Fade } from "react-awesome-reveal";
 
 export function Skills(): JSX.Element {
   return (

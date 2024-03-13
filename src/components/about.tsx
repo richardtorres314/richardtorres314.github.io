@@ -1,7 +1,7 @@
 "use client";
 
-import { Section } from "@/ui/section/section";
 import { Fade } from "react-awesome-reveal";
+import { Section } from "@/ui/section/section";
 
 export default function About(): JSX.Element {
   return (

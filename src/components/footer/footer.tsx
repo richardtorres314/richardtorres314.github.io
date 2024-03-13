@@ -1,8 +1,8 @@
 "use client";
 
 import { Fade } from "react-awesome-reveal";
-import styles from "./footer.module.scss";
 import classNames from "classnames";
+import styles from "./footer.module.scss";
 
 export function Footer(): JSX.Element {
   return (
