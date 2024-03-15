@@ -102,10 +102,6 @@ export function Navbar(): JSX.Element {
                 styles.navbarItem
               )}
               href={link.url}
-              {...(link.url[1] !== "#" && {
-                rel: "noreferrer",
-                target: "_blank"
-              })}
             >
               {link.text}
             </a>

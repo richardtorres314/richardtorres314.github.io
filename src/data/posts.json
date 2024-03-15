@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://dev.to/richardtorres314/how-to-destructure-class-methods-4i18",
+    "title": "How to Destructure Class Methods",
+    "tags": [
+      "javascript",
+      "typescript"
+    ],
+    "date": "Sep 9, 2022"
+  },
+  {
+    "url": "https://dev.to/richardtorres314/lazy-loading-vs-virtualization-4c60",
+    "title": "Lazy Loading vs Virtualization",
+    "tags": [
+      "design",
+      "webdev",
+      "ux"
+    ],
+    "date": "Sep 17, 2022"
+  },
+  {
+    "url": "https://dev.to/richardtorres314/graphql-files-in-nextjs-o73",
+    "title": "GraphQL Files in Next.js",
+    "tags": [
+      "graphql",
+      "nextjs",
+      "typescript",
+      "react"
+    ],
+    "date": "Sep 27, 2022"
+  },
+  {
+    "url": "https://dev.to/richardtorres314/array-mutation-methods-in-javascript-ik",
+    "title": "Array Mutation Methods in JavaScript",
+    "tags": [
+      "javascript",
+      "coding",
+      "algorithms",
+      "datastructures"
+    ],
+    "date": "Mar 14, 2024"
+  }
+]
