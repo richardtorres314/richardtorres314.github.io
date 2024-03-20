@@ -1,55 +1,47 @@
 "use client";
 
-import { Fade } from "react-awesome-reveal";
-import { Grid } from "@/ui/grid/grid";
+import { Card, CardHeader } from "@/ui/card";
+
+import { Fade } from "@/ui/fade/fade";
 import Link from "next/link";
 import { ReactSVG } from "react-svg";
 import { Section } from "@/ui/section/section";
-import classNames from "classnames";
-import contributions from "@/data/contributions.json";
-import styles from "./contributions.module.scss";
+import contributions from "./contributions.json";
 
-export function Contributions(): JSX.Element {
+export function Contributions() {
   return (
     <Fade duration={1500}>
       <Section id="contributions">
-        <div className="container">
-          <h2 className="title has-text-centered">
-            <span className="has-text-danger">O</span>pen{" "}
-            <span className="has-text-danger">S</span>ource{" "}
-            <span className="has-text-danger">Con</span>tributions
+        <div className="md:container max-w-screen-lg">
+          <h2 className="text-4xl font-semibold mb-6 text-center">
+            <span className="text-red-500">O</span>pen{" "}
+            <span className="text-red-500">S</span>ource{" "}
+            <span className="text-red-500">Con</span>tributions
           </h2>
-          <div className="container is-max-desktop">
-            <div className="columns is-multiline is-centered">
-              {contributions.map((contribution) => (
-                <div className="column is-6" key={contribution.projectName}>
-                  <div className={classNames("box", styles.box)}>
-                    <Grid layout="contributions">
-                      <figure
-                        className={classNames(
-                          "image is-32x32 is-flex is-justify-content-center",
-                          styles.logo
-                        )}
+          <div className="flex flex-wrap gap-4 justify-center">
+            {contributions.map((contribution) => (
+              <Card key={contribution.projectName}>
+                <CardHeader>
+                  <div className="flex gap-4 items-center">
+                    <ReactSVG
+                      className="w-8 h-8 flex justify-center object-cover"
+                      src={contribution.image}
+                    />
+                    <div>
+                      <Link
+                        rel="noreferrer"
+                        target="_blank"
+                        href={contribution.url}
+                        className="text-blue-500 hover:underline"
                       >
-                        <ReactSVG src={contribution.image} />
-                      </figure>
-                      <div className={styles.company}>
-                        <Link
-                          rel="noreferrer"
-                          target="_blank"
-                          href={contribution.url}
-                        >
-                          {contribution.projectName}
-                        </Link>
-                      </div>
-                      <div className={styles.version}>
-                        Contributed Version: {contribution.version}
-                      </div>
-                    </Grid>
+                        {contribution.projectName}
+                      </Link>
+                      <div>Contributed Version: {contribution.version}</div>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </Section>

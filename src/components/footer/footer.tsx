@@ -1,17 +1,8 @@
-"use client";
+import { Fade } from "@/ui/fade/fade";
 
-import { Fade } from "react-awesome-reveal";
-import classNames from "classnames";
-import styles from "./footer.module.scss";
-
-export function Footer(): JSX.Element {
+export function Footer() {
   return (
-    <footer
-      className={classNames(
-        "footer has-text-light has-text-centered",
-        styles.footer
-      )}
-    >
+    <footer className="footer text-light text-center pb-24 px-6 pt-12">
       <Fade duration={1500}>Made in Boston • Richard Torres</Fade>
     </footer>
   );

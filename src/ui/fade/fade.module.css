@@ -1,0 +1,11 @@
+@media (scripting: none) {
+  .fade {
+    opacity: 1 !important;
+  }
+}
+
+@media print {
+  .fade {
+    opacity: 1 !important;
+  }
+}

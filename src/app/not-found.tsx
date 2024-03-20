@@ -1,27 +1,52 @@
+import { LatentThemeChecker } from "@/components/latent-theme-checker/latent-theme-checker";
 import { Section } from "@/ui/section/section";
 
 export const metadata = {
-  title: "Richard Torres - Not Found"
+  title: "Richard Torres - Not Found",
+  metadataBase: new URL("https://richardtorres.github.io/"),
+  openGraph: {
+    title: "Richard Torres — Personal Homepage",
+    url: "https://richardtorres.github.io/",
+    locale: "en-US",
+    type: "website",
+    description:
+      "I'm Richard Torres, software engineer located in Boston, MA. Learn more or contact me.",
+    images: {
+      url: "/images/richard-torres.jpg"
+    }
+  },
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+  }
 };
 
-export default function NotFound(): JSX.Element {
+export default function NotFound() {
   return (
-    <Section>
-      <div className="container m-auto is-max-desktop">
-        <h1 className="title has-text-centered">Page Not Found</h1>
-        <div className="content">
-          <p className="block">
-            The page you are looking for no longer exists or you arrived here in
-            error. If you believe this is a mistake,{" "}
-            <a href="mailto:richardtorres314@gmail.com">reach out</a>!
-            Otherwise,{" "}
-            <a href="/" className="link">
-              head to the starship
-            </a>
-            .
-          </p>
+    <LatentThemeChecker>
+      <Section>
+        <div className="container max-w-screen-lg">
+          <h1 className="text-4xl font-semibold mb-6 text-center">
+            Page Not Found
+          </h1>
+          <div className="content">
+            <p>
+              The page you are looking for no longer exists or you arrived here
+              in error. If you believe this is a mistake,{" "}
+              <a
+                className="text-blue-500 hover:underline"
+                href="mailto:richardtorres314@gmail.com"
+              >
+                reach out
+              </a>
+              ! Otherwise,{" "}
+              <a href="/" className="text-blue-500 hover:underline">
+                head to the starship
+              </a>
+              .
+            </p>
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+    </LatentThemeChecker>
   );
 }

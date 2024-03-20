@@ -1,65 +1,54 @@
-"use client";
+import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 
-import { Fade } from "react-awesome-reveal";
+import { Badge } from "@/ui/badge";
+import { Fade } from "@/ui/fade/fade";
 import { Section } from "@/ui/section/section";
-import classNames from "classnames";
-import data from "@/data/skills.json";
-import styles from "./skills.module.scss";
+import data from "./skills.json";
 
-export function Skills(): JSX.Element {
+export function Skills() {
   return (
-    <Section className={styles.section} id="skills">
-      <Fade duration={1500}>
-        <div className="container">
-          <h2 className="title has-text-centered">
-            <span className="has-text-danger">Ski</span>lls
+    <Fade duration={1500}>
+      <Section id="skills">
+        <div className="md:container">
+          <h2 className="text-4xl font-semibold mb-6 text-center">
+            <span className="text-red-500">Ski</span>lls
           </h2>
-          <div className="columns">
+          <div className="flex flex-wrap justify-center gap-8">
             {data.map((skill) => (
-              <div className="column" key={skill.name}>
-                <div className={classNames("card", styles.card)}>
-                  <div className="card-content">
-                    <h3
-                      className={classNames(
-                        "title is-uppercase is-6 has-text-centered has-text-weight-normal",
-                        styles.title
-                      )}
-                    >
+              <div key={skill.name} className="grow">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-center font-light uppercase text-md">
                       {skill.name}
-                    </h3>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
                     {skill.values.map((item) => (
                       <div
-                        className={classNames(
-                          "is-align-items-center mb-4",
-                          styles.category
-                        )}
+                        className="items-center mb-4 xl:flex"
                         key={item.name}
                       >
-                        <div
-                          className={classNames("mr-4", styles.categoryName)}
-                        >
-                          {item.name}
-                        </div>
-                        <div className="tags are-small">
+                        <div className="mr-4 mb-2 xl:mb-0">{item.name}</div>
+                        <div className="flex gap-2">
                           {item.values.map((value) => (
-                            <div
-                              className="tag has-text-white"
+                            <Badge
+                              className="tag text-white"
                               key={value}
                               style={{ backgroundColor: item.color }}
                             >
                               {value}
-                            </div>
+                            </Badge>
                           ))}
                         </div>
                       </div>
                     ))}
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               </div>
             ))}
           </div>
         </div>
-      </Fade>
-    </Section>
+      </Section>
+    </Fade>
   );
 }

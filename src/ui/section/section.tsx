@@ -1,15 +1,20 @@
 import classNames from "classnames";
 import { type HTMLAttributes } from "react";
-import styles from "./section.module.scss";
 
 export function Section({
   className,
+  children,
   ...passedProps
-}: HTMLAttributes<HTMLElement>): JSX.Element {
+}: HTMLAttributes<HTMLElement>) {
   return (
     <section
-      className={classNames("section", styles.section, className)}
+      className={classNames(
+        "p-12 scroll-mt-24 print:break-inside-avoid",
+        className
+      )}
       {...passedProps}
-    />
+    >
+      {children}
+    </section>
   );
 }

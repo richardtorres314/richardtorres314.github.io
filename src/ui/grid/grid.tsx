@@ -6,7 +6,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   layout?: string;
 }
 
-export function Grid(props: Props): JSX.Element {
+export function Grid(props: Props) {
   const { className, layout, ...passedProps } = props;
 
   return (

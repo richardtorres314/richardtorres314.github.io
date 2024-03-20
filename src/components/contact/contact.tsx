@@ -1,59 +1,46 @@
-"use client";
-
 import { Email } from "@/icons/email";
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "@/ui/fade/fade";
 import { GitHub } from "@/icons/github";
 import { LinkedIn } from "@/icons/linkedin";
 import { Section } from "@/ui/section/section";
-import classNames from "classnames";
-import styles from "./contact.module.scss";
 
-export function Contact(): JSX.Element {
+export function Contact() {
   return (
-    <Section
-      className={classNames("has-text-light", styles.section)}
-      id="contact"
-    >
-      <Fade duration={1500}>
-        <div className="container">
-          <h2 className="title has-text-centered has-text-light">
-            <span className="has-text-danger">Con</span>tact Me
+    <Fade duration={1500}>
+      <Section id="contact">
+        <div className="md:container">
+          <h2 className="text-4xl font-semibold mb-6 text-center">
+            <span className="text-red-500">Con</span>tact Me
           </h2>
-          <p className="block has-text-centered">
+          <p className="text-center mb-6">
             Let’s work together! Contact me and I’ll get back to you shortly 😊
           </p>
-          <div className="columns is-centered">
-            <div className="column is-1 is-centered has-text-centered">
-              <a
-                href="https://www.github.com/richardtorres314"
-                target="_blank"
-                rel="noreferrer"
-                className="icon is-large has-text-light"
-              >
-                <GitHub />
-              </a>
-            </div>
-            <div className="column is-1 is-centered has-text-centered">
-              <a
-                href="https://www.linkedin.com/in/richardtorres314"
-                target="_blank"
-                rel="noreferrer"
-                className="icon is-large has-text-light"
-              >
-                <LinkedIn />
-              </a>
-            </div>
-            <div className="column is-1 is-centered has-text-centered">
-              <a
-                href="mailto:richardtorres314@gmail.com"
-                className="icon is-large has-text-light"
-              >
-                <Email />
-              </a>
-            </div>
+          <div className="flex align-center justify-center gap-8">
+            <a
+              href="https://www.github.com/richardtorres314"
+              target="_blank"
+              rel="noreferrer"
+              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+            >
+              <GitHub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/richardtorres314"
+              target="_blank"
+              rel="noreferrer"
+              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+            >
+              <LinkedIn />
+            </a>
+            <a
+              href="mailto:richardtorres314@gmail.com"
+              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+            >
+              <Email />
+            </a>
           </div>
         </div>
-      </Fade>
-    </Section>
+      </Section>
+    </Fade>
   );
 }

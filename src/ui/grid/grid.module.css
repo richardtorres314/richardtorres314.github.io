@@ -11,10 +11,3 @@
   grid-template-columns: auto 1fr 1fr;
   grid-template-rows: auto auto auto 1fr;
 }
-
-.contributions {
-  grid-template-areas:
-    "logo company"
-    "logo version";
-  grid-template-columns: auto 1fr;
-}

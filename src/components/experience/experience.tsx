@@ -1,20 +1,18 @@
-"use client";
-
 import { Done } from "@/icons/done";
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "@/ui/fade/fade";
 import { Grid } from "@/ui/grid/grid";
 import { Section } from "@/ui/section/section";
 import classNames from "classnames";
-import experiences from "@/data/experience.json";
+import experiences from "./experience.json";
 import styles from "./experience.module.scss";
 
-export function Experience(): JSX.Element {
+export function Experience() {
   return (
     <Fade duration={1500}>
       <Section id="experience">
-        <div className="container is-max-desktop">
-          <h2 className="title has-text-centered">
-            <span className="has-text-danger">Exp</span>erience
+        <div className="md:container md:max-w-screen-lg">
+          <h2 className="text-4xl font-semibold mb-6 text-center">
+            <span className="text-red-500">Exp</span>erience
           </h2>
           <ul>
             {experiences.map((experience, index) => (
@@ -22,7 +20,7 @@ export function Experience(): JSX.Element {
                 <Grid layout="experience">
                   <figure
                     className={classNames(
-                      "image is-flex is-align-items-center is-32x32",
+                      "image flex items-center w-8 h-8",
                       styles.image
                     )}
                   >
@@ -31,35 +29,22 @@ export function Experience(): JSX.Element {
                       src={experience.logo}
                     />
                   </figure>
-                  <div
-                    className={classNames(
-                      "has-text-weight-semibold",
-                      styles.company
-                    )}
-                  >
+                  <div className={classNames("font-semibold", styles.company)}>
                     {experience.company}
                   </div>
                   <div
                     className={classNames(
-                      "has-text-danger has-text-right",
+                      "text-red-500 text-right",
                       styles.location
                     )}
                   >
                     {experience.location}
                   </div>
-                  <div
-                    className={classNames(
-                      "has-text-weight-medium",
-                      styles.title
-                    )}
-                  >
+                  <div className={classNames("font-medium", styles.title)}>
                     {experience.title}
                   </div>
                   <div
-                    className={classNames(
-                      "has-text-right is-italic",
-                      styles.dates
-                    )}
+                    className={classNames("text-right italic", styles.dates)}
                   >
                     {experience.dates}
                   </div>
@@ -67,17 +52,10 @@ export function Experience(): JSX.Element {
                     <ul>
                       {experience.duties.map((duty, index) => (
                         <li key={`duty-${index}`}>
-                          <div
-                            className={classNames("is-flex mb-2", styles.duty)}
-                          >
-                            <span
-                              className={classNames(
-                                "icon mr-1 is-small has-text-dark",
-                                styles.icon
-                              )}
-                            >
+                          <div className={classNames("flex mb-2", styles.duty)}>
+                            <div className="mr-1 w-4 h-4 min-w-4 min-h-4 dark:fill-white">
                               <Done />
-                            </span>
+                            </div>
                             <span>{duty}</span>
                           </div>
                         </li>

@@ -1,19 +1,31 @@
-import "bulma/bulma.sass";
 import { type PropsWithChildren } from "react";
-import styles from "./layout.module.scss";
-import { Navbar } from "@/components/navbar/navbar";
+import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
-import "styles/global.scss";
+import { Inter as FontSans } from "next/font/google";
+import "styles/global.css";
+
+import { cn } from "@/lib/utils";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans"
+});
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr" className="dark:bg-slate-800 dark:text-white">
       <head>
-        <script async src="/appearance.js"></script>
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/appearance.js" />
       </head>
-      <body className={styles.body}>
-        <Navbar />
-        <main className={styles.main}>{children}</main>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased pt-24 md:pt-24 print:pt-0",
+          fontSans.variable
+        )}
+      >
+        <Header />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

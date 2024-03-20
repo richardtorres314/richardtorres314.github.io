@@ -30,9 +30,3 @@
 .icon {
   min-width: 1rem;
 }
-
-body:global(.dark) {
-  .icon svg {
-    fill: white;
-  }
-}
