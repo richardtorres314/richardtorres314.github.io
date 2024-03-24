@@ -13,7 +13,7 @@ const fontSans = FontSans({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" dir="ltr" className="dark:bg-slate-800 dark:text-white">
+    <html lang="en" dir="ltr">
       <head>
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/appearance.js" />

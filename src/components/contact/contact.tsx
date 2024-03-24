@@ -20,7 +20,7 @@ export function Contact() {
               href="https://www.github.com/richardtorres314"
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+              className="w-12 h-12 text-foreground/80 hover:text-foreground/60"
             >
               <GitHub />
             </a>
@@ -28,13 +28,13 @@ export function Contact() {
               href="https://www.linkedin.com/in/richardtorres314"
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+              className="w-12 h-12 text-foreground/80 hover:text-foreground/60"
             >
               <LinkedIn />
             </a>
             <a
               href="mailto:richardtorres314@gmail.com"
-              className="w-12 h-12 fill-gray-800 hover:fill-gray-400"
+              className="w-12 h-12 text-foreground/80 hover:text-foreground/60"
             >
               <Email />
             </a>

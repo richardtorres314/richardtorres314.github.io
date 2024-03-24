@@ -83,7 +83,7 @@ export function Header() {
               variant="ghost"
               className="dark:fill-white dark:bg-background dark:hover:bg-accent px-2"
             >
-              <span className="w-4 h-4">
+              <span className="w-4 h-4 text-foreground/80 hover:text-foreground/60">
                 <Sun />
               </span>
             </Button>
