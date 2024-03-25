@@ -38,7 +38,7 @@ export default function Blog() {
               .map((post) => (
                 <li key={post.url} className="mb-4">
                   <a href={post.url} rel="noreferrer" target="_blank">
-                    <Card className="hover:bg-gray-100 dark:hover:bg-slate-900">
+                    <Card className="hover:bg-card-foreground/5">
                       <CardHeader>
                         <CardTitle>{post.title}</CardTitle>
                       </CardHeader>
