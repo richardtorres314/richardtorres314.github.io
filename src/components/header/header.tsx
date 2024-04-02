@@ -131,15 +131,17 @@ export function Header() {
           <NavigationMenuList>
             {links.map((link) => (
               <NavigationMenuItem key={link.url}>
-                <NavigationMenuLink
-                  className={classNames(
-                    "uppercase",
-                    navigationMenuTriggerStyle()
-                  )}
-                  href={link.url}
-                >
-                  {link.text}
-                </NavigationMenuLink>
+                <Link href={link.url} passHref legacyBehavior>
+                  <NavigationMenuLink
+                    className={classNames(
+                      "uppercase",
+                      navigationMenuTriggerStyle()
+                    )}
+                    href={link.url}
+                  >
+                    {link.text}
+                  </NavigationMenuLink>
+                </Link>
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>
