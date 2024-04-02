@@ -77,7 +77,7 @@ export function Header() {
               <div className="text-md">Software Engineer</div>
             </div>
           </a>
-          <div className="flex md:hidden gap-2">
+          <div className="flex xl:hidden gap-2">
             <Button
               onClick={handleOnClickThemeButton}
               variant="ghost"
@@ -131,16 +131,15 @@ export function Header() {
           <NavigationMenuList>
             {links.map((link) => (
               <NavigationMenuItem key={link.url}>
-                <Link href={link.url} legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={classNames(
-                      "uppercase",
-                      navigationMenuTriggerStyle()
-                    )}
-                  >
-                    {link.text}
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  className={classNames(
+                    "uppercase",
+                    navigationMenuTriggerStyle()
+                  )}
+                  href={link.url}
+                >
+                  {link.text}
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>

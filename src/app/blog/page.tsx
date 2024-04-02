@@ -7,14 +7,14 @@ import posts from "./posts.json";
 
 export const metadata = {
   title: "Blog - Richard Torres",
-  metadataBase: new URL("https://richardtorres.github.io/"),
+  metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {
-    title: "Richard Torres — Personal Homepage",
-    url: "https://richardtorres.github.io/",
+    title: "Richard Torres — Blog",
+    url: "https://www.richardtorres.co/blog",
     locale: "en-US",
     type: "website",
     description:
-      "I'm Richard Torres, software engineer located in Boston, MA. Learn more or contact me.",
+      "I'm Richard Torres, software engineer located in Boston, MA. This is my blog. Learn more or contact me.",
     images: {
       url: "/images/richard-torres.jpg"
     }
@@ -29,9 +29,16 @@ export default function Blog() {
     <Fade duration={1500}>
       <Section>
         <div className="container">
-          <h1 className="text-4xl font-semibold mb-6 text-center">
-            Blog Posts
-          </h1>
+          <div className="mb-16 text-center">
+            <h1 className="text-4xl font-semibold mb-6 text-center">
+              <span className="text-red-500">Bl</span>og{" "}
+              <span className="text-red-500">Po</span>sts
+            </h1>
+            <p>
+              Here is a list of blog posts I&rsquo;ve written across the web.
+              Click on a post to read!
+            </p>
+          </div>
           <ul>
             {posts
               .sort((a, b) => (a.date > b.date ? 1 : -1))
@@ -48,7 +55,8 @@ export default function Blog() {
                             <Badge key={`${tag}-${index}`}>{tag}</Badge>
                           ))}
                         </div>
-                        <div>{post.date}</div>
+                        <p className="mb-2">{post.description}</p>
+                        <div className="text-sm">{post.date}</div>
                       </CardContent>
                     </Card>
                   </a>

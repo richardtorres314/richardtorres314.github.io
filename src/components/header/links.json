@@ -12,12 +12,16 @@
     "text": "Experience"
   },
   {
-    "url": "/#contributions",
+    "url": "/contributions",
     "text": "Contributions"
   },
   {
     "url": "/blog",
     "text": "Blog"
+  },
+  {
+    "url": "/freebies",
+    "text": "Freebies"
   },
   {
     "url": "/#contact",

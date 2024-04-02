@@ -1,15 +1,14 @@
 import About from "@/components/about";
 import { Contact } from "@/components/contact/contact";
-import { Contributions } from "@/components/contributions/contributions";
 import { Experience } from "@/components/experience/experience";
 import { Skills } from "@/components/skills/skills";
 
 export const metadata = {
   title: "Richard Torres",
-  metadataBase: new URL("https://richardtorres.github.io/"),
+  metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Personal Homepage",
-    url: "https://richardtorres.github.io/",
+    url: "https://www.richardtorres.co/",
     locale: "en-US",
     type: "website",
     description:
@@ -29,7 +28,6 @@ export default function Home() {
       <About />
       <Skills />
       <Experience />
-      <Contributions />
       <Contact />
     </>
   );
