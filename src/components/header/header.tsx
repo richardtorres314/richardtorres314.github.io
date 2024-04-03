@@ -109,6 +109,7 @@ export function Header() {
                   <NavigationMenuList className="block">
                     {links.map((link) => (
                       <NavigationMenuItem key={link.url}>
+                        {/* Workaround needed for next.js scroll behavior issue: https://github.com/vercel/next.js/issues/45187 */}
                         <Link href={link.url} legacyBehavior passHref>
                           <NavigationMenuLink
                             className={classNames(
