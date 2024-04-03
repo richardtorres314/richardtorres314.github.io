@@ -30,7 +30,7 @@ export default function About() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Illustration of person thinking alongside laptop"
-                src="images/code-thinking.svg"
+                src="/images/code-thinking.svg"
               />
             </div>
           </div>

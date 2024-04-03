@@ -67,7 +67,7 @@ export function Header() {
             <img
               draggable="false"
               alt="Richard Torres"
-              src="images/me.jpg"
+              src="/images/me.jpg"
               className="h-14 w-14 rounded-full object-cover"
             />
             <div className="ml-4">
