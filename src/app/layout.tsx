@@ -20,7 +20,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased pt-24 md:pt-24 print:pt-0",
+          "min-h-screen bg-background font-sans antialiased pt-24 md:pt-24 print:pt-0 data-[scroll-locked]:pt-24 data-[scroll-locked]:!mr-0",
           fontSans.variable
         )}
       >

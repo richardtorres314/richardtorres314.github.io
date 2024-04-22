@@ -18,16 +18,13 @@ export const metadata = {
     images: {
       url: "/images/richard-torres.jpg"
     }
-  },
-  icons: {
-    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
   }
 };
 
 export default function Blog() {
   return (
     <Fade duration={1500}>
-      <Section>
+      <Section className="print:break-inside-auto">
         <div className="container">
           <div className="mb-16 text-center">
             <h1 className="text-4xl font-semibold mb-6 text-center">
@@ -43,7 +40,7 @@ export default function Blog() {
             {posts
               .sort((a, b) => (a.date > b.date ? 1 : -1))
               .map((post) => (
-                <li key={post.url} className="mb-4">
+                <li key={post.url} className="mb-4 print:break-inside-avoid">
                   <a href={post.url} rel="noreferrer" target="_blank">
                     <Card className="hover:bg-card-foreground/5">
                       <CardHeader>

@@ -16,7 +16,10 @@ export function Experience() {
           </h2>
           <ul>
             {experiences.map((experience, index) => (
-              <li key={`experience-${index}`} className="mb-4">
+              <li
+                key={`experience-${index}`}
+                className="mb-4 print:break-inside-avoid"
+              >
                 <Grid layout="experience">
                   <figure
                     className={classNames(

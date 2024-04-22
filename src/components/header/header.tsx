@@ -56,7 +56,7 @@ export function Header() {
 
   return (
     <header
-      className="fixed top-0 p-4 w-full z-50 bg-inherit print:static"
+      className="fixed top-0 p-4 w-full z-50 bg-inherit print:static print:pb-12"
       role="navigation"
       area-label="main navigation"
     >
