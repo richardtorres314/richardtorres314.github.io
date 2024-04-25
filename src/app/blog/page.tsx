@@ -1,9 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
-
-import { Badge } from "@/ui/badge";
 import { Fade } from "@/ui/fade/fade";
+import { Posts } from "./posts";
 import { Section } from "@/ui/section/section";
-import posts from "./posts.json";
 
 export const metadata = {
   title: "Blog - Richard Torres",
@@ -36,30 +33,7 @@ export default function Blog() {
               Click on a post to read!
             </p>
           </div>
-          <ul>
-            {posts
-              .sort((a, b) => (a.date > b.date ? 1 : -1))
-              .map((post) => (
-                <li key={post.url} className="mb-4 print:break-inside-avoid">
-                  <a href={post.url} rel="noreferrer" target="_blank">
-                    <Card className="hover:bg-card-foreground/5">
-                      <CardHeader>
-                        <CardTitle>{post.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {post.tags.map((tag, index) => (
-                            <Badge key={`${tag}-${index}`}>{tag}</Badge>
-                          ))}
-                        </div>
-                        <p className="mb-2">{post.description}</p>
-                        <div className="text-sm">{post.date}</div>
-                      </CardContent>
-                    </Card>
-                  </a>
-                </li>
-              ))}
-          </ul>
+          <Posts />
         </div>
       </Section>
     </Fade>
