@@ -1,4 +1,4 @@
-import { LatentThemeChecker } from "@/components/latent-theme-checker/latent-theme-checker";
+import { LatentThemeChecker } from "@/components/latent-theme-checker";
 import { Section } from "@/ui/section/section";
 
 export const metadata = {
