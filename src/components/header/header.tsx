@@ -58,7 +58,7 @@ export function Header() {
     <header
       className="fixed top-0 p-4 w-full z-50 bg-inherit print:static print:pb-12"
       role="navigation"
-      area-label="main navigation"
+      aria-label="main navigation"
     >
       <div className="md:container flex justify-between">
         <div className="flex justify-between items-center w-full">
