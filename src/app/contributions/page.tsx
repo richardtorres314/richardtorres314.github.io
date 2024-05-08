@@ -101,8 +101,8 @@ export default function Contributions() {
                     </Badge>
                   ) : (
                     <div className="absolute bottom-4 left-6 flex gap-2">
-                      {contribution.version.map((contribution) => (
-                        <Badge>v{contribution}</Badge>
+                      {contribution.version.map((version) => (
+                        <Badge key={version}>v{version}</Badge>
                       ))}
                     </div>
                   )}
