@@ -3,25 +3,33 @@
     "projectName": "Storybook",
     "url": "https://storybook.js.org/",
     "version": "5.2",
-    "image": "images/storybook.svg"
+    "image": "images/storybook.svg",
+    "type": "package",
+    "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation."
   },
   {
     "projectName": "Sinon.JS",
     "url": "https://sinonjs.org/",
     "version": "9.1.0",
-    "image": "images/sinonjs.svg"
+    "image": "images/sinonjs.svg",
+    "type": "package",
+    "description": "Test spies, stubs and mocks for JavaScript."
   },
   {
     "projectName": "Elastic UI",
     "url": "https://elastic.github.io/eui/#/",
     "version": "70.2.4",
-    "image": "images/elasticui.svg"
+    "image": "images/elasticui.svg",
+    "type": "package",
+    "description": "Elastic UI Framework 🙌"
   },
   {
     "projectName": "jsPDF",
     "url": "https://parall.ax/products/jspdf",
     "version": "2.5.0",
-    "image": "images/jspdf.svg"
+    "image": "images/jspdf.svg",
+    "type": "package",
+    "description": "Client-side JavaScript PDF generation for everyone."
   },
   {
     "projectName": "Quiet",
@@ -30,6 +38,18 @@
       "2.1.0",
       "2.2.0"
     ],
-    "image": "images/quiet.svg"
+    "image": "images/quiet.svg",
+    "type": "application",
+    "description": "A private, p2p alternative to Slack and Discord built on Tor & IPFS"
+  },
+  {
+    "projectName": "Homebrew",
+    "url": "https://brew.sh",
+    "version": [
+      "Cask: Quiet"
+    ],
+    "image": "images/homebrew.svg",
+    "type": "script",
+    "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries"
   }
 ]

@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="22.176903"
-   height="31.999998"
-   viewBox="0 0 22.176902 31.999999"
-   version="1.1"
-   id="svg2"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <defs
-     id="defs1">
-    <style
-       id="style1">.a{isolation:isolate}.b{fill:#03eabe}.c,.d{fill:#8b5cdd;mix-blend-mode:multiply}.d{fill:#8e9a9a}</style>
-  </defs>
-  <title
-     id="title1">jspdf-logo</title>
-  <g
-     class="a"
-     id="g2"
-     transform="translate(-48.354862,-69.751853)">
-    <circle
-       class="b"
-       cx="61.272533"
-       cy="92.494484"
-       r="9.257369"
-       id="circle1"
-       style="stroke-width:0.186528" />
-    <path
-       class="c"
-       d="m 67.510019,79.023453 a 9.580062,9.580062 0 1 1 -9.268561,-9.266695 9.580062,9.580062 0 0 1 9.268561,9.266695 z"
-       id="path1"
-       style="stroke-width:0.186528" />
-    <circle
-       class="d"
-       cx="64.409927"
-       cy="84.826332"
-       r="6.1218386"
-       id="circle2"
-       style="stroke-width:0.186528" />
-  </g>
-  <metadata
-     id="metadata2">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>jspdf-logo</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="64" height="64" viewBox="0 0 22.176902 31.999999" version="1.1" id="svg2" xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <defs id="defs1">
+      <style id="style1">
+         .a {
+            isolation: isolate
+         }
+
+         .b {
+            fill: #03eabe
+         }
+
+         .c,
+         .d {
+            fill: #8b5cdd;
+            mix-blend-mode: multiply
+         }
+
+         .d {
+            fill: #8e9a9a
+         }
+      </style>
+   </defs>
+   <title id="title1">jspdf-logo</title>
+   <g class="a" id="g2" transform="translate(-48.354862,-69.751853)">
+      <circle class="b" cx="61.272533" cy="92.494484" r="9.257369" id="circle1" style="stroke-width:0.186528" />
+      <path class="c"
+         d="m 67.510019,79.023453 a 9.580062,9.580062 0 1 1 -9.268561,-9.266695 9.580062,9.580062 0 0 1 9.268561,9.266695 z"
+         id="path1" style="stroke-width:0.186528" />
+      <circle class="d" cx="64.409927" cy="84.826332" r="6.1218386" id="circle2" style="stroke-width:0.186528" />
+   </g>
+   <metadata id="metadata2">
+      <rdf:RDF>
+         <cc:Work rdf:about="">
+            <dc:title>jspdf-logo</dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
 </svg>

@@ -1,0 +1,35 @@
+[
+  {
+    "projectName": "Storybook",
+    "url": "https://storybook.js.org/",
+    "version": "5.2",
+    "image": "images/storybook.svg"
+  },
+  {
+    "projectName": "Sinon.JS",
+    "url": "https://sinonjs.org/",
+    "version": "9.1.0",
+    "image": "images/sinonjs.svg"
+  },
+  {
+    "projectName": "Elastic UI",
+    "url": "https://elastic.github.io/eui/#/",
+    "version": "70.2.4",
+    "image": "images/elasticui.svg"
+  },
+  {
+    "projectName": "jsPDF",
+    "url": "https://parall.ax/products/jspdf",
+    "version": "2.5.0",
+    "image": "images/jspdf.svg"
+  },
+  {
+    "projectName": "Quiet",
+    "url": "https://tryquiet.org/",
+    "version": [
+      "2.1.0",
+      "2.2.0"
+    ],
+    "image": "images/quiet.svg"
+  }
+]

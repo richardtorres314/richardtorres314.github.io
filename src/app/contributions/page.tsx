@@ -1,5 +1,6 @@
-import { Card, CardHeader } from "@/ui/card";
+import { Card, CardContent, CardHeader } from "@/ui/card";
 
+import { Badge } from "@/ui/badge";
 import { Fade } from "@/ui/fade/fade";
 import SVG from "@/ui/svg/svg";
 import { Section } from "@/ui/section/section";
@@ -79,38 +80,45 @@ export default function Contributions() {
               contributed.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center max-w-screen-lg m-auto">
             {contributions.map((contribution) => (
-              <div key={contribution.projectName}>
-                <Card>
-                  <CardHeader>
-                    <div className="flex gap-4 items-center">
-                      <SVG
-                        className="w-8 h-8 flex justify-center object-cover"
-                        src={contribution.image}
-                      />
-                      <div>
-                        <a
-                          rel="noreferrer"
-                          target="_blank"
-                          href={contribution.url}
-                          className="text-blue-500 hover:underline"
-                        >
-                          {contribution.projectName}
-                        </a>
-                        {typeof contribution.version === "string" ? (
-                          <div>Contributed Version: {contribution.version}</div>
-                        ) : (
-                          <div>
-                            Contributed Versions:{" "}
-                            {contribution.version.join(", ")}
-                          </div>
-                        )}
-                      </div>
+              <Card
+                key={contribution.projectName}
+                className="border-none shadow-md overflow-hidden"
+              >
+                <CardHeader className="items-center relative bg-gradient-to-tr from-cyan-600 to-cyan-200 dark:from-cyan-900 dark:to-cyan-600 aspect-auto justify-center">
+                  <SVG
+                    className="w-24 h-24 flex justify-center object-cover"
+                    src={contribution.image}
+                  />
+                  {contribution.type === "script" ? (
+                    <Badge className="absolute bottom-4 left-6">
+                      {contribution.version}
+                    </Badge>
+                  ) : typeof contribution.version === "string" ? (
+                    <Badge className="absolute bottom-4 left-6">
+                      v{contribution.version}
+                    </Badge>
+                  ) : (
+                    <div className="absolute bottom-4 left-6 flex gap-2">
+                      {contribution.version.map((contribution) => (
+                        <Badge>v{contribution}</Badge>
+                      ))}
                     </div>
-                  </CardHeader>
-                </Card>
-              </div>
+                  )}
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href={contribution.url}
+                    className="text-blue-500 hover:underline"
+                  >
+                    {contribution.projectName}
+                  </a>
+                  <div>{contribution.description}</div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

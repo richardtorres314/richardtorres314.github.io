@@ -1,0 +1,10 @@
+[
+  {
+    "projectName": "Homebrew",
+    "url": "https://brew.sh",
+    "casks": [
+      "Quiet"
+    ],
+    "image": "images/homebrew.svg"
+  }
+]
