@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from "@/ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "@/ui/card";
 
 import { Badge } from "@/ui/badge";
 import { Fade } from "@/ui/fade/fade";
@@ -84,14 +84,14 @@ export default function Contributions() {
             {contributions.map((contribution) => (
               <Card
                 key={contribution.projectName}
-                className="border-none shadow-md overflow-hidden"
+                className="border-none shadow-md overflow-hidden flex flex-col"
               >
                 <CardHeader className="items-center relative bg-gradient-to-tr from-cyan-600 to-cyan-200 dark:from-cyan-900 dark:to-cyan-600 aspect-auto justify-center">
                   <SVG
                     className="w-24 h-24 flex justify-center object-cover"
                     src={contribution.image}
                   />
-                  {contribution.type === "script" ? (
+                  {contribution.projectType === "script" ? (
                     <Badge className="absolute bottom-4 left-6">
                       {contribution.version}
                     </Badge>
@@ -107,7 +107,7 @@ export default function Contributions() {
                     </div>
                   )}
                 </CardHeader>
-                <CardContent className="pt-6">
+                <CardContent className="pt-6 grow">
                   <a
                     rel="noreferrer"
                     target="_blank"
@@ -118,6 +118,16 @@ export default function Contributions() {
                   </a>
                   <div>{contribution.description}</div>
                 </CardContent>
+                <CardFooter className="flex-col items-start space-y-2">
+                  <Badge variant="secondary">
+                    {contribution.contributionType}
+                  </Badge>
+                  <div className="flex gap-2">
+                    {contribution.languages?.map((language) => (
+                      <Badge key={language}>{language}</Badge>
+                    ))}
+                  </div>
+                </CardFooter>
               </Card>
             ))}
           </div>

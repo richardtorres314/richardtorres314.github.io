@@ -4,32 +4,49 @@
     "url": "https://storybook.js.org/",
     "version": "5.2",
     "image": "images/storybook.svg",
-    "type": "package",
-    "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation."
+    "projectType": "package",
+    "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation.",
+    "contributionType": "documentation",
+    "languages": [
+      "markdown"
+    ]
   },
   {
     "projectName": "Sinon.JS",
     "url": "https://sinonjs.org/",
     "version": "9.1.0",
     "image": "images/sinonjs.svg",
-    "type": "package",
-    "description": "Test spies, stubs and mocks for JavaScript."
+    "projectType": "package",
+    "description": "Test spies, stubs and mocks for JavaScript.",
+    "contributionType": "bugfix",
+    "languages": [
+      "JavaScript"
+    ]
   },
   {
     "projectName": "Elastic UI",
     "url": "https://elastic.github.io/eui/#/",
     "version": "70.2.4",
     "image": "images/elasticui.svg",
-    "type": "package",
-    "description": "Elastic UI Framework 🙌"
+    "projectType": "package",
+    "description": "Elastic UI Framework 🙌",
+    "contributionType": "bugfix",
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "projectName": "jsPDF",
     "url": "https://parall.ax/products/jspdf",
     "version": "2.5.0",
     "image": "images/jspdf.svg",
-    "type": "package",
-    "description": "Client-side JavaScript PDF generation for everyone."
+    "projectType": "package",
+    "description": "Client-side JavaScript PDF generation for everyone.",
+    "contributionType": "feature",
+    "languages": [
+      "JavaScript",
+      "TypeScript"
+    ]
   },
   {
     "projectName": "Quiet",
@@ -39,8 +56,12 @@
       "2.2.0"
     ],
     "image": "images/quiet.svg",
-    "type": "application",
-    "description": "A private, p2p alternative to Slack and Discord built on Tor & IPFS"
+    "projectType": "application",
+    "description": "A private, p2p alternative to Slack and Discord built on Tor & IPFS",
+    "contributionType": "bugfix",
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "projectName": "Homebrew",
@@ -49,7 +70,11 @@
       "Cask: Quiet"
     ],
     "image": "images/homebrew.svg",
-    "type": "script",
-    "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries"
+    "projectType": "script",
+    "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries",
+    "contributionType": "feature",
+    "languages": [
+      "Ruby"
+    ]
   }
 ]
