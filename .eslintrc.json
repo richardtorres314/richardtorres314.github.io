@@ -8,6 +8,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "next/core-web-vitals",
+    "plugin:jsx-a11y/strict",
     "prettier"
   ],
   "parserOptions": {
@@ -15,7 +16,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y"
   ],
   "rules": {
     "react/jsx-curly-brace-presence": [

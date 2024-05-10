@@ -2,7 +2,7 @@ import eslint from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default [
+const defaults = [
   { languageOptions: { globals: globals.browser } },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -16,3 +16,5 @@ export default [
     ]
   }
 ];
+
+export default defaults;

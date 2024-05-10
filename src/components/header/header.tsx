@@ -93,7 +93,7 @@ export function Header() {
                   variant="ghost"
                   className="xl:hidden dark:fill-white dark:bg-background dark:hover:bg-accent px-2"
                 >
-                  <a
+                  <span
                     role="button"
                     className="w-4 h-4 print:fill-black"
                     aria-label="menu"
@@ -101,7 +101,7 @@ export function Header() {
                     data-target="navMenu"
                   >
                     <Menu />
-                  </a>
+                  </span>
                 </Button>
               </PopoverTrigger>
               <PopoverContent>
