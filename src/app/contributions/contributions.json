@@ -8,7 +8,7 @@
     "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation.",
     "contributionType": "documentation",
     "languages": [
-      "markdown"
+      "Markdown"
     ]
   },
   {
@@ -75,6 +75,21 @@
     "contributionType": "feature",
     "languages": [
       "Ruby"
+    ]
+  },
+  {
+    "projectName": "Electron",
+    "url": "https://www.electronjs.org/",
+    "version": [
+      "Pending"
+    ],
+    "image": "images/electron.svg",
+    "projectType": "application",
+    "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+    "contributionType": "documentation",
+    "languages": [
+      "Markdown",
+      "HTML"
     ]
   }
 ]

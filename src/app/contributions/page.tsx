@@ -91,7 +91,8 @@ export default function Contributions() {
                     className="w-24 h-24 flex justify-center object-cover"
                     src={contribution.image}
                   />
-                  {contribution.projectType === "script" ? (
+                  {contribution.projectType === "script" ||
+                  contribution.version[0] === "Pending" ? (
                     <Badge className="absolute bottom-4 left-6">
                       {contribution.version}
                     </Badge>
