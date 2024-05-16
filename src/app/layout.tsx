@@ -6,10 +6,10 @@ import "styles/global.css";
 
 import { cn } from "@/lib/utils";
 
-  const fontSans = FontSans({
-    subsets: ["latin"],
-    variable: "--font-sans"
-  });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans"
+});
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
