@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "npx serve@latest out",
-    "prepare": "husky",
+    "prepare": "husky && husky install",
     "test": ""
   },
   "dependencies": {
@@ -62,6 +62,8 @@
     ],
     "*.{json, js, ts, tsx, tsx, html}": [
       "prettier --write --ignore-unknown"
-    ]
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
