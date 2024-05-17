@@ -9,7 +9,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle
+  navigationMenuTriggerStyle,
 } from "@/ui/navigation-menu";
 import Link from "next/link";
 import { Sun } from "@/icons/sun";
@@ -30,7 +30,7 @@ export function Header() {
       const main = document.querySelector("main");
       main?.scrollIntoView();
       router.replace("/", {
-        scroll: false
+        scroll: false,
       });
     }
   }
@@ -114,7 +114,7 @@ export function Header() {
                           <NavigationMenuLink
                             className={classNames(
                               "uppercase",
-                              navigationMenuTriggerStyle()
+                              navigationMenuTriggerStyle(),
                             )}
                           >
                             {link.text}
@@ -136,7 +136,7 @@ export function Header() {
                   <NavigationMenuLink
                     className={classNames(
                       "uppercase",
-                      navigationMenuTriggerStyle()
+                      navigationMenuTriggerStyle(),
                     )}
                     href={link.url}
                   >

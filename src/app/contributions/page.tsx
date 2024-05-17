@@ -17,9 +17,9 @@ export const metadata = {
     description:
       "I'm Richard Torres, software engineer located in Boston, MA. This is a list of open source projects to which I've contributed. Learn more or contact me.",
     images: {
-      url: "/images/richard-torres.jpg"
-    }
-  }
+      url: "/images/richard-torres.jpg",
+    },
+  },
 };
 
 export default function Contributions() {

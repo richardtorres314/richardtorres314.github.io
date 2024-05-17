@@ -7,9 +7,7 @@
     "projectType": "package",
     "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation.",
     "contributionType": "documentation",
-    "languages": [
-      "Markdown"
-    ]
+    "languages": ["Markdown"]
   },
   {
     "projectName": "Sinon.JS",
@@ -19,9 +17,7 @@
     "projectType": "package",
     "description": "Test spies, stubs and mocks for JavaScript.",
     "contributionType": "bugfix",
-    "languages": [
-      "JavaScript"
-    ]
+    "languages": ["JavaScript"]
   },
   {
     "projectName": "Elastic UI",
@@ -31,9 +27,7 @@
     "projectType": "package",
     "description": "Elastic UI Framework 🙌",
     "contributionType": "bugfix",
-    "languages": [
-      "TypeScript"
-    ]
+    "languages": ["TypeScript"]
   },
   {
     "projectName": "jsPDF",
@@ -43,53 +37,36 @@
     "projectType": "package",
     "description": "Client-side JavaScript PDF generation for everyone.",
     "contributionType": "feature",
-    "languages": [
-      "JavaScript",
-      "TypeScript"
-    ]
+    "languages": ["JavaScript", "TypeScript"]
   },
   {
     "projectName": "Quiet",
     "url": "https://tryquiet.org/",
-    "version": [
-      "2.1.0",
-      "2.2.0"
-    ],
+    "version": ["2.1.0", "2.2.0"],
     "image": "images/quiet.svg",
     "projectType": "application",
     "description": "A private, p2p alternative to Slack and Discord built on Tor & IPFS",
     "contributionType": "bugfix",
-    "languages": [
-      "TypeScript"
-    ]
+    "languages": ["TypeScript"]
   },
   {
     "projectName": "Homebrew",
     "url": "https://brew.sh",
-    "version": [
-      "Cask: Quiet"
-    ],
+    "version": ["Cask: Quiet"],
     "image": "images/homebrew.svg",
     "projectType": "script",
     "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries",
     "contributionType": "feature",
-    "languages": [
-      "Ruby"
-    ]
+    "languages": ["Ruby"]
   },
   {
     "projectName": "Electron",
     "url": "https://www.electronjs.org/",
-    "version": [
-      "Pending"
-    ],
+    "version": ["Pending"],
     "image": "images/electron.svg",
     "projectType": "application",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
     "contributionType": "documentation",
-    "languages": [
-      "Markdown",
-      "HTML"
-    ]
+    "languages": ["Markdown", "HTML"]
   }
 ]

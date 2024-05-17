@@ -6,16 +6,16 @@ export const links = [
   {
     name: "GitHub",
     icon: GitHub,
-    url: "https://www.github.com/richardtorres314"
+    url: "https://www.github.com/richardtorres314",
   },
   {
     name: "LinkedIn",
     icon: LinkedIn,
-    url: "https://www.linkedin.com/in/richardtorres314"
+    url: "https://www.linkedin.com/in/richardtorres314",
   },
   {
     name: "Email",
     icon: Email,
-    url: "mailto:richardtorres314@gmail.com"
-  }
+    url: "mailto:richardtorres314@gmail.com",
+  },
 ];

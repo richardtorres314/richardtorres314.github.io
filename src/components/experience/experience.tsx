@@ -24,7 +24,7 @@ export function Experience() {
                   <figure
                     className={classNames(
                       "image flex items-center w-8 h-8",
-                      styles.image
+                      styles.image,
                     )}
                   >
                     <img
@@ -38,7 +38,7 @@ export function Experience() {
                   <div
                     className={classNames(
                       "text-red-500 text-right",
-                      styles.location
+                      styles.location,
                     )}
                   >
                     {experience.location}

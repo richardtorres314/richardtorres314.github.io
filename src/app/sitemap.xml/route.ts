@@ -3,20 +3,20 @@ function getSitemap() {
   const map = [
     {
       url: "https://richardtorres.co",
-      lastModified: new Date()
+      lastModified: new Date(),
     },
     {
       url: "https://richardtorres.co/blog",
-      lastModified: new Date()
+      lastModified: new Date(),
     },
     {
       url: "https://richardtorres.co/contributions",
-      lastModified: new Date()
+      lastModified: new Date(),
     },
     {
       url: "https://richardtorres.co/freebies",
-      lastModified: new Date()
-    }
+      lastModified: new Date(),
+    },
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +32,7 @@ function getSitemap() {
             </url>
           `,
       )
-      .join('')}
+      .join("")}
     </urlset>
   `;
 }
@@ -40,7 +40,7 @@ function getSitemap() {
 export async function GET() {
   return new Response(getSitemap(), {
     headers: {
-      'Content-Type': 'text/xml',
+      "Content-Type": "text/xml",
     },
   });
 }

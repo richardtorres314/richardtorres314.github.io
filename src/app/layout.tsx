@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
-  variable: "--font-sans"
+  variable: "--font-sans",
 });
 
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased pt-24 md:pt-24 print:pt-0 data-[scroll-locked]:pt-24 data-[scroll-locked]:!mr-0",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <Header />

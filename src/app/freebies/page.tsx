@@ -16,9 +16,9 @@ export const metadata = {
     description:
       "I'm Richard Torres, software engineer located in Boston, MA. This is a collection of free resources I created. Learn more or contact me.",
     images: {
-      url: "/images/richard-torres.jpg"
-    }
-  }
+      url: "/images/richard-torres.jpg",
+    },
+  },
 };
 
 export default function Freebies() {

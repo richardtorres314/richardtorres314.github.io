@@ -7,7 +7,7 @@ import {
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from "@/ui/dropdown-menu";
 import { MouseEvent, useState } from "react";
 
@@ -24,8 +24,8 @@ export function Posts() {
       posts.reduce((acc, curr) => {
         acc.push(...curr.tags);
         return acc;
-      }, [] as string[])
-    )
+      }, [] as string[]),
+    ),
   ).sort((a, b) => (a < b ? -1 : 1));
 
   const handleTagSelect = (event: MouseEvent, tag: string) => {
@@ -73,7 +73,7 @@ export function Posts() {
         {posts
           .sort((a, b) => (a.date > b.date ? 1 : -1))
           .filter((post) =>
-            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true
+            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true,
           )
           .map((post) => (
             <li key={post.url} className="mb-4 print:break-inside-avoid">

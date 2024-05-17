@@ -14,7 +14,7 @@ export function Grid(props: Props) {
       className={classNames(
         styles.grid,
         className,
-        layout !== undefined && styles[layout]
+        layout !== undefined && styles[layout],
       )}
       {...passedProps}
     />

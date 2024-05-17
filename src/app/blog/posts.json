@@ -3,45 +3,28 @@
     "url": "https://dev.to/richardtorres314/how-to-destructure-class-methods-4i18",
     "title": "How to Destructure Class Methods",
     "description": "Destructuring a property in JavaScript is pretty seamless, but destructuring methods are a whole different story. Learn what some issues developers face when destructuring class methods and how to resolve.",
-    "tags": [
-      "javascript",
-      "typescript"
-    ],
+    "tags": ["javascript", "typescript"],
     "date": "Sep 9, 2022"
   },
   {
     "url": "https://dev.to/richardtorres314/lazy-loading-vs-virtualization-4c60",
     "title": "Lazy Loading vs Virtualization",
     "description": "What is lazy loading? How about virtualization? Are they the same? Learn the difference between these two often confused terms.",
-    "tags": [
-      "design",
-      "webdev",
-      "ux"
-    ],
+    "tags": ["design", "webdev", "ux"],
     "date": "Sep 17, 2022"
   },
   {
     "url": "https://dev.to/richardtorres314/graphql-files-in-nextjs-o73",
     "title": "GraphQL Files in Next.js",
     "description": "Working with GraphQL as string literals in a Next.js app can lead to large, unmaintainable files. Learn how to separate your GraphQL queries into separate files in Next.js.",
-    "tags": [
-      "graphql",
-      "nextjs",
-      "typescript",
-      "react"
-    ],
+    "tags": ["graphql", "nextjs", "typescript", "react"],
     "date": "Sep 27, 2022"
   },
   {
     "url": "https://dev.to/richardtorres314/array-mutation-methods-in-javascript-ik",
     "title": "Array Mutation Methods in JavaScript",
     "description": "Some array methods in JavaScript mutate while others do not. Learn what it means to mutate and which methods mutate an array.",
-    "tags": [
-      "javascript",
-      "coding",
-      "algorithms",
-      "datastructures"
-    ],
+    "tags": ["javascript", "coding", "algorithms", "datastructures"],
     "date": "Mar 14, 2024"
   }
 ]

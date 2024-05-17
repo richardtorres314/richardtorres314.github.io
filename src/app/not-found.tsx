@@ -12,9 +12,9 @@ export const metadata = {
     description:
       "I'm Richard Torres, software engineer located in Boston, MA. Learn more or contact me.",
     images: {
-      url: "/images/richard-torres.jpg"
-    }
-  }
+      url: "/images/richard-torres.jpg",
+    },
+  },
 };
 
 export default function NotFound() {
