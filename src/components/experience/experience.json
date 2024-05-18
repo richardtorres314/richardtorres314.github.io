@@ -6,10 +6,10 @@
     "title": "Software Engineer",
     "dates": "Jan. 2021–Present",
     "duties": [
-      "Improved memory management by 50% and oversaw other key performance optimizations",
-      "Led automation feature development, opening product line to enterprise customers",
-      "Utilized Google Cloud Platform for data storage and endpoint management in a serverless architecture",
+      "Led core automation feature, opening product line to enterprise customers",
       "Orchestrated regular deployments to staging and production environments",
+      "Improved memory management by 50% and oversaw other key performance optimizations",
+      "Utilized Google Cloud Platform for data storage and endpoint management in a serverless architecture",
       "Frequently wrote internal documentation, tests, and updates to CI/CD pipelines and build tools"
     ]
   },
@@ -20,9 +20,9 @@
     "title": "Software Engineer (Contract)",
     "dates": "July 2021–Nov. 2021",
     "duties": [
-      "Built desktop application features with React and Go, making use of websockets for real time communication",
+      "Built features for an integrated desktop messaging with React and Go, making use of websockets for real time communication",
       "Contributed to product and architecture discussions as the client's userbase and team grew",
-      "Led feature development in product's agile development cycle"
+      "Led feature development in product's agile development cycle for rapid iteration and continuous deployment"
     ]
   },
   {
@@ -32,10 +32,9 @@
     "title": "Senior Software Engineer",
     "dates": "Feb., 2020–Aug. 2020",
     "duties": [
-      "Led the MVP develop for the company's core second product from inception",
+      "Led the MVP development for the company's core second product from inception using Node.js, React, TypeScript, PostgreSQL, and GraphQL",
       "Architected application infrastructure hosted on AWS using key services including Elastic Beanstalk, SNS, RDS, and Lambda",
-      "Instituted CI/CD tooling using GitHub Actions for regular deployments",
-      "Utilized GraphQL API layer for multi-client API consumption"
+      "Instituted CI/CD tooling using GitHub Actions for regular deployments"
     ]
   },
   {
@@ -45,10 +44,9 @@
     "title": "Software Engineer",
     "dates": "Apr., 2018–Feb., 2020",
     "duties": [
-      "Mentored junior engineers in building and maintaining company's Angular application",
-      "Contributed software engineering expertise in the development of the company's key product",
-      "Introduced methodologies and best practices for scalable building and collaboration across a rapidly expanded team",
-      "Rebuilt core application as a single-page application using including Node.js, React, MySQL, and TypeScript"
+      "Rebuilt legacy Emmy Award winning application to a modern stack using Node.js, React, MySQL, TypeScript, and Docker",
+      "Worked along core team as an early engineering hire to establish methodologies for scalable building and collaboration across a rapidly expanded team",
+      "Mentored junior engineers in building and maintaining company's Angular application"
     ]
   },
   {
@@ -58,9 +56,9 @@
     "title": "Front-end Developer",
     "dates": "July, 2017–Mar., 2018",
     "duties": [
-      "Developed web components for integrating with third-party e-commerce sites, emphasizing performance, cross-browser compatibility, SEO, and best practices",
-      "Created a new development process enabling the product to make use of modern front-end tools such as React and Webpack",
-      "Established a centralized code repository to aid in version control reusable code snippets and collaboration with other developers"
+      "Worked closely with the CTO as the first engineering hire to build core functionality of a Ruby application",
+      "Developed reusable web components for seamless integration with third-party e-commerce platforms",
+      "Created new workflows that cut development time by more than 50% including pre-processing and build pipelines for static asset management"
     ]
   },
   {
@@ -70,11 +68,11 @@
     "title": "Web Producer",
     "dates": "Oct. 2015–July, 2017",
     "duties": [
-      "Managed team of engineers across distributed projects",
+      "Managed a team of engineers and interns across distributed projects",
       "Maintained legacy .NET applications and oversaw the migration to custom in-house WordPress instances",
       "Improved page rank score by 90% for department-managed degree programs",
       "Chartered data analytics to provide feedback for UI/UX and user engagement",
-      "Created and tracked email marketing campaigns thousands 1000s of recipients"
+      "Created and tracked email marketing campaigns sent to thousands of recipients"
     ]
   }
 ]

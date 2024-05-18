@@ -19,6 +19,7 @@ import posts from "./posts.json";
 export function Posts() {
   const [tags, setTags] = useState<string[]>([]);
 
+  // gets all tags and sorts alphabetically descending
   const postTags = Array.from(
     new Set(
       posts.reduce((acc, curr) => {
@@ -28,6 +29,7 @@ export function Posts() {
     ),
   ).sort((a, b) => (a < b ? -1 : 1));
 
+  // gets selected tag and adds to selected tags
   const handleTagSelect = (event: MouseEvent, tag: string) => {
     event.preventDefault();
     setTags((tags) => {
@@ -39,19 +41,24 @@ export function Posts() {
     });
   };
 
+  // clears all selected tags
+  const handleClearTags = () => {
+    setTags([])
+  }
+
   return (
     <>
       <div className="mb-2 flex justify-end">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">
-              Filter <ChevronDown className="ml-1 w-4" />
+              Filter Tags <ChevronDown className="ml-1 w-4" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuLabel
               className="cursor-pointer pl-8"
-              onClick={() => setTags([])}
+              onClick={handleClearTags}
             >
               Clear All
             </DropdownMenuLabel>
