@@ -6,7 +6,7 @@ import { Section } from "@/ui/section/section";
 import freebies from "./freebies.json";
 
 export const metadata = {
-  title: "Blog - Richard Torres",
+  title: "Freebies - Richard Torres",
   metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Collection of Freebies",

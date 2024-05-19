@@ -6,14 +6,35 @@ import classNames from "classnames";
 import experiences from "./experience.json";
 import styles from "./experience.module.scss";
 
-export function Experience() {
+export const metadata = {
+  title: "Blog - Richard Torres",
+  metadataBase: new URL("https://www.richardtorres.co"),
+  openGraph: {
+    title: "Richard Torres — Professional Experience",
+    url: "https://www.richardtorres.co/experience",
+    locale: "en-US",
+    type: "website",
+    description:
+      "I'm Richard Torres, software engineer located in Boston, MA. This is my professional experience. Learn more or contact me.",
+    images: {
+      url: "/images/richard-torres.jpg",
+    },
+  },
+};
+
+export default function Experience() {
   return (
     <Fade duration={1500}>
-      <Section id="experience">
+      <Section className="print:break-inside-auto">
         <div className="md:container md:max-w-screen-lg">
-          <h2 className="text-4xl font-semibold mb-6 text-center">
-            <span className="text-red-500">Exp</span>erience
-          </h2>
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl mb-6 font-semibold">
+              <span className="text-red-500">Exp</span>erience
+            </h2>
+            <p>
+              My professional experience as a Software Engineer, the teams I've worked on, and the tools I've built.
+            </p>
+          </div>
           <ul>
             {experiences.map((experience, index) => (
               <li

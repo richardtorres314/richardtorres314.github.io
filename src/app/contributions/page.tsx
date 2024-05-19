@@ -25,7 +25,7 @@ export const metadata = {
 export default function Contributions() {
   return (
     <Fade duration={1500}>
-      <Section>
+      <Section className="print:break-inside-auto">
         <div className="container">
           <div className="mb-16 text-center">
             <h2 className="text-4xl font-semibold mb-6">
