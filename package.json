@@ -57,13 +57,13 @@
     "node": "^18"
   },
   "lint-staged": {
-    "*.{js, jsx, ts, tsx}": [
-      "eslint --quiet --fix"
+    "**/*.{js, jsx, ts, tsx}": [
+      "eslint --fix"
     ],
-    "*.{json, js, ts, tsx, tsx, html}": [
+    "**/*.{json, js, ts, tsx, tsx, html}": [
       "prettier --write --ignore-unknown"
     ],
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "**/*.js": "eslint --cache --fix",
+    "**/*.{js,css,md}": "prettier --write"
   }
 }

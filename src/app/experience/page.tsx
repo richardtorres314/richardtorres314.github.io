@@ -32,7 +32,8 @@ export default function Experience() {
               <span className="text-red-500">Exp</span>erience
             </h2>
             <p>
-              My professional experience as a Software Engineer, the teams I've worked on, and the tools I've built.
+              My professional experience as a Software Engineer, the teams
+              I&apos;ve worked on, and the tools I&apos;ve built.
             </p>
           </div>
           <ul>

@@ -1,5 +1,4 @@
 import About from "@/components/about";
-import { Experience } from "@/components/experience/experience";
 import { Skills } from "@/components/skills/skills";
 
 export const metadata = {
