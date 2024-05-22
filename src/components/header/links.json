@@ -1,13 +1,5 @@
 [
   {
-    "url": "/#about",
-    "text": "About"
-  },
-  {
-    "url": "/#skills",
-    "text": "Skills"
-  },
-  {
     "url": "/experience",
     "text": "Experience"
   },
