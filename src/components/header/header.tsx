@@ -105,16 +105,19 @@ export function Header() {
                 </Button>
               </PopoverTrigger>
               <PopoverContent>
-                <NavigationMenu orientation="vertical">
-                  <NavigationMenuList className="block">
+                <NavigationMenu
+                  orientation="vertical"
+                  className="max-xl:max-w-full max-xl:block"
+                >
+                  <NavigationMenuList className="block max-xl:space-x-0 max-xl:space-y-1">
                     {links.map((link) => (
-                      <NavigationMenuItem key={link.url}>
+                      <NavigationMenuItem key={link.url} className="w-full">
                         {/* Workaround needed for next.js scroll behavior issue: https://github.com/vercel/next.js/issues/45187 */}
                         <Link href={link.url} legacyBehavior passHref>
                           <NavigationMenuLink
                             className={classNames(
-                              "uppercase",
-                              navigationMenuTriggerStyle(),
+                              "uppercase first:w-full",
+                              navigationMenuTriggerStyle()
                             )}
                           >
                             {link.text}
@@ -136,7 +139,7 @@ export function Header() {
                   <NavigationMenuLink
                     className={classNames(
                       "uppercase",
-                      navigationMenuTriggerStyle(),
+                      navigationMenuTriggerStyle()
                     )}
                     href={link.url}
                   >
