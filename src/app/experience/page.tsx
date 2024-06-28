@@ -26,7 +26,7 @@ export default function Experience() {
   return (
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
-        <div className="md:container md:max-w-screen-lg">
+        <div className="xl:container xl:max-w-screen-lg">
           <div className="mb-16 text-center">
             <h2 className="text-4xl mb-6 font-semibold">
               <span className="text-red-500">Exp</span>erience
@@ -46,7 +46,7 @@ export default function Experience() {
                   <figure
                     className={classNames(
                       "image flex items-center w-8 h-8",
-                      styles.image,
+                      styles.image
                     )}
                   >
                     <img
@@ -60,7 +60,7 @@ export default function Experience() {
                   <div
                     className={classNames(
                       "text-red-500 text-right",
-                      styles.location,
+                      styles.location
                     )}
                   >
                     {experience.location}

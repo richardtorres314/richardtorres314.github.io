@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "npx serve@latest out",
+    "start": "export NODE_ENV=development && npx serve@latest out",
     "prepare": "husky",
     "test": "jest",
     "test:watch": "jest --watch"

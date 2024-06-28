@@ -22,7 +22,7 @@ export default function Blog() {
   return (
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
-        <div className="container">
+        <div className="xl:container">
           <div className="mb-16 text-center">
             <h1 className="text-4xl font-semibold mb-6 text-center">
               <span className="text-red-500">Bl</span>og{" "}

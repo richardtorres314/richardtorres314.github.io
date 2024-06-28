@@ -1,0 +1,36 @@
+"use client";
+
+import {
+  NavigationMenuItem,
+  NavigationMenuLink,
+  navigationMenuTriggerStyle,
+} from "@/ui/navigation-menu";
+
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import links from "./links.json";
+import { usePathname } from "next/navigation";
+
+export function MenuList() {
+  const pathname = usePathname();
+  return (
+    <>
+      {links.map((link) => (
+        <NavigationMenuItem key={link.url} className="w-full">
+          {/* Workaround needed for next.js scroll behavior issue: https://github.com/vercel/next.js/issues/45187 */}
+          <Link href={link.url} legacyBehavior passHref>
+            <NavigationMenuLink
+              active={link.url === pathname}
+              className={cn(
+                "uppercase first:w-full",
+                navigationMenuTriggerStyle()
+              )}
+            >
+              {link.text}
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      ))}
+    </>
+  );
+}
