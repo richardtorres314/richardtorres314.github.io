@@ -14,23 +14,11 @@
     ]
   },
   {
-    "company": "SquadFormers",
-    "logo": "images/squadformers.png",
-    "location": "Remote",
-    "title": "Software Engineer (Contract)",
-    "dates": "July 2021–Nov. 2021",
-    "duties": [
-      "Built features for an integrated desktop messaging with React and Go, making use of websockets for real time communication",
-      "Contributed to product and architecture discussions as the client's userbase and team grew",
-      "Led feature development in product's agile development cycle for rapid iteration and continuous deployment"
-    ]
-  },
-  {
     "company": "coUrbanize",
     "logo": "images/courbanize.png",
     "location": "Boston, MA",
     "title": "Senior Software Engineer",
-    "dates": "Feb., 2020–Aug. 2020",
+    "dates": "Feb., 2020–Aug. 2021",
     "duties": [
       "Led the MVP development for the company's core second product from inception using Node.js, React, TypeScript, PostgreSQL, and GraphQL",
       "Architected application infrastructure hosted on AWS using key services including Elastic Beanstalk, SNS, RDS, and Lambda",
