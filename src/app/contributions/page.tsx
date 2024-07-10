@@ -84,7 +84,7 @@ export default function Contributions() {
               key={contribution.projectName}
               className="border-none shadow-md overflow-hidden flex flex-col"
             >
-              <CardHeader className="items-center relative bg-gradient-to-tr from-cyan-600 to-cyan-200 dark:from-cyan-900 dark:to-cyan-600 aspect-auto justify-center">
+              <CardHeader className="items-center relative bg-gradient-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center">
                 <SVG
                   className="w-24 h-24 flex justify-center object-cover"
                   src={contribution.image}
