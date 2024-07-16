@@ -1,15 +1,8 @@
 import { type PropsWithChildren } from "react";
 import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
-import { Inter as FontSans } from "next/font/google";
+import "@fontsource-variable/inter";
 import "styles/global.css";
-
-import { cn } from "@/lib/utils";
-
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
@@ -18,12 +11,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/appearance.js" />
       </head>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased pt-24 md:pt-24 print:pt-0 data-[scroll-locked]:pt-24 data-[scroll-locked]:!mr-0",
-          fontSans.variable,
-        )}
-      >
+      <body className="min-h-screen bg-background antialiased pt-24 md:pt-24 print:pt-0 data-[scroll-locked]:pt-24 data-[scroll-locked]:!mr-0">
         <Header />
         <main>{children}</main>
         <Footer />
