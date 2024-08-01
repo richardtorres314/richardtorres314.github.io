@@ -1,23 +1,17 @@
 "use client";
 
-import { type MouseEvent } from "react";
-import { useRouter } from "next/navigation";
+import { MouseEvent } from "react";
 
 export function Logo() {
-  const router = useRouter();
-
   function handleOnClickLogo(event: MouseEvent<HTMLAnchorElement>) {
-    event.stopPropagation();
     event.preventDefault();
+    event.stopPropagation();
 
     if (window.location.pathname !== "/") {
       window.location.replace("/");
     } else {
       const main = document.querySelector("main");
       main?.scrollIntoView();
-      router.replace("/", {
-        scroll: false,
-      });
     }
   }
 
