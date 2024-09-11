@@ -62,7 +62,7 @@
   {
     "projectName": "Electron",
     "url": "https://www.electronjs.org/",
-    "version": ["Pending"],
+    "version": ["32.0.0"],
     "image": "images/electron.svg",
     "projectType": "application",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
