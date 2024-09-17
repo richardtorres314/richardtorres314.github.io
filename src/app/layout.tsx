@@ -1,8 +1,9 @@
-import { type PropsWithChildren } from "react";
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer/footer";
 import "@fontsource-variable/inter";
 import "styles/global.css";
+
+import { Footer } from "@/components/footer/footer";
+import { Header } from "@/components/header/header";
+import type { PropsWithChildren } from "react";
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (

@@ -46,8 +46,8 @@ export default function Freebies() {
                     </CardHeader>
                     <CardContent>
                       <div className="flex flex-wrap gap-2 mb-4">
-                        {freebie.tags.map((tag, index) => (
-                          <Badge key={`${tag}-${index}`}>{tag}</Badge>
+                        {freebie.tags.map((tag) => (
+                          <Badge key={`${freebie.name}-${tag}`}>{tag}</Badge>
                         ))}
                       </div>
                       <p>{freebie.description}</p>

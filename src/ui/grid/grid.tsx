@@ -1,6 +1,6 @@
+import type { HTMLAttributes } from "react";
 import classNames from "classnames";
 import styles from "./grid.module.css";
-import { type HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   layout?: string;
@@ -14,7 +14,7 @@ export function Grid(props: Props) {
       className={classNames(
         styles.grid,
         className,
-        layout !== undefined && styles[layout],
+        layout !== undefined && styles[layout]
       )}
       {...passedProps}
     />

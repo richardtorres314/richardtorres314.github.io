@@ -1,7 +1,7 @@
 // Workaround issue for next.js issue: https://github.com/vercel/next.js/issues/59444
 "use client";
 
-import { HTMLAttributes, useEffect } from "react";
+import { type HTMLAttributes, useEffect } from "react";
 
 export function LatentThemeChecker({ children }: HTMLAttributes<HTMLElement>) {
   useEffect(() => {

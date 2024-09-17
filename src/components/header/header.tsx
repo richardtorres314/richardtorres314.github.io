@@ -15,7 +15,6 @@ export function Header() {
   return (
     <header
       className="fixed top-0 p-4 w-full z-50 bg-inherit print:static print:pb-12"
-      role="navigation"
       aria-label="main navigation"
     >
       <div className="md:container flex justify-between">
@@ -30,7 +29,6 @@ export function Header() {
                   className="xl:hidden dark:fill-white dark:bg-background dark:hover:bg-accent px-2"
                 >
                   <span
-                    role="button"
                     className="w-4 h-4 print:fill-black"
                     aria-label="menu"
                     aria-expanded="false"

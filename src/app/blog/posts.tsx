@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/ui/dropdown-menu";
-import { MouseEvent, useState } from "react";
+import { type MouseEvent, useState } from "react";
 
 import { Badge } from "@/ui/badge";
 import { Button } from "@/ui/button";
@@ -25,8 +25,8 @@ export function Posts() {
       posts.reduce((acc, curr) => {
         acc.push(...curr.tags);
         return acc;
-      }, [] as string[]),
-    ),
+      }, [] as string[])
+    )
   ).sort((a, b) => (a < b ? -1 : 1));
 
   // gets selected tag and adds to selected tags
@@ -43,8 +43,8 @@ export function Posts() {
 
   // clears all selected tags
   const handleClearTags = () => {
-    setTags([])
-  }
+    setTags([]);
+  };
 
   return (
     <>
@@ -66,7 +66,7 @@ export function Posts() {
             {postTags.map((tag) => (
               <DropdownMenuCheckboxItem
                 key={tag}
-                checked={tags.includes(tag) ? true : false}
+                checked={tags.includes(tag)}
                 onClick={(e) => handleTagSelect(e, tag)}
                 className="cursor-pointer"
               >
@@ -80,7 +80,7 @@ export function Posts() {
         {posts
           .sort((a, b) => (a.date > b.date ? 1 : -1))
           .filter((post) =>
-            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true,
+            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true
           )
           .map((post) => (
             <li key={post.url} className="mb-4 print:break-inside-avoid">
@@ -91,8 +91,8 @@ export function Posts() {
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {post.tags.map((tag, index) => (
-                        <Badge key={`${tag}-${index}`}>{tag}</Badge>
+                      {post.tags.map((tag) => (
+                        <Badge key={`${post.title}-${tag}`}>{tag}</Badge>
                       ))}
                     </div>
                     <p className="mb-2">{post.description}</p>

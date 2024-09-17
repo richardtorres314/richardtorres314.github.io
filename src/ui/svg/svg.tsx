@@ -1,6 +1,6 @@
 "use client";
 
-import { Props, ReactSVG } from "react-svg";
+import { type Props, ReactSVG } from "react-svg";
 
 type SVGProps = Omit<Props, "ref">;
 

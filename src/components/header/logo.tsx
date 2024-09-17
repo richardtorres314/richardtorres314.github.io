@@ -1,6 +1,6 @@
 "use client";
 
-import { MouseEvent } from "react";
+import type { MouseEvent } from "react";
 
 export function Logo() {
   function handleOnClickLogo(event: MouseEvent<HTMLAnchorElement>) {

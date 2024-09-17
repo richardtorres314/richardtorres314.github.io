@@ -1,6 +1,6 @@
 "use client";
 
-import { FadeProps, Fade as RAFade } from "react-awesome-reveal";
+import { type FadeProps, Fade as RAFade } from "react-awesome-reveal";
 
 import styles from "./fade.module.css";
 

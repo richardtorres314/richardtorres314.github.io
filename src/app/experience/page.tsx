@@ -37,9 +37,9 @@ export default function Experience() {
             </p>
           </div>
           <ul>
-            {experiences.map((experience, index) => (
+            {experiences.map((experience) => (
               <li
-                key={`experience-${index}`}
+                key={experience.company}
                 className="mb-4 print:break-inside-avoid"
               >
                 <Grid layout="experience">
@@ -75,8 +75,8 @@ export default function Experience() {
                   </div>
                   <div className={styles.duties}>
                     <ul>
-                      {experience.duties.map((duty, index) => (
-                        <li key={`duty-${index}`}>
+                      {experience.duties.map((duty) => (
+                        <li key={`${experience.title}-${duty}`}>
                           <div className={classNames("flex mb-2", styles.duty)}>
                             <div className="mr-1 w-4 h-4 min-w-4 min-h-4 dark:fill-white">
                               <Done />
