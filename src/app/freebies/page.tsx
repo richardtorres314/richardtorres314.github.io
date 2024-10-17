@@ -1,9 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
-
-import { Badge } from "@/ui/badge";
 import { Fade } from "@/ui/fade/fade";
+import { Freebies } from "./freebies";
 import { Section } from "@/ui/section/section";
-import freebies from "./freebies.json";
 
 export const metadata = {
   title: "Freebies - Richard Torres",
@@ -21,7 +18,7 @@ export const metadata = {
   },
 };
 
-export default function Freebies() {
+export default function FreebiesPage() {
   return (
     <Fade duration={1500}>
       <Section>
@@ -36,27 +33,7 @@ export default function Freebies() {
               in your next project.
             </p>
           </div>
-          <ul>
-            {freebies.map((freebie) => (
-              <li key={freebie.name}>
-                <a href={freebie.url} rel="noreferrer" target="_blank">
-                  <Card className="hover:bg-card-foreground/5">
-                    <CardHeader>
-                      <CardTitle>{freebie.name}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {freebie.tags.map((tag) => (
-                          <Badge key={`${freebie.name}-${tag}`}>{tag}</Badge>
-                        ))}
-                      </div>
-                      <p>{freebie.description}</p>
-                    </CardContent>
-                  </Card>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Freebies />
         </div>
       </Section>
     </Fade>

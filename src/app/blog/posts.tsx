@@ -22,10 +22,10 @@ export function Posts() {
   // gets all tags and sorts alphabetically descending
   const postTags = Array.from(
     new Set(
-      posts.reduce((acc, curr) => {
+      posts.reduce<string[]>((acc, curr) => {
         acc.push(...curr.tags);
         return acc;
-      }, [] as string[])
+      }, [])
     )
   ).sort((a, b) => (a < b ? -1 : 1));
 
