@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { MouseEvent } from "react";
 
 export function Logo() {
@@ -16,7 +17,7 @@ export function Logo() {
   }
 
   return (
-    <a href="/" onClick={handleOnClickLogo} className="flex items-center">
+    <Link href="/" onClick={handleOnClickLogo} className="flex items-center">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         draggable="false"
@@ -30,6 +31,6 @@ export function Logo() {
         </div>
         <div className="text-md">Software Engineer</div>
       </div>
-    </a>
+    </Link>
   );
 }

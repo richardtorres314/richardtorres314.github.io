@@ -1,4 +1,5 @@
 import { LatentThemeChecker } from "@/components/latent-theme-checker";
+import Link from "next/link";
 import { Section } from "@/ui/section/section";
 
 export const metadata = {
@@ -36,9 +37,9 @@ export default function NotFound() {
                 reach out
               </a>
               ! Otherwise,{" "}
-              <a href="/" className="text-blue-500 hover:underline">
+              <Link href="/" className="text-blue-500 hover:underline">
                 head to the starship
-              </a>
+              </Link>
               .
             </p>
           </div>

@@ -28,7 +28,6 @@
     "react": "19.0.0",
     "react-awesome-reveal": "^4.2.8",
     "react-dom": "19.0.0",
-    "react-svg": "^16.1.33",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
