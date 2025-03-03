@@ -5,13 +5,13 @@ import contributions from "./contributions.json";
 
 export function Contributions() {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center max-w-screen-lg m-auto">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center max-w-(--breakpoint-lg) m-auto">
       {contributions.map((contribution) => (
         <Card
           key={contribution.projectName}
           className="border-none shadow-md overflow-hidden flex flex-col"
         >
-          <CardHeader className="items-center relative bg-gradient-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center">
+          <CardHeader className="items-center relative bg-linear-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center">
             <div className="w-24 h-24 flex justify-center object-cover">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

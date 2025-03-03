@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="text-light pb-12 px-6 mt-12 print:break-inside-avoid">
       <Fade duration={1500}>
-        <div className="flex md:container md:max-w-screen-lg">
+        <div className="flex md:container md:max-w-(--breakpoint-lg)">
           <div className="grow">
             <div>
               <div className="font-light text-2xl">

@@ -26,7 +26,7 @@ export default function Experience() {
   return (
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
-        <div className="xl:container xl:max-w-screen-lg">
+        <div className="xl:container xl:max-w-(--breakpoint-lg)">
           <div className="mb-16 text-center">
             <h2 className="text-4xl mb-6 font-semibold">
               <span className="text-red-500">Exp</span>erience

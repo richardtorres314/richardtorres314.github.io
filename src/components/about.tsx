@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Fade duration={1500}>
       <Section id="about">
-        <div className="md:container mx-auto md:max-w-screen-lg">
+        <div className="md:container mx-auto md:max-w-(--breakpoint-lg)">
           <div className="flex flex-wrap lg:flex-nowrap gap-12 print:flex-nowrap">
             <div>
               <h2 className="text-4xl font-semibold mb-6">

@@ -22,7 +22,7 @@ export default function NotFound() {
   return (
     <LatentThemeChecker>
       <Section>
-        <div className="container max-w-screen-lg">
+        <div className="container max-w-(--breakpoint-lg)">
           <h1 className="text-4xl font-semibold mb-6 text-center">
             Page Not Found
           </h1>

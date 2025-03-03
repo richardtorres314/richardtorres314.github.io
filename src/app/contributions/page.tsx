@@ -28,7 +28,7 @@ export default function ContributionPage() {
             <span className="text-red-500">So</span>urce{" "}
             <span className="text-red-500">Con</span>tributions
           </h2>
-          <p className="max-w-screen-md m-auto mb-4">
+          <p className="max-w-(--breakpoint-md) m-auto mb-4">
             I&rsquo;m deeply passionate about open source. I&rsquo;m an active
             member of several user groups such as{" "}
             <a
