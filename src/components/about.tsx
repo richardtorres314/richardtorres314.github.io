@@ -27,7 +27,6 @@ export default function About() {
               </p>
             </div>
             <div className="flex items-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Illustration of person thinking alongside laptop"
                 src="/images/code-thinking.svg"

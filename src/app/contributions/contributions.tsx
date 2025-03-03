@@ -9,13 +9,12 @@ export function Contributions() {
       {contributions.map((contribution) => (
         <Card
           key={contribution.projectName}
-          className="border-none shadow-md overflow-hidden flex flex-col"
+          className="border-none shadow-md overflow-hidden flex flex-col pt-0"
         >
-          <CardHeader className="items-center relative bg-linear-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center">
+          <CardHeader className="items-center relative bg-linear-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center pt-6">
             <div className="w-24 h-24 flex justify-center object-cover">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                className="w-16 h-16"
+                className="size-16"
                 alt={contribution.projectName}
                 src={contribution.image}
               />

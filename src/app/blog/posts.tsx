@@ -48,7 +48,7 @@ export function Posts() {
 
   return (
     <>
-      <div className="mb-2 flex justify-end">
+      <div className="mb-2 flex justify-end print:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">

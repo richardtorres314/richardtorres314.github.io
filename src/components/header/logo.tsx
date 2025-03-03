@@ -18,7 +18,6 @@ export function Logo() {
 
   return (
     <Link href="/" onClick={handleOnClickLogo} className="flex items-center">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         draggable="false"
         alt="Richard Torres"
