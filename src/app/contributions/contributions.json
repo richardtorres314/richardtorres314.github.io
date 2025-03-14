@@ -68,5 +68,15 @@
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
     "contributionType": "documentation",
     "languages": ["Markdown", "HTML"]
+  },
+  {
+    "projectName": "HTML Spec",
+    "url": "https://html.spec.whatwg.org/",
+    "version": [],
+    "image": "images/html.svg",
+    "projectType": "documentatation",
+    "description": "HTML Standard",
+    "contributionType": "documentation",
+    "languages": ["HTML"]
   }
 ]

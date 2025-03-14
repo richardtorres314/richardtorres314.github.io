@@ -12,7 +12,7 @@ export function Contributions() {
           className="border-none shadow-md overflow-hidden flex flex-col pt-0"
         >
           <CardHeader className="items-center relative bg-linear-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center pt-6">
-            <div className="w-24 h-24 flex justify-center object-cover">
+            <div className="size-32 flex justify-center">
               <img
                 className="size-16"
                 alt={contribution.projectName}
@@ -36,16 +36,16 @@ export function Contributions() {
               </div>
             )}
           </CardHeader>
-          <CardContent className="pt-6 grow">
+          <CardContent className="grow">
             <a
               rel="noreferrer"
               target="_blank"
               href={contribution.url}
-              className="text-blue-500 hover:underline"
+              className="text-blue-500 hover:underline text-lg block pb-2"
             >
               {contribution.projectName}
             </a>
-            <div>{contribution.description}</div>
+            <p>{contribution.description}</p>
           </CardContent>
           <CardFooter className="flex-col items-start space-y-2">
             <Badge variant="secondary">{contribution.contributionType}</Badge>
