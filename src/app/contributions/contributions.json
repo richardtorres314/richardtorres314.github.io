@@ -7,7 +7,11 @@
     "projectType": "package",
     "description": "Storybook is a frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation.",
     "contributionType": "documentation",
-    "languages": ["Markdown"]
+    "languages": ["Markdown"],
+    "pullRequests": [
+      "https://github.com/storybookjs/storybook/pull/10508",
+      "https://github.com/storybookjs/storybook/pull/7007"
+    ]
   },
   {
     "projectName": "Sinon.JS",
@@ -17,17 +21,19 @@
     "projectType": "package",
     "description": "Test spies, stubs and mocks for JavaScript.",
     "contributionType": "bugfix",
-    "languages": ["JavaScript"]
+    "languages": ["JavaScript"],
+    "pullRequests": ["https://github.com/sinonjs/sinon/pull/2289"]
   },
   {
     "projectName": "Elastic UI",
-    "url": "https://elastic.github.io/eui/#/",
+    "url": "https://eui.elastic.co/#/",
     "version": "70.2.4",
     "image": "images/elasticui.svg",
     "projectType": "package",
     "description": "Elastic UI Framework 🙌",
     "contributionType": "bugfix",
-    "languages": ["TypeScript"]
+    "languages": ["TypeScript"],
+    "pullRequests": ["https://github.com/elastic/eui/pull/6346"]
   },
   {
     "projectName": "jsPDF",
@@ -37,7 +43,11 @@
     "projectType": "package",
     "description": "Client-side JavaScript PDF generation for everyone.",
     "contributionType": "feature",
-    "languages": ["JavaScript", "TypeScript"]
+    "languages": ["JavaScript", "TypeScript"],
+    "pullRequests": [
+      "https://github.com/parallax/jsPDF/pull/3341",
+      "https://github.com/parallax/jsPDF/pull/3324"
+    ]
   },
   {
     "projectName": "Quiet",
@@ -47,7 +57,12 @@
     "projectType": "application",
     "description": "A private, p2p alternative to Slack and Discord built on Tor & IPFS",
     "contributionType": "bugfix",
-    "languages": ["TypeScript"]
+    "languages": ["TypeScript"],
+    "pullRequests": [
+      "https://github.com/TryQuiet/quiet/pull/2234",
+      "https://github.com/TryQuiet/quiet/pull/2287",
+      "https://github.com/TryQuiet/quiet/pull/2307"
+    ]
   },
   {
     "projectName": "Homebrew",
@@ -57,7 +72,8 @@
     "projectType": "script",
     "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries",
     "contributionType": "feature",
-    "languages": ["Ruby"]
+    "languages": ["Ruby"],
+    "pullRequests": ["https://github.com/Homebrew/homebrew-cask/pull/173077"]
   },
   {
     "projectName": "Electron",
@@ -67,7 +83,8 @@
     "projectType": "application",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
     "contributionType": "documentation",
-    "languages": ["Markdown", "HTML"]
+    "languages": ["Markdown", "HTML"],
+    "pullRequests": ["https://github.com/electron/electron/pull/42112"]
   },
   {
     "projectName": "HTML Spec",
@@ -77,6 +94,7 @@
     "projectType": "documentatation",
     "description": "HTML Standard",
     "contributionType": "documentation",
-    "languages": ["HTML"]
+    "languages": ["HTML"],
+    "pullRequests": ["https://github.com/whatwg/html/pull/11118"]
   }
 ]

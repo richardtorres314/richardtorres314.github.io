@@ -11,7 +11,7 @@ export function Contributions() {
           key={contribution.projectName}
           className="border-none shadow-md overflow-hidden flex flex-col pt-0"
         >
-          <CardHeader className="items-center relative bg-linear-to-tr from-cyan-600 to-cyan-200 dark:from-gray-900 dark:to-gray-600 aspect-auto justify-center pt-6">
+          <CardHeader className="items-center relative bg-blue-500 dark:bg-black/25 aspect-auto justify-center pt-6">
             <div className="size-32 flex justify-center">
               <img
                 className="size-16"
@@ -21,15 +21,15 @@ export function Contributions() {
             </div>
             {contribution.projectType === "script" ||
             contribution.version[0] === "Pending" ? (
-              <Badge className="absolute bottom-4 left-6">
+              <Badge className="absolute bottom-6 left-6">
                 {contribution.version}
               </Badge>
             ) : typeof contribution.version === "string" ? (
-              <Badge className="absolute bottom-4 left-6">
+              <Badge className="absolute bottom-6 left-6">
                 v{contribution.version}
               </Badge>
             ) : (
-              <div className="absolute bottom-4 left-6 flex gap-2">
+              <div className="absolute bottom-6 left-6 flex gap-2">
                 {contribution.version.map((version) => (
                   <Badge key={version}>v{version}</Badge>
                 ))}
