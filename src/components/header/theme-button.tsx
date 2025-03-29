@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/ui/button";
 import { Sun } from "@/icons/sun";
+import { Button } from "@/ui/button";
 
 export function ThemeButton() {
   function handleOnClickThemeButton() {
@@ -27,9 +27,9 @@ export function ThemeButton() {
     <Button
       onClick={handleOnClickThemeButton}
       variant="ghost"
-      className="dark:fill-white dark:bg-background dark:hover:bg-accent px-2"
+      className="px-2 dark:bg-background dark:fill-white dark:hover:bg-accent"
     >
-      <span className="w-4 h-4 text-foreground/80 hover:text-foreground/60">
+      <span className="size-4 text-foreground/80 hover:text-foreground/60">
         <Sun />
       </span>
     </Button>

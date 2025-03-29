@@ -25,7 +25,7 @@ export function Logo() {
         className="h-14 w-14 rounded-full object-cover"
       />
       <div className="ml-4">
-        <div className="font-light text-2xl">
+        <div className="text-2xl font-light">
           Richard <span className="font-bold">Torres</span>
         </div>
         <div className="text-md">Software Engineer</div>

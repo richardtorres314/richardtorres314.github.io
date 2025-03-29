@@ -1,15 +1,14 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import {
   NavigationMenuItem,
   NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from "@/ui/navigation-menu";
-
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import links from "./links.json";
 import { usePathname } from "next/navigation";
+import links from "./links.json";
 
 export function MenuList() {
   const pathname = usePathname();
@@ -23,7 +22,7 @@ export function MenuList() {
               active={link.url === pathname}
               className={cn(
                 "uppercase first:w-full",
-                navigationMenuTriggerStyle()
+                navigationMenuTriggerStyle(),
               )}
             >
               {link.text}

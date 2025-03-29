@@ -10,7 +10,7 @@ export function Skills() {
     <Fade duration={1500}>
       <Section id="skills">
         <div className="md:container">
-          <h2 className="text-4xl font-semibold mb-6 text-center">
+          <h2 className="mb-6 text-center text-4xl font-semibold">
             <span className="text-red-500">Ski</span>lls
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
@@ -18,14 +18,14 @@ export function Skills() {
               <div key={skill.name} className="grow">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-center font-light uppercase text-md">
+                    <CardTitle className="text-md text-center font-light uppercase">
                       {skill.name}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     {skill.values.map((item) => (
                       <div
-                        className="items-center mb-4 xl:flex"
+                        className="mb-4 items-center xl:flex"
                         key={item.name}
                       >
                         <div className="mr-4 mb-2 xl:mb-0">{item.name}</div>
