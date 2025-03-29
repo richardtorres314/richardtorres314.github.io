@@ -1,6 +1,6 @@
-import { Contributions } from "./contributions";
 import { Fade } from "@/ui/fade/fade";
 import { Section } from "@/ui/section/section";
+import { Contributions } from "./contributions";
 
 export const metadata = {
   title: "Blog - Richard Torres",
@@ -23,12 +23,12 @@ export default function ContributionPage() {
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-semibold mb-6">
+          <h2 className="mb-6 text-4xl font-semibold">
             <span className="text-red-500">Op</span>en{" "}
             <span className="text-red-500">So</span>urce{" "}
             <span className="text-red-500">Con</span>tributions
           </h2>
-          <p className="max-w-(--breakpoint-md) m-auto mb-4">
+          <p className="m-auto mb-4 max-w-(--breakpoint-md)">
             I&rsquo;m deeply passionate about open source. I&rsquo;m an active
             member of several user groups such as{" "}
             <a

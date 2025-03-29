@@ -1,6 +1,6 @@
 import { Fade } from "@/ui/fade/fade";
-import { Freebies } from "./freebies";
 import { Section } from "@/ui/section/section";
+import { Freebies } from "./freebies";
 
 export const metadata = {
   title: "Freebies - Richard Torres",
@@ -24,7 +24,7 @@ export default function FreebiesPage() {
       <Section>
         <div className="container">
           <div className="mb-16 text-center">
-            <h1 className="text-4xl font-bold mb-6 text-center">
+            <h1 className="mb-6 text-center text-4xl font-bold">
               <span className="text-red-500">Fre</span>ebies
             </h1>
             <p className="mb-4">The best things in life are free!</p>

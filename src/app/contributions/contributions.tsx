@@ -1,18 +1,17 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/ui/card";
-
 import { Badge } from "@/ui/badge";
+import { Card, CardContent, CardFooter, CardHeader } from "@/ui/card";
 import contributions from "./contributions.json";
 
 export function Contributions() {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center max-w-(--breakpoint-lg) m-auto">
+    <div className="m-auto grid max-w-(--breakpoint-lg) justify-center gap-4 sm:grid-cols-2 md:grid-cols-3">
       {contributions.map((contribution) => (
         <Card
           key={contribution.projectName}
-          className="border-none shadow-md overflow-hidden flex flex-col pt-0"
+          className="flex flex-col overflow-hidden border-none pt-0 shadow-md"
         >
-          <CardHeader className="items-center relative bg-blue-500 dark:bg-black/25 aspect-auto justify-center pt-6">
-            <div className="size-32 flex justify-center">
+          <CardHeader className="relative aspect-auto items-center justify-center bg-blue-500 pt-6 dark:bg-black/25">
+            <div className="flex size-32 justify-center">
               <img
                 className="size-16"
                 alt={contribution.projectName}
@@ -41,7 +40,7 @@ export function Contributions() {
               rel="noreferrer"
               target="_blank"
               href={contribution.url}
-              className="text-blue-500 hover:underline text-lg block pb-2"
+              className="block pb-2 text-lg text-blue-500 hover:underline"
             >
               {contribution.projectName}
             </a>

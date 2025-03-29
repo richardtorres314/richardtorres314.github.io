@@ -1,6 +1,6 @@
 import { Fade } from "@/ui/fade/fade";
-import { Posts } from "./posts";
 import { Section } from "@/ui/section/section";
+import { Posts } from "./posts";
 
 export const metadata = {
   title: "Blog - Richard Torres",
@@ -24,7 +24,7 @@ export default function Blog() {
       <Section className="print:break-inside-auto">
         <div className="xl:container">
           <div className="mb-16 text-center">
-            <h1 className="text-4xl font-semibold mb-6 text-center">
+            <h1 className="mb-6 text-center text-4xl font-semibold">
               <span className="text-red-500">Bl</span>og{" "}
               <span className="text-red-500">Po</span>sts
             </h1>

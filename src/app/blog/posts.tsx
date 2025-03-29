@@ -1,5 +1,7 @@
 "use client";
 
+import { Badge } from "@/ui/badge";
+import { Button } from "@/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import {
   DropdownMenu,
@@ -9,11 +11,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/ui/dropdown-menu";
-import { type MouseEvent, useState } from "react";
-
-import { Badge } from "@/ui/badge";
-import { Button } from "@/ui/button";
 import { ChevronDown } from "lucide-react";
+import { type MouseEvent, useState } from "react";
 import posts from "./posts.json";
 
 export function Posts() {
@@ -25,8 +24,8 @@ export function Posts() {
       posts.reduce<string[]>((acc, curr) => {
         acc.push(...curr.tags);
         return acc;
-      }, [])
-    )
+      }, []),
+    ),
   ).sort((a, b) => (a < b ? -1 : 1));
 
   // gets selected tag and adds to selected tags
@@ -80,7 +79,7 @@ export function Posts() {
         {posts
           .sort((a, b) => (a.date > b.date ? 1 : -1))
           .filter((post) =>
-            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true
+            tags.length ? post.tags.some((tag) => tags.includes(tag)) : true,
           )
           .map((post) => (
             <li key={post.url} className="mb-4 print:break-inside-avoid">
@@ -90,7 +89,7 @@ export function Posts() {
                     <CardTitle>{post.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="mb-4 flex flex-wrap gap-2">
                       {post.tags.map((tag) => (
                         <Badge key={`${post.title}-${tag}`}>{tag}</Badge>
                       ))}

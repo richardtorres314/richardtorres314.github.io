@@ -1,6 +1,6 @@
 import { LatentThemeChecker } from "@/components/latent-theme-checker";
-import Link from "next/link";
 import { Section } from "@/ui/section/section";
+import Link from "next/link";
 
 export const metadata = {
   title: "Richard Torres - Not Found",
@@ -23,7 +23,7 @@ export default function NotFound() {
     <LatentThemeChecker>
       <Section>
         <div className="container max-w-(--breakpoint-lg)">
-          <h1 className="text-4xl font-semibold mb-6 text-center">
+          <h1 className="mb-6 text-center text-4xl font-semibold">
             Page Not Found
           </h1>
           <div className="content">

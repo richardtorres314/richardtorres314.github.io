@@ -28,7 +28,7 @@ export default function Experience() {
       <Section className="print:break-inside-auto">
         <div className="xl:container xl:max-w-(--breakpoint-lg)">
           <div className="mb-16 text-center">
-            <h2 className="text-4xl mb-6 font-semibold">
+            <h2 className="mb-6 text-4xl font-semibold">
               <span className="text-red-500">Exp</span>erience
             </h2>
             <p>
@@ -45,8 +45,8 @@ export default function Experience() {
                 <Grid layout="experience">
                   <figure
                     className={classNames(
-                      "image flex items-center w-8 h-8",
-                      styles.image
+                      "image flex h-8 w-8 items-center",
+                      styles.image,
                     )}
                   >
                     <img
@@ -59,8 +59,8 @@ export default function Experience() {
                   </div>
                   <div
                     className={classNames(
-                      "text-red-500 text-right",
-                      styles.location
+                      "text-right text-red-500",
+                      styles.location,
                     )}
                   >
                     {experience.location}
@@ -77,8 +77,8 @@ export default function Experience() {
                     <ul>
                       {experience.duties.map((duty) => (
                         <li key={`${experience.title}-${duty}`}>
-                          <div className={classNames("flex mb-2", styles.duty)}>
-                            <div className="mr-1 w-4 h-4 min-w-4 min-h-4 dark:fill-white">
+                          <div className={classNames("mb-2 flex", styles.duty)}>
+                            <div className="mr-1 h-4 min-h-4 w-4 min-w-4 dark:fill-white">
                               <Done />
                             </div>
                             <span>{duty}</span>
