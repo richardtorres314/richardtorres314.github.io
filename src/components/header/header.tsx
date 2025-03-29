@@ -1,35 +1,34 @@
+import { Menu } from "@/icons/menu";
+import { Button } from "@/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
 } from "@/ui/navigation-menu";
 import { Popover, PopoverContent, PopoverTrigger } from "@/ui/popover";
-
-import { Button } from "@/ui/button";
 import { Logo } from "./logo";
-import { Menu } from "@/icons/menu";
 import { MenuList } from "./menu-list";
 import { ThemeButton } from "./theme-button";
 
 export function Header() {
   return (
     <header
-      className="fixed top-0 p-4 w-full z-50 bg-inherit print:static print:pb-12"
+      className="fixed top-0 z-50 w-full bg-inherit p-4 print:static print:pb-12"
       aria-label="main navigation"
     >
-      <div className="md:container flex justify-between">
-        <div className="flex justify-between items-center w-full">
+      <div className="flex justify-between md:container">
+        <div className="flex w-full items-center justify-between">
           <Logo />
-          <div className="flex xl:hidden gap-2">
+          <div className="flex gap-2 xl:hidden print:hidden">
             <ThemeButton />
             <Popover>
               <PopoverTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="xl:hidden dark:fill-white dark:bg-background dark:hover:bg-accent px-2"
+                  className="px-2 xl:hidden dark:bg-background dark:fill-white dark:hover:bg-accent"
                 >
                   <span
-                    className="w-4 h-4 print:fill-black"
+                    className="h-4 w-4 print:fill-black"
                     aria-label="menu"
                     aria-expanded="false"
                     data-target="navMenu"
@@ -41,9 +40,9 @@ export function Header() {
               <PopoverContent>
                 <NavigationMenu
                   orientation="vertical"
-                  className="max-xl:max-w-full max-xl:block"
+                  className="max-xl:block max-xl:max-w-full"
                 >
-                  <NavigationMenuList className="block max-xl:space-x-0 max-xl:space-y-1">
+                  <NavigationMenuList className="block max-xl:space-y-1 max-xl:space-x-0">
                     <MenuList />
                   </NavigationMenuList>
                 </NavigationMenu>
