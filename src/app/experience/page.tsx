@@ -2,9 +2,7 @@ import { Done } from "@/icons/done";
 import { Fade } from "@/ui/fade/fade";
 import { Grid } from "@/ui/grid/grid";
 import { Section } from "@/ui/section/section";
-import classNames from "classnames";
 import experiences from "./experience.json";
-import styles from "./experience.module.scss";
 
 export const metadata = {
   title: "Blog - Richard Torres",
@@ -36,48 +34,36 @@ export default function Experience() {
               I&apos;ve worked on, and the tools I&apos;ve built.
             </p>
           </div>
-          <ul>
+          <ul className="flex flex-col gap-2">
             {experiences.map((experience) => (
               <li
                 key={experience.company}
                 className="mb-4 print:break-inside-avoid"
               >
-                <Grid layout="experience">
-                  <figure
-                    className={classNames(
-                      "image flex h-8 w-8 items-center",
-                      styles.image,
-                    )}
-                  >
+                <Grid className="grid-cols-[auto_1fr]">
+                  <figure className="row-span-2 flex size-8 items-center">
                     <img
                       alt={`${experience.company} Logo`}
                       src={experience.logo}
                     />
                   </figure>
-                  <div className={classNames("font-semibold", styles.company)}>
+                  <div className="col-start-2 row-start-1 font-semibold">
                     {experience.company}
                   </div>
-                  <div
-                    className={classNames(
-                      "text-right text-red-500",
-                      styles.location,
-                    )}
-                  >
+                  <div className="col-start-3 row-start-1 text-right text-red-500">
                     {experience.location}
                   </div>
-                  <div className={classNames("font-medium", styles.title)}>
+                  <div className="col-start-2 font-medium">
                     {experience.title}
                   </div>
-                  <div
-                    className={classNames("text-right italic", styles.dates)}
-                  >
+                  <div className="text-right text-sm italic">
                     {experience.dates}
                   </div>
-                  <div className={styles.duties}>
+                  <div className="col-span-2 col-start-2">
                     <ul>
                       {experience.duties.map((duty) => (
                         <li key={`${experience.title}-${duty}`}>
-                          <div className={classNames("mb-2 flex", styles.duty)}>
+                          <div className="mb-2 flex items-baseline">
                             <div className="mr-1 h-4 min-h-4 w-4 min-w-4 dark:fill-white">
                               <Done />
                             </div>

@@ -1,22 +1,8 @@
+import { cn } from "@/lib/utils";
 import type { HTMLAttributes } from "react";
-import classNames from "classnames";
-import styles from "./grid.module.css";
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
-  layout?: string;
-}
+export function Grid(props: HTMLAttributes<HTMLDivElement>) {
+  const { className, ...passedProps } = props;
 
-export function Grid(props: Props) {
-  const { className, layout, ...passedProps } = props;
-
-  return (
-    <div
-      className={classNames(
-        styles.grid,
-        className,
-        layout !== undefined && styles[layout]
-      )}
-      {...passedProps}
-    />
-  );
+  return <div className={cn("grid gap-2", className)} {...passedProps} />;
 }
