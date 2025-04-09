@@ -1,6 +1,5 @@
 import { Done } from "@/icons/done";
 import { Fade } from "@/ui/fade/fade";
-import { Grid } from "@/ui/grid/grid";
 import { Section } from "@/ui/section/section";
 import experiences from "./experience.json";
 
@@ -40,23 +39,23 @@ export default function Experience() {
                 key={experience.company}
                 className="mb-4 print:break-inside-avoid"
               >
-                <Grid className="grid-cols-[auto_1fr]">
-                  <figure className="row-span-2 flex size-8 items-center">
+                <div className="grid grid-cols-[auto_1fr] gap-2 md:grid-cols-[auto_1fr_1fr]">
+                  <figure className="row-span-2 size-8">
                     <img
                       alt={`${experience.company} Logo`}
                       src={experience.logo}
                     />
                   </figure>
-                  <div className="col-start-2 row-start-1 font-semibold">
+                  <div className="font-semibold md:col-2">
                     {experience.company}
                   </div>
-                  <div className="col-start-3 row-start-1 text-right text-red-500">
-                    {experience.location}
-                  </div>
-                  <div className="col-start-2 font-medium">
+                  <div className="col-2 row-2 font-medium">
                     {experience.title}
                   </div>
-                  <div className="text-right text-sm italic">
+                  <div className="col-2 row-3 text-red-500 md:col-3 md:row-auto md:text-right">
+                    {experience.location}
+                  </div>
+                  <div className="col-2 row-4 text-sm italic md:col-3 md:row-2 md:text-right">
                     {experience.dates}
                   </div>
                   <div className="col-span-2 col-start-2">
@@ -73,7 +72,7 @@ export default function Experience() {
                       ))}
                     </ul>
                   </div>
-                </Grid>
+                </div>
               </li>
             ))}
           </ul>

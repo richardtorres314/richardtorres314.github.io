@@ -4,7 +4,7 @@
     "logo": "images/the.com.png",
     "location": "Remote",
     "title": "Software Engineer",
-    "dates": "Jan. 2021–Present",
+    "dates": "Jan. 2021 – Present",
     "duties": [
       "Led core automation feature, opening product line to enterprise customers",
       "Orchestrated regular deployments to staging and production environments",
@@ -18,7 +18,7 @@
     "logo": "images/courbanize.png",
     "location": "Boston, MA",
     "title": "Senior Software Engineer",
-    "dates": "Feb., 2020–Aug. 2021",
+    "dates": "Feb., 2020 – Aug. 2021",
     "duties": [
       "Led the MVP development for the company's core second product from inception using Node.js, React, TypeScript, PostgreSQL, and GraphQL",
       "Architected application infrastructure hosted on AWS using key services including Elastic Beanstalk, SNS, RDS, and Lambda",
@@ -30,7 +30,7 @@
     "logo": "images/sos.svg",
     "location": "Boston, MA",
     "title": "Software Engineer",
-    "dates": "Apr., 2018–Feb., 2020",
+    "dates": "Apr., 2018 – Feb., 2020",
     "duties": [
       "Rebuilt legacy Emmy Award winning application to a modern stack using Node.js, React, MySQL, TypeScript, and Docker",
       "Worked along core team as an early engineering hire to establish methodologies for scalable building and collaboration across a rapidly expanded team",
@@ -42,7 +42,7 @@
     "logo": "images/swell.jpg",
     "location": "Boston, MA",
     "title": "Front-end Developer",
-    "dates": "July, 2017–Mar., 2018",
+    "dates": "July, 2017 – Mar., 2018",
     "duties": [
       "Worked closely with the CTO as the first engineering hire to build core functionality of a Ruby application",
       "Developed reusable web components for seamless integration with third-party e-commerce platforms",
@@ -54,7 +54,7 @@
     "logo": "images/bu.gif",
     "location": "Boston, MA",
     "title": "Web Producer",
-    "dates": "Oct. 2015–July, 2017",
+    "dates": "Oct. 2015 – July, 2017",
     "duties": [
       "Managed a team of engineers and interns across distributed projects",
       "Maintained legacy .NET applications and oversaw the migration to custom in-house WordPress instances",
