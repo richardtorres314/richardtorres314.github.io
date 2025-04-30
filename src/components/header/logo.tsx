@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { MouseEvent } from "react";
 
 export function Logo() {
-  function handleOnClickLogo(event: MouseEvent<HTMLAnchorElement>) {
+  function handleOnClickLogo(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -17,19 +17,23 @@ export function Logo() {
   }
 
   return (
-    <Link href="/" onClick={handleOnClickLogo} className="flex items-center">
-      <img
-        draggable="false"
-        alt="Richard Torres"
-        src="/images/me.jpg"
-        className="h-14 w-14 rounded-full object-cover"
-      />
-      <div className="ml-4">
+    <Link href="/" legacyBehavior>
+      <button
+        type="button"
+        className="grid cursor-pointer grid-cols-[auto_auto] gap-x-3 gap-y-0.5"
+        onClick={handleOnClickLogo}
+      >
+        <img
+          draggable="false"
+          alt="Richard Torres"
+          src="/images/me.jpg"
+          className="row-span-2 size-14 self-center rounded-full object-cover"
+        />
         <div className="text-2xl font-light">
           Richard <span className="font-bold">Torres</span>
         </div>
-        <div className="text-md">Software Engineer</div>
-      </div>
+        <div className="text-md col-start-2 text-start">Software Engineer</div>
+      </button>
     </Link>
   );
 }
