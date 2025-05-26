@@ -22,13 +22,13 @@ export default function ContributionPage() {
   return (
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
-        <div className="mb-16 text-center">
+        <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="mb-6 text-4xl font-semibold">
             <span className="text-red-500">Op</span>en{" "}
             <span className="text-red-500">So</span>urce{" "}
             <span className="text-red-500">Con</span>tributions
           </h2>
-          <p className="m-auto mb-4 max-w-(--breakpoint-md)">
+          <p className="mb-4">
             I&rsquo;m deeply passionate about open source. I&rsquo;m an active
             member of several user groups such as{" "}
             <a

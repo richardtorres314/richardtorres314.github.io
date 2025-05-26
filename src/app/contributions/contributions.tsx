@@ -10,8 +10,8 @@ export function Contributions() {
           key={contribution.projectName}
           className="flex flex-col overflow-hidden border-none pt-0 shadow-md"
         >
-          <CardHeader className="relative aspect-auto items-center justify-center bg-blue-500 pt-6 dark:bg-black/25">
-            <div className="flex size-32 justify-center">
+          <CardHeader className="relative aspect-auto items-center justify-center bg-blue-500 pt-6 dark:bg-black/25 print:bg-transparent dark:print:bg-transparent">
+            <div className="mt-4 flex size-32 justify-center">
               <img
                 className="size-16"
                 alt={contribution.projectName}
@@ -35,7 +35,7 @@ export function Contributions() {
               </div>
             )}
           </CardHeader>
-          <CardContent className="grow">
+          <CardContent className="grow pt-6">
             <a
               rel="noreferrer"
               target="_blank"

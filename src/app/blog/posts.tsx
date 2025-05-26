@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowTopRightOnSquare } from "@/icons/arrow-top-right-on-square";
 import { Badge } from "@/ui/badge";
 import { Button } from "@/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
@@ -47,7 +48,7 @@ export function Posts() {
 
   return (
     <>
-      <div className="mb-2 flex justify-end print:hidden">
+      <div className="mb-6 flex justify-end print:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">
@@ -84,9 +85,14 @@ export function Posts() {
           .map((post) => (
             <li key={post.url} className="mb-4 print:break-inside-avoid">
               <a href={post.url} rel="noreferrer" target="_blank">
-                <Card className="hover:bg-card-foreground/5">
+                <Card className="relative hover:bg-card-foreground/5">
                   <CardHeader>
                     <CardTitle>{post.title}</CardTitle>
+                    <div className="items-top absolute top-0 right-0 flex h-16 w-20 justify-end bg-linear-to-tr from-transparent from-50% to-accent-foreground to-50%">
+                      <span className="p-2">
+                        <ArrowTopRightOnSquare className="size-6 stroke-card" />
+                      </span>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <div className="mb-4 flex flex-wrap gap-2">

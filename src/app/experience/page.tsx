@@ -24,7 +24,7 @@ export default function Experience() {
     <Fade duration={1500}>
       <Section className="print:break-inside-auto">
         <div className="xl:container xl:max-w-(--breakpoint-lg)">
-          <div className="mb-16 text-center">
+          <div className="m-auto mb-16 max-w-2xl text-center">
             <h2 className="mb-6 text-4xl font-semibold">
               <span className="text-red-500">Exp</span>erience
             </h2>
@@ -39,7 +39,7 @@ export default function Experience() {
                 key={experience.company}
                 className="mb-4 print:break-inside-avoid"
               >
-                <div className="grid grid-cols-[auto_1fr] gap-2 md:grid-cols-[auto_1fr_1fr]">
+                <div className="grid grid-cols-[auto_1fr] gap-2 md:grid-cols-[auto_1fr_1fr] print:grid-cols-[auto_1fr_1fr]">
                   <figure className="row-span-2 size-8">
                     <img
                       alt={`${experience.company} Logo`}
@@ -52,10 +52,10 @@ export default function Experience() {
                   <div className="col-2 row-2 font-medium">
                     {experience.title}
                   </div>
-                  <div className="col-2 row-3 text-red-500 md:col-3 md:row-auto md:text-right">
+                  <div className="col-2 row-3 text-red-500 md:col-3 md:row-auto md:text-right print:col-3 print:row-auto print:text-right">
                     {experience.location}
                   </div>
-                  <div className="col-2 row-4 text-sm italic md:col-3 md:row-2 md:text-right">
+                  <div className="col-2 row-4 text-sm italic md:col-3 md:row-2 md:text-right print:col-3 print:row-auto print:text-right">
                     {experience.dates}
                   </div>
                   <div className="col-span-2 col-start-2">

@@ -21,7 +21,7 @@ export function MenuList() {
             <NavigationMenuLink
               active={link.url === pathname}
               className={cn(
-                "uppercase first:w-full",
+                "uppercase first:w-full print:text-xs",
                 navigationMenuTriggerStyle(),
               )}
             >

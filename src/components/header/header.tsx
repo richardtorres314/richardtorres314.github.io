@@ -13,13 +13,13 @@ import { ThemeButton } from "./theme-button";
 export function Header() {
   return (
     <header
-      className="fixed top-0 z-50 w-full bg-inherit p-4 print:static print:pb-12"
+      className="fixed top-0 z-50 w-full bg-inherit px-12 py-4 print:static print:px-0 print:pb-12"
       aria-label="main navigation"
     >
-      <div className="flex justify-between md:container">
+      <div className="flex justify-between xl:container">
         <div className="flex w-full items-center justify-between">
           <Logo />
-          <div className="flex gap-2 xl:hidden print:hidden">
+          <div className="flex gap-2 lg:hidden print:hidden">
             <ThemeButton />
             <Popover>
               <PopoverTrigger asChild>
@@ -50,7 +50,7 @@ export function Header() {
             </Popover>
           </div>
         </div>
-        <NavigationMenu className="hidden xl:flex">
+        <NavigationMenu className="hidden lg:flex print:block">
           <NavigationMenuList>
             <MenuList />
             <NavigationMenuItem>
