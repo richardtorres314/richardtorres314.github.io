@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
 import { Fade } from "@/ui/fade/fade";
 import { Section } from "@/ui/section/section";
 import { Freebies } from "./freebies";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Freebies - Richard Torres",
   metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {

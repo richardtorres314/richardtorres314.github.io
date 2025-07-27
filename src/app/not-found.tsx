@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import { LatentThemeChecker } from "@/components/latent-theme-checker";
 import { Section } from "@/ui/section/section";
-import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Richard Torres - Not Found",
   metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {

@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
 import About from "@/components/about";
 import { Skills } from "@/components/skills/skills";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Richard Torres",
   metadataBase: new URL("https://www.richardtorres.co"),
   openGraph: {
