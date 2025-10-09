@@ -1,5 +1,7 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
+import { type MouseEvent, useState } from "react";
 import { ArrowTopRightOnSquare } from "@/icons/arrow-top-right-on-square";
 import { Badge } from "@/ui/badge";
 import { Button } from "@/ui/button";
@@ -12,8 +14,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
-import { type MouseEvent, useState } from "react";
 import posts from "./posts.json";
 
 export function Posts() {

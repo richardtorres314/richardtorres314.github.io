@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 export default function FreebiesPage() {
   return (
     <Fade duration={1500}>
-      <Section>
-        <div className="container">
+      <Section className="print:break-inside-auto">
+        <div className="xl:container">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h1 className="mb-6 text-center text-4xl font-bold">
               <span className="text-red-500">Fre</span>ebies

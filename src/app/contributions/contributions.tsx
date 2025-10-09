@@ -12,11 +12,13 @@ export function Contributions() {
         >
           <CardHeader className="relative aspect-auto items-center justify-center bg-blue-500 pt-6 dark:bg-black/25 print:bg-transparent dark:print:bg-transparent">
             <div className="mt-4 flex size-32 justify-center">
-              <img
-                className="size-16"
-                alt={contribution.projectName}
-                src={contribution.image}
-              />
+              <picture>
+                <img
+                  className="size-16"
+                  alt={contribution.projectName}
+                  src={contribution.image}
+                />
+              </picture>
             </div>
             {contribution.projectType === "script" ||
             contribution.version[0] === "Pending" ? (

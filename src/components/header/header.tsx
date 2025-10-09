@@ -12,10 +12,7 @@ import { ThemeButton } from "./theme-button";
 
 export function Header() {
   return (
-    <header
-      className="fixed top-0 z-50 w-full bg-inherit px-12 py-4 print:static print:px-0 print:pb-12"
-      aria-label="main navigation"
-    >
+    <header className="fixed top-0 z-50 w-full bg-inherit px-12 py-4 print:static print:px-0 print:pb-12">
       <div className="flex justify-between xl:container">
         <div className="flex w-full items-center justify-between">
           <Logo />
@@ -29,8 +26,6 @@ export function Header() {
                 >
                   <span
                     className="h-4 w-4 print:fill-black"
-                    aria-label="menu"
-                    aria-expanded="false"
                     data-target="navMenu"
                   >
                     <Menu />

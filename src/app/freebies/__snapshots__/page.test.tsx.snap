@@ -7,10 +7,10 @@ exports[`Freebies Page renders freebies page unchanged 1`] = `
     style="opacity: 0; animation-delay: 0ms;"
   >
     <section
-      class="p-12 scroll-mt-24 print:break-inside-avoid print:p-0"
+      class="p-12 scroll-mt-24 print:p-0 print:break-inside-auto"
     >
       <div
-        class="container"
+        class="xl:container"
       >
         <div
           class="mx-auto mb-16 max-w-2xl text-center"
