@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
-
 import { Badge } from "@/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
 import { Fade } from "@/ui/fade/fade";
 import { Section } from "@/ui/section/section";
 import data from "./skills.json";
