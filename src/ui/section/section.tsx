@@ -9,8 +9,8 @@ export function Section({
   return (
     <section
       className={cn(
-        "p-12 scroll-mt-24 print:break-inside-avoid print:p-0",
-        className
+        "scroll-mt-24 p-12 print:break-inside-avoid print:p-0",
+        className,
       )}
       {...passedProps}
     >

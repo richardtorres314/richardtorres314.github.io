@@ -164,18 +164,8 @@ body {
   min-height: 100vh;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 html {
   min-height: 100%;
   overflow-y: auto;
   overscroll-behavior-y: none;
-  scroll-behavior: smooth;
-}
-
-main {
-  scroll-behavior: smooth;
-  scroll-margin-top: calc(64px + 2rem);
 }
