@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import type { HTMLAttributes } from "react";
 
 export function ArrowTopRightOnSquare(props: HTMLAttributes<SVGElement>) {
   return (
@@ -10,6 +10,7 @@ export function ArrowTopRightOnSquare(props: HTMLAttributes<SVGElement>) {
       stroke="currentColor"
       {...props}
     >
+      <title>Arrow Top Right on Square</title>
       <path
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -42,6 +42,7 @@ export default function Experience() {
               >
                 <div className="grid grid-cols-[auto_1fr] gap-2 md:grid-cols-[auto_1fr_1fr] print:grid-cols-[auto_1fr_1fr]">
                   <figure className="row-span-2 size-8">
+                    {/** biome-ignore lint/performance/noImgElement: Avoid vendor specific solutions */}
                     <img
                       alt={`${experience.company} Logo`}
                       src={experience.logo}

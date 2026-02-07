@@ -27,6 +27,7 @@ export default function About() {
               </p>
             </div>
             <div className="flex items-center">
+              {/** biome-ignore lint/performance/noImgElement: Avoid vender dependent solutions */}
               <img
                 alt="Illustration of person thinking alongside laptop"
                 src="/images/code-thinking.svg"
