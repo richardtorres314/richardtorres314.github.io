@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 export class IntersectionObserver {
   root = null;
   rootMargin = "";
-  thresholds = [];
+  thresholds = [] as any[];
 
   disconnect() {
     return null;
@@ -21,5 +21,5 @@ export class IntersectionObserver {
     return null;
   }
 }
-window.IntersectionObserver = IntersectionObserver;
-global.IntersectionObserver = IntersectionObserver;
+(window as any).IntersectionObserver = IntersectionObserver;
+(global as any).IntersectionObserver = IntersectionObserver;

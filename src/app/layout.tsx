@@ -1,6 +1,5 @@
 import { Footer } from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
-import "@fontsource-variable/inter";
 import type { PropsWithChildren } from "react";
 import "styles/global.css";
 
