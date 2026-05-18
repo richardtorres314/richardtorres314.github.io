@@ -41,34 +41,33 @@ describe("Card", () => {
   });
 
   test("renders card with description with children", () => {
-    render(
+    const { getByText } = render(
       <Card>
         <CardDescription>CardDescription</CardDescription>
         <p>Test</p>
       </Card>,
     );
-    expect(screen.getByText("CardDescription")).toBeInTheDocument();
-    expect(screen.getByText("Test")).toBeInTheDocument();
+    expect(getByText("CardDescription")).toBeInTheDocument();
+    expect(getByText("Test")).toBeInTheDocument();
   });
 
   test("renders card with content", () => {
-    render(
+    const { getByText } = render(
       <Card>
         <CardContent>CardContent</CardContent>
       </Card>,
     );
-    const cardContent = screen.getByText("CardContent");
+    const cardContent = getByText("CardContent");
     expect(cardContent).toHaveClass("p-6");
   });
 
   test("renders card with footer", () => {
-    render(
+    const { getByText } = render(
       <Card>
         <CardFooter>CardFooter</CardFooter>
       </Card>,
     );
-    const cardFooter = screen.getByText("CardFooter");
-    expect(cardFooter).toHaveClass("p-6");
-    expect(cardFooter).toHaveClass("flex");
+    const cardFooter = getByText("CardFooter");
+    expect(cardFooter).toHaveClass("p-6", "flex");
   });
 });
