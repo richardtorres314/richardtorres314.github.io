@@ -24,10 +24,7 @@ export function Header() {
                   variant="ghost"
                   className="px-2 xl:hidden dark:bg-background dark:fill-white dark:hover:bg-accent"
                 >
-                  <span
-                    className="h-4 w-4 print:fill-black"
-                    data-target="navMenu"
-                  >
+                  <span className="h-4 w-4 print:fill-black">
                     <Menu />
                   </span>
                 </Button>

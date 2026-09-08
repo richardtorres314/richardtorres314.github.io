@@ -5,10 +5,10 @@ import { Posts } from "./posts";
 
 export const metadata: Metadata = {
   title: "Blog - Richard Torres",
-  metadataBase: new URL("https://www.richardtorres.co"),
+  metadataBase: new URL("https://richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Blog",
-    url: "https://www.richardtorres.co/blog",
+    url: "https://richardtorres.co/blog",
     locale: "en-US",
     type: "website",
     description:

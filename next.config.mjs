@@ -1,6 +1,6 @@
 // @ts-check
 
-import NextBundleAnalyzer from '@next/bundle-analyzer';
+import NextBundleAnalyzer from "@next/bundle-analyzer";
 
 const withBundleAnalyzer = NextBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
@@ -12,10 +12,6 @@ const withBundleAnalyzer = NextBundleAnalyzer({
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath:
-    process.env.NODE_ENV === "production"
-      ? "/richardtorres314.github.io"
-      : undefined,
 };
 
 export default withBundleAnalyzer(nextConfig);

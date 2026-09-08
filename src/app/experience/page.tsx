@@ -5,11 +5,11 @@ import { Section } from "@/ui/section/section";
 import experiences from "./experience.json";
 
 export const metadata: Metadata = {
-  title: "Blog - Richard Torres",
-  metadataBase: new URL("https://www.richardtorres.co"),
+  title: "Experience - Richard Torres",
+  metadataBase: new URL("https://richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Professional Experience",
-    url: "https://www.richardtorres.co/experience",
+    url: "https://richardtorres.co/experience",
     locale: "en-US",
     type: "website",
     description:

@@ -4,11 +4,11 @@ import { Section } from "@/ui/section/section";
 import { Contributions } from "./contributions";
 
 export const metadata: Metadata = {
-  title: "Blog - Richard Torres",
-  metadataBase: new URL("https://www.richardtorres.co"),
+  title: "Contributions - Richard Torres",
+  metadataBase: new URL("https://richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Open Source Contributions",
-    url: "https://www.richardtorres.co/contributions",
+    url: "https://richardtorres.co/contributions",
     locale: "en-US",
     type: "website",
     description:

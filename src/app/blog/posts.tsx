@@ -77,7 +77,7 @@ export function Posts() {
         </DropdownMenu>
       </div>
       <ul>
-        {posts
+        {[...posts]
           .sort((a, b) => (a.date > b.date ? 1 : -1))
           .filter((post) =>
             tags.length ? post.tags.some((tag) => tags.includes(tag)) : true,

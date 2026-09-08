@@ -5,10 +5,10 @@ import { Section } from "@/ui/section/section";
 
 export const metadata: Metadata = {
   title: "Richard Torres - Not Found",
-  metadataBase: new URL("https://www.richardtorres.co"),
+  metadataBase: new URL("https://richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Personal Homepage",
-    url: "https://www.richardtorres.co",
+    url: "https://richardtorres.co",
     locale: "en-US",
     type: "website",
     description:

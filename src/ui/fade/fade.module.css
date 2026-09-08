@@ -1,11 +1,13 @@
 @media (scripting: none) {
   .fade {
+    /* biome-ignore lint/complexity/noImportantStyles: necessary to override inline opacity before reveal */
     opacity: 1 !important;
   }
 }
 
 @media print {
   .fade {
+    /* biome-ignore lint/complexity/noImportantStyles: necessary to override inline opacity before reveal */
     opacity: 1 !important;
   }
 }

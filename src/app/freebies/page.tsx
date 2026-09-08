@@ -5,10 +5,10 @@ import { Freebies } from "./freebies";
 
 export const metadata: Metadata = {
   title: "Freebies - Richard Torres",
-  metadataBase: new URL("https://www.richardtorres.co"),
+  metadataBase: new URL("https://richardtorres.co"),
   openGraph: {
     title: "Richard Torres — Collection of Freebies",
-    url: "https://www.richardtorres.co/freebies",
+    url: "https://richardtorres.co/freebies",
     locale: "en-US",
     type: "website",
     description:

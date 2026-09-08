@@ -4,17 +4,20 @@ import { Badge, badgeVariants as badgeVariant } from "./badge";
 
 describe("Badge", () => {
   test("renders badge with default variant", () => {
-    const badge = render(<Badge variant="default">Badge</Badge>).container.firstChild as HTMLElement;
+    const badge = render(<Badge variant="default">Badge</Badge>).container
+      .firstChild as HTMLElement;
     expect(badge).toHaveClass("inline-flex");
   });
 
   test("renders badge with secondary variant", () => {
-    const badge = render(<Badge variant="secondary">Badge</Badge>).container.firstChild as HTMLElement;
+    const badge = render(<Badge variant="secondary">Badge</Badge>).container
+      .firstChild as HTMLElement;
     expect(badge).toHaveClass("bg-secondary");
   });
 
   test("renders badge with destructive variant", () => {
-    const badge = render(<Badge variant="destructive">Badge</Badge>).container.firstChild as HTMLElement;
+    const badge = render(<Badge variant="destructive">Badge</Badge>).container
+      .firstChild as HTMLElement;
     expect(badge).toHaveClass("bg-destructive");
   });
 
