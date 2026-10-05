@@ -54,6 +54,6 @@
   },
   "overrides": {
     "@types/react": "19.2.18",
-    "brace-expansion": "^2.1.4"
+    "brace-expansion": "^2.1.7"
   }
 }
